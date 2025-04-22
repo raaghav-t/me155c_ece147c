@@ -1,0 +1,78 @@
+%implements s0_b0_zvezf_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+real_T rtb_HILReadEncoder[2];
+real_T rtb_SineWave;
+%closefile localVarDecl
+%assign tlcOutputsFcnOfS0B0 = OpaqueTLCBlockFcn("Outputs", 0, 0, 0, 2, 0)
+%assign tlcOutputsFcnOfS0B1 = OpaqueTLCBlockFcn("Outputs", 0, 1, 0, 2, 1)
+%assign tlcOutputsFcnOfS0B2 = OpaqueTLCBlockFcn("Outputs", 0, 2, 0, 2, 2)
+%assign tlcOutputsFcnOfS0B3 = OpaqueTLCBlockFcn("Outputs", 0, 3, 0, 2, 3)
+%assign tlcOutputsFcnOfS0B4 = OpaqueTLCBlockFcn("Outputs", 0, 4, 0, 2, 4)
+%assign tlcOutputsFcnOfS0B5 = OpaqueTLCBlockFcn("Outputs", 0, 5, 0, 2, 5)
+%<SLibGenerateExtModeOutput(system)>
+%if !WHITE_SPACE(tlcOutputsFcnOfS0B0)
+/* {S!d48}S-Function (hil_initialize_block): '<Root>/HIL Initialize' */
+%<tlcOutputsFcnOfS0B0>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS0B1)
+/* {S!d50}S-Function (hil_read_encoder_block): '<Root>/HIL Read Encoder' */
+%<tlcOutputsFcnOfS0B1>\
+%endif
+/* {S!d52}Gain: '<Root>/Gain' */
+Lab1_B.raag[0] = Lab1_P.Gain_Gain * rtb_HILReadEncoder[0];
+Lab1_B.raag[1] = Lab1_P.Gain_Gain * rtb_HILReadEncoder[1];
+%if !WHITE_SPACE(tlcOutputsFcnOfS0B2)
+/* {S!d54}Scope: '<Root>/Scope' */
+%<tlcOutputsFcnOfS0B2>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS0B3)
+/* {S!d56}ToWorkspace: '<Root>/To Workspace' */
+%<tlcOutputsFcnOfS0B3>\
+%endif
+/* {S!d58}Sin: '<Root>/Sine Wave' */
+if (Lab1_DW.systemEnable != 0) {
+    rtb_SineWave = Lab1_P.omega * %<(SLibCG_SE(LibGetTaskTime(1)))>;
+    Lab1_DW.lastSin = sin(rtb_SineWave);
+    Lab1_DW.lastCos = cos(rtb_SineWave);
+    Lab1_DW.systemEnable = 0;
+}
+rtb_SineWave = ((Lab1_DW.lastSin * Lab1_P.SineWave_PCos + Lab1_DW.lastCos * Lab1_P.SineWave_PSin) * Lab1_P.SineWave_HCos + (Lab1_DW.lastCos * Lab1_P.SineWave_PCos - Lab1_DW.lastSin * Lab1_P.SineWave_PSin) * Lab1_P.SineWave_Hsin) * Lab1_P.amp + Lab1_P.SineWave_Bias;
+/* {E!d58}End of Sin: '<Root>/Sine Wave' */
+%if !WHITE_SPACE(tlcOutputsFcnOfS0B4)
+
+/* {S!d60}S-Function (hil_write_analog_block): '<Root>/HIL Write Analog' */
+%<tlcOutputsFcnOfS0B4>\
+%endif
+/* {S!d66}Step: '<Root>/Step' */
+if (%<(SLibCG_SE(LibGetTaskTime(0)))> < Lab1_P.Step_Time) {
+    /* {S!d62}Step: '<Root>/Step' */
+    Lab1_B.Step = Lab1_P.Step_Y0;
+} else {
+    /* {S!d64}Step: '<Root>/Step' */
+    Lab1_B.Step = Lab1_P.Step_YFinal;
+}
+/* {E!d66}End of Step: '<Root>/Step' */
+%if !WHITE_SPACE(tlcOutputsFcnOfS0B5)
+
+/* {S!d68}Scope: '<Root>/TRIGGER_SCOPE' */
+%<tlcOutputsFcnOfS0B5>\
+%endif
+%<SLibInsertSolverResetCode()>\
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 2, fcnProtoType)>
+%endfunction

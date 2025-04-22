@@ -22,9 +22,10 @@ mdata = merge(data{:});
 
 
 %%
-trfu = tfest(mdata, 3);
+trfu = tfest(mdata, 3, 2);
 
 Gs = tf(trfu)
-
-
+%%
+figure(2)
 bode(Gs)
+hold on

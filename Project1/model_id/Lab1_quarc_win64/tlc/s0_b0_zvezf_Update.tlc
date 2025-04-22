@@ -1,0 +1,26 @@
+%implements s0_b0_zvezf_Update "C"
+
+%function Update(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+real_T HoldSine;
+%closefile localVarDecl
+/* Update for Sin: '<Root>/Sine Wave' */
+HoldSine = Lab1_DW.lastSin;
+Lab1_DW.lastSin = Lab1_DW.lastSin * Lab1_P.SineWave_HCos + Lab1_DW.lastCos * Lab1_P.SineWave_Hsin;
+Lab1_DW.lastCos = Lab1_DW.lastCos * Lab1_P.SineWave_HCos - HoldSine * Lab1_P.SineWave_Hsin;
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedUpdateLocalVars", localVarDecl)>
+%endfunction
+%function UpdateFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Update(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 3, fcnProtoType)>
+%endfunction

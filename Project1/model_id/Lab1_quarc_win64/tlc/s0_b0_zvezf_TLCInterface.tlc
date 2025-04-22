@@ -1,0 +1,2272 @@
+%implements s0_b0_zvezf_TLCInterface "C"
+
+%function getInputAddr_0_2_0_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_B.raag" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_0_2_0_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_B.raag" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_2_0_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.Scope_PWORK"
+%endfunction
+
+%function getDWork_0_2_0_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.Scope_PWORK"
+%endfunction
+
+%function getInputAddr_0_3_0_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_B.raag" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_0_3_0_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_B.raag" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_3_0_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.ToWorkspace_PWORK"
+%endfunction
+
+%function getDWork_0_3_0_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.ToWorkspace_PWORK"
+%endfunction
+
+%function getInputAddr_0_5_0_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_B.Step"
+%endfunction
+
+%function getInput_0_5_0_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_B.Step"
+%endfunction
+
+%function getDWorkAddr_0_5_0_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.TRIGGER_SCOPE_PWORK"
+%endfunction
+
+%function getDWork_0_5_0_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.TRIGGER_SCOPE_PWORK"
+%endfunction
+
+%function getDWorkAddr_0_0_0_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_Card"
+%endfunction
+
+%function getDWork_0_0_0_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_Card"
+%endfunction
+
+%function getDWorkAddr_0_0_0_0_3_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_AIMinimums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_0_3_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_AIMinimums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_0_0_0_3_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_AIMaximums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_0_3_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_AIMaximums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_0_0_0_3_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_AOMinimums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_0_3_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_AOMinimums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_0_0_0_3_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_AOMaximums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_0_3_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_AOMaximums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_0_0_0_3_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_AOVoltages" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_0_3_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_AOVoltages" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_0_0_0_3_6_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_QuadratureModes" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_0_3_6_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_QuadratureModes" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_0_0_0_3_7_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_FilterFrequency" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_0_3_7_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_FilterFrequency" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_0_0_0_3_8_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_InitialEICounts" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_0_3_8_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_InitialEICounts" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_37(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_Active"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_37(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_Active"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_38(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOTerminate"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_38(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOTerminate"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_39(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOExit"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_39(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOExit"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_40(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOTerminate"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_40(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOTerminate"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_41(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOExit"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_41(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOExit"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_42(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POTerminate"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_42(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POTerminate"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_43(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POExit"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_43(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POExit"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_4(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_OOTerminate"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_4(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_OOTerminate"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_OOExit"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_OOExit"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_44(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_CKPStart"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_44(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_CKPStart"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_45(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_CKPEnter"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_45(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_CKPEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_46(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_CKStart"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_46(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_CKStart"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_47(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_CKEnter"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_47(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_CKEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_48(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AIPStart"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_48(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AIPStart"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_49(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AIPEnter"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_49(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AIPEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_50(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOPStart"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_50(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOPStart"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_51(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOPEnter"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_51(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOPEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_52(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOStart"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_52(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOStart"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_53(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOEnter"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_53(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_54(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOReset"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_54(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOReset"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_55(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOPStart"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_55(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOPStart"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_56(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOPEnter"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_56(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOPEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_57(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOStart"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_57(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOStart"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_58(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOEnter"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_58(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_59(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOReset"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_59(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOReset"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_60(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIPStart"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_60(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIPStart"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_61(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIPEnter"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_61(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIPEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_62(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIStart"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_62(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIStart"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_63(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIEnter"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_63(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_64(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POPStart"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_64(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POPStart"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_65(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POPEnter"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_65(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POPEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_66(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POStart"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_66(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POStart"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_67(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POEnter"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_67(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_68(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POReset"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_68(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POReset"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_6(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_OOStart"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_6(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_OOStart"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_7(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_OOEnter"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_7(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_OOEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_69(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_OOReset"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_69(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_OOReset"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_8(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOFinal"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_8(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOFinal"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_70(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOFinal"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_70(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOFinal"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_9(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POFinal"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_9(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POFinal"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_28(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_CKChannels"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_28(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_CKChannels"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_29(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_CKModes"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_29(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_CKModes"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_33(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AIChannels"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_33(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AIChannels"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_10(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AIHigh"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_10(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AIHigh"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_11(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AILow"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_11(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AILow"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_34(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOChannels"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_34(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOChannels"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_12(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOHigh"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_12(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOHigh"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_13(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOLow"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_13(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOLow"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_14(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOInitial"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_14(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOInitial"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_15(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOWatchdog"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_15(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOWatchdog"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_71(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOInitial"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_71(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOInitial"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_30(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOWatchdog"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_30(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOWatchdog"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_35(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIChannels"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_35(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIChannels"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_36(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIQuadrature"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_36(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIQuadrature"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_16(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIFrequency"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_16(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIFrequency"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_31(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIInitial"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_31(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIInitial"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_32(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POModes"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_32(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POModes"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_17(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POFrequency"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_17(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POFrequency"
+%endfunction
+
+%function getParamAddr_0_0_0_0_3_1_18(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POInitial"
+%endfunction
+
+%function getParam_0_0_0_0_3_1_18(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POInitial"
+%endfunction
+
+%function getDWorkAddr_0_0_0_2_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_Card"
+%endfunction
+
+%function getDWork_0_0_0_2_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_Card"
+%endfunction
+
+%function getDWorkAddr_0_0_0_2_0_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_AIMinimums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_2_0_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_AIMinimums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_0_0_2_0_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_AIMaximums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_2_0_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_AIMaximums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_0_0_2_0_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_AOMinimums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_2_0_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_AOMinimums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_0_0_2_0_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_AOMaximums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_2_0_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_AOMaximums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_0_0_2_0_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_AOVoltages" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_2_0_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_AOVoltages" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_0_0_2_0_6_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_QuadratureModes" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_2_0_6_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_QuadratureModes" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_0_0_2_0_7_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_FilterFrequency" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_2_0_7_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_FilterFrequency" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_0_0_2_0_8_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_InitialEICounts" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_2_0_8_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_InitialEICounts" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_37(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_Active"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_37(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_Active"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_38(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOTerminate"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_38(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOTerminate"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_39(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOExit"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_39(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOExit"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_40(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOTerminate"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_40(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOTerminate"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_41(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOExit"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_41(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOExit"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_42(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POTerminate"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_42(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POTerminate"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_43(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POExit"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_43(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POExit"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_4(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_OOTerminate"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_4(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_OOTerminate"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_OOExit"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_OOExit"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_44(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_CKPStart"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_44(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_CKPStart"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_45(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_CKPEnter"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_45(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_CKPEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_46(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_CKStart"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_46(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_CKStart"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_47(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_CKEnter"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_47(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_CKEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_48(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AIPStart"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_48(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AIPStart"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_49(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AIPEnter"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_49(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AIPEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_50(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOPStart"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_50(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOPStart"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_51(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOPEnter"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_51(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOPEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_52(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOStart"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_52(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOStart"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_53(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOEnter"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_53(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_54(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOReset"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_54(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOReset"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_55(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOPStart"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_55(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOPStart"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_56(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOPEnter"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_56(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOPEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_57(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOStart"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_57(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOStart"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_58(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOEnter"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_58(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_59(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOReset"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_59(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOReset"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_60(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIPStart"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_60(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIPStart"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_61(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIPEnter"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_61(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIPEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_62(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIStart"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_62(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIStart"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_63(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIEnter"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_63(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_64(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POPStart"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_64(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POPStart"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_65(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POPEnter"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_65(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POPEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_66(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POStart"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_66(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POStart"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_67(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POEnter"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_67(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_68(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POReset"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_68(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POReset"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_6(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_OOStart"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_6(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_OOStart"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_7(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_OOEnter"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_7(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_OOEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_69(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_OOReset"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_69(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_OOReset"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_8(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOFinal"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_8(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOFinal"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_70(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOFinal"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_70(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOFinal"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_9(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POFinal"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_9(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POFinal"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_28(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_CKChannels"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_28(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_CKChannels"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_29(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_CKModes"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_29(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_CKModes"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_33(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AIChannels"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_33(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AIChannels"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_10(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AIHigh"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_10(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AIHigh"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_11(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AILow"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_11(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AILow"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_34(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOChannels"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_34(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOChannels"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_12(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOHigh"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_12(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOHigh"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_13(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOLow"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_13(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOLow"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_14(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOInitial"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_14(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOInitial"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_15(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOWatchdog"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_15(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOWatchdog"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_71(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOInitial"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_71(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOInitial"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_30(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOWatchdog"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_30(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOWatchdog"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_35(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIChannels"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_35(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIChannels"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_36(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIQuadrature"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_36(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIQuadrature"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_16(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIFrequency"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_16(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIFrequency"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_31(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIInitial"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_31(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIInitial"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_32(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POModes"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_32(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POModes"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_17(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POFrequency"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_17(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POFrequency"
+%endfunction
+
+%function getParamAddr_0_0_0_2_0_1_18(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POInitial"
+%endfunction
+
+%function getParam_0_0_0_2_0_1_18(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POInitial"
+%endfunction
+
+%function getOutputAddr_0_1_0_2_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtb_HILReadEncoder" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_0_1_0_2_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtb_HILReadEncoder" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_1_0_2_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILReadEncoder_Buffer" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_1_0_2_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILReadEncoder_Buffer" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_1_0_2_1_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILReadEncoder_PWORK"
+%endfunction
+
+%function getDWork_0_1_0_2_1_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILReadEncoder_PWORK"
+%endfunction
+
+%function getParamAddr_0_1_0_2_1_1_2(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILReadEncoder_channels"
+%endfunction
+
+%function getParam_0_1_0_2_1_1_2(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILReadEncoder_channels"
+%endfunction
+
+%function getParamAddr_0_1_0_2_1_1_72(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILReadEncoder_Active"
+%endfunction
+
+%function getParam_0_1_0_2_1_1_72(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILReadEncoder_Active"
+%endfunction
+
+%function getInputAddr_0_2_0_2_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_B.raag" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_0_2_0_2_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_B.raag" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_2_0_2_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.Scope_PWORK"
+%endfunction
+
+%function getDWork_0_2_0_2_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.Scope_PWORK"
+%endfunction
+
+%function getInputAddr_0_3_0_2_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_B.raag" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_0_3_0_2_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_B.raag" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_3_0_2_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.ToWorkspace_PWORK"
+%endfunction
+
+%function getDWork_0_3_0_2_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.ToWorkspace_PWORK"
+%endfunction
+
+%function getInputAddr_0_4_0_2_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtb_SineWave"
+%endfunction
+
+%function getInput_0_4_0_2_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtb_SineWave"
+%endfunction
+
+%function getDWorkAddr_0_4_0_2_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILWriteAnalog_PWORK"
+%endfunction
+
+%function getDWork_0_4_0_2_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILWriteAnalog_PWORK"
+%endfunction
+
+%function getParamAddr_0_4_0_2_4_1_3(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILWriteAnalog_channels"
+%endfunction
+
+%function getParam_0_4_0_2_4_1_3(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILWriteAnalog_channels"
+%endfunction
+
+%function getParamAddr_0_4_0_2_4_1_73(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILWriteAnalog_Active"
+%endfunction
+
+%function getParam_0_4_0_2_4_1_73(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILWriteAnalog_Active"
+%endfunction
+
+%function getInputAddr_0_5_0_2_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_B.Step"
+%endfunction
+
+%function getInput_0_5_0_2_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_B.Step"
+%endfunction
+
+%function getDWorkAddr_0_5_0_2_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.TRIGGER_SCOPE_PWORK"
+%endfunction
+
+%function getDWork_0_5_0_2_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.TRIGGER_SCOPE_PWORK"
+%endfunction
+
+%function getDWorkAddr_0_0_0_5_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_Card"
+%endfunction
+
+%function getDWork_0_0_0_5_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_Card"
+%endfunction
+
+%function getDWorkAddr_0_0_0_5_0_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_AIMinimums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_5_0_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_AIMinimums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_0_0_5_0_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_AIMaximums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_5_0_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_AIMaximums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_0_0_5_0_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_AOMinimums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_5_0_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_AOMinimums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_0_0_5_0_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_AOMaximums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_5_0_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_AOMaximums" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_0_0_5_0_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_AOVoltages" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_5_0_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_AOVoltages" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_0_0_5_0_6_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_QuadratureModes" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_5_0_6_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_QuadratureModes" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_0_0_5_0_7_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_FilterFrequency" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_5_0_7_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_FilterFrequency" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_0_0_5_0_8_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.HILInitialize_InitialEICounts" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_0_0_5_0_8_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.HILInitialize_InitialEICounts" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_37(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_Active"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_37(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_Active"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_38(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOTerminate"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_38(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOTerminate"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_39(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOExit"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_39(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOExit"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_40(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOTerminate"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_40(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOTerminate"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_41(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOExit"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_41(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOExit"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_42(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POTerminate"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_42(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POTerminate"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_43(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POExit"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_43(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POExit"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_4(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_OOTerminate"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_4(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_OOTerminate"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_OOExit"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_OOExit"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_44(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_CKPStart"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_44(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_CKPStart"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_45(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_CKPEnter"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_45(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_CKPEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_46(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_CKStart"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_46(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_CKStart"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_47(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_CKEnter"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_47(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_CKEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_48(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AIPStart"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_48(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AIPStart"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_49(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AIPEnter"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_49(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AIPEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_50(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOPStart"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_50(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOPStart"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_51(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOPEnter"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_51(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOPEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_52(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOStart"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_52(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOStart"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_53(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOEnter"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_53(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_54(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOReset"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_54(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOReset"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_55(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOPStart"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_55(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOPStart"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_56(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOPEnter"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_56(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOPEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_57(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOStart"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_57(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOStart"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_58(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOEnter"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_58(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_59(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOReset"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_59(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOReset"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_60(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIPStart"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_60(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIPStart"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_61(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIPEnter"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_61(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIPEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_62(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIStart"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_62(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIStart"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_63(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIEnter"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_63(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_64(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POPStart"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_64(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POPStart"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_65(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POPEnter"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_65(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POPEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_66(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POStart"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_66(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POStart"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_67(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POEnter"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_67(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_68(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POReset"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_68(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POReset"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_6(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_OOStart"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_6(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_OOStart"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_7(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_OOEnter"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_7(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_OOEnter"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_69(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_OOReset"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_69(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_OOReset"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_8(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOFinal"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_8(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOFinal"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_70(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOFinal"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_70(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOFinal"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_9(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POFinal"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_9(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POFinal"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_28(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_CKChannels"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_28(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_CKChannels"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_29(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_CKModes"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_29(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_CKModes"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_33(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AIChannels"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_33(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AIChannels"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_10(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AIHigh"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_10(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AIHigh"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_11(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AILow"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_11(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AILow"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_34(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOChannels"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_34(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOChannels"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_12(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOHigh"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_12(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOHigh"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_13(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOLow"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_13(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOLow"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_14(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOInitial"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_14(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOInitial"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_15(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_AOWatchdog"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_15(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_AOWatchdog"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_71(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOInitial"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_71(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOInitial"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_30(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_DOWatchdog"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_30(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_DOWatchdog"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_35(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIChannels"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_35(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIChannels"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_36(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIQuadrature"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_36(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIQuadrature"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_16(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIFrequency"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_16(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIFrequency"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_31(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_EIInitial"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_31(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_EIInitial"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_32(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POModes"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_32(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POModes"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_17(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POFrequency"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_17(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POFrequency"
+%endfunction
+
+%function getParamAddr_0_0_0_5_0_1_18(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_P.HILInitialize_POInitial"
+%endfunction
+
+%function getParam_0_0_0_5_0_1_18(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_P.HILInitialize_POInitial"
+%endfunction
+
+%function getInputAddr_0_3_0_5_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_B.raag" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_0_3_0_5_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_B.raag" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_3_0_5_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Lab1_DW.ToWorkspace_PWORK"
+%endfunction
+
+%function getDWork_0_3_0_5_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Lab1_DW.ToWorkspace_PWORK"
+%endfunction
+
