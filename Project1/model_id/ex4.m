@@ -1,5 +1,5 @@
 clear;
-load("hw2_ex4_id_order.mat");
+load("data2.mat");
 
 npnz = [1 0; 1 1;
         2 0; 2 1; 2 2;
@@ -14,7 +14,6 @@ Ts = 0.001;
 
 ws = logspace(-0.5,1,20)*2*pi;
 
-data
 data = cell(length(ws),1);
 
 for w = 1:length(ws)
@@ -29,13 +28,19 @@ for w = 1:length(ws)
     data{w} = iddata(ybar'/n, u'/n, Ts);
 end
 
-mdata = merge(data{:});
+data = merge(data{:});
 
 for i = 1:size(npnz,1)
     np = npnz(i,1);
     nz = npnz(i,2);
     model = tfest(data,np,nz);
-    normalizedMSE = model.Report.Fit.MSE/((y'*y)/length(y));
+    normalizers = zeros(1,20);
+    for test = 1:20
+        normalizers(test) = data.OutputData{1,test}'*data.OutputData{1,test};
+    end
+
+
+    normalizedMSE = mean(model.Report.Fit.MSE./normalizers/9999);%/((y'*y)/length(y));
     MSEs(i) = normalizedMSE;
     num = model.Numerator;
     den = model.Denominator(2:end); % excludes leading coeff (always 1)
