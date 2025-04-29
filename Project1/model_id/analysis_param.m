@@ -22,7 +22,7 @@ mdata = merge(data{:});
 
 
 %%
-trfu = tfest(mdata, 3, 1);
+trfu = tfest(mdata, 3, 2);
 
 Gs = tf(trfu)
 %%

@@ -9,7 +9,7 @@
  *
  * Model version              : 1.10
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Mon Apr 21 20:49:50 2025
+ * C source code generated on : Mon Apr 28 20:34:40 2025
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -70,14 +70,14 @@ static const char_T * rtDataTypeNames[] = {
 
 /* data type transitions for block I/O structure */
 static DataTypeTransition rtBTransitions[] = {
-  { (char_T *)(&Controller_B.DiscreteTransferFcn), 0, 0, 6 }
+  { (char_T *)(&Controller_B.Gain1), 0, 0, 6 }
   ,
 
-  { (char_T *)(&Controller_DW.DiscreteTransferFcn_states[0]), 0, 0, 28 },
+  { (char_T *)(&Controller_DW.DiscreteTimeIntegrator_DSTATE), 0, 0, 29 },
 
   { (char_T *)(&Controller_DW.HILInitialize_Card), 15, 0, 1 },
 
-  { (char_T *)(&Controller_DW.HILWriteAnalog_PWORK), 11, 0, 9 },
+  { (char_T *)(&Controller_DW.HILReadEncoder_PWORK), 11, 0, 7 },
 
   { (char_T *)(&Controller_DW.HILInitialize_QuadratureModes[0]), 6, 0, 10 }
 };
@@ -92,9 +92,9 @@ static DataTypeTransitionTable rtBTransTable = {
 static DataTypeTransition rtPTransitions[] = {
   { (char_T *)(&Controller_P.den_d[0]), 0, 0, 10 },
 
-  { (char_T *)(&Controller_P.HILWriteAnalog_channels), 7, 0, 3 },
+  { (char_T *)(&Controller_P.HILReadEncoder_channels[0]), 7, 0, 3 },
 
-  { (char_T *)(&Controller_P.HILInitialize_OOTerminate), 0, 0, 25 },
+  { (char_T *)(&Controller_P.HILInitialize_OOTerminate), 0, 0, 32 },
 
   { (char_T *)(&Controller_P.HILInitialize_CKChannels[0]), 6, 0, 7 },
 

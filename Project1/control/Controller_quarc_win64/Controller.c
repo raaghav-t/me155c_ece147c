@@ -9,7 +9,7 @@
  *
  * Model version              : 1.10
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Mon Apr 21 20:49:50 2025
+ * C source code generated on : Mon Apr 28 20:34:40 2025
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -40,42 +40,38 @@ void Controller_output(void)
 {
   real_T rtb_HILReadEncoder[2];
   real_T rtb_Saturation;
+  real_T tmp;
 
   /* DiscreteTransferFcn: '<Root>/Discrete Transfer Fcn' */
   rtb_Saturation = Controller_DW.DiscreteTransferFcn_states[0] *
     Controller_P.num_d[1];
 
-  /* DiscreteTransferFcn: '<Root>/Discrete Transfer Fcn' */
-  Controller_B.DiscreteTransferFcn = ((Controller_DW.DiscreteTransferFcn_states
-    [1] * Controller_P.num_d[2] + rtb_Saturation) +
+  /* Gain: '<Root>/Gain1' incorporates:
+   *  DiscreteTransferFcn: '<Root>/Discrete Transfer Fcn'
+   */
+  Controller_B.Gain1 = (((Controller_DW.DiscreteTransferFcn_states[1] *
+    Controller_P.num_d[2] + rtb_Saturation) +
     Controller_DW.DiscreteTransferFcn_states[2] * Controller_P.num_d[3]) +
-    Controller_DW.DiscreteTransferFcn_states[3] * Controller_P.num_d[4];
+                        Controller_DW.DiscreteTransferFcn_states[3] *
+                        Controller_P.num_d[4]) * Controller_P.Gain1_Gain;
 
-  /* Saturate: '<Root>/Saturation' */
-  if (Controller_B.DiscreteTransferFcn > Controller_P.Saturation_UpperSat) {
-    rtb_Saturation = Controller_P.Saturation_UpperSat;
-  } else if (Controller_B.DiscreteTransferFcn < Controller_P.Saturation_LowerSat)
-  {
-    rtb_Saturation = Controller_P.Saturation_LowerSat;
+  /* Saturate: '<Root>/Saturation1' incorporates:
+   *  DiscreteIntegrator: '<Root>/Discrete-Time Integrator'
+   */
+  if (Controller_DW.DiscreteTimeIntegrator_DSTATE >
+      Controller_P.Saturation1_UpperSat) {
+    tmp = Controller_P.Saturation1_UpperSat;
+  } else if (Controller_DW.DiscreteTimeIntegrator_DSTATE <
+             Controller_P.Saturation1_LowerSat) {
+    tmp = Controller_P.Saturation1_LowerSat;
   } else {
-    rtb_Saturation = Controller_B.DiscreteTransferFcn;
+    tmp = Controller_DW.DiscreteTimeIntegrator_DSTATE;
   }
 
-  /* End of Saturate: '<Root>/Saturation' */
-
-  /* S-Function (hil_write_analog_block): '<Root>/HIL Write Analog' */
-
-  /* S-Function Block: Controller/HIL Write Analog (hil_write_analog_block) */
-  {
-    t_error result;
-    result = hil_write_analog(Controller_DW.HILInitialize_Card,
-      &Controller_P.HILWriteAnalog_channels, 1, &rtb_Saturation);
-    if (result < 0) {
-      msg_get_error_messageA(NULL, result, _rt_error_message, sizeof
-        (_rt_error_message));
-      rtmSetErrorStatus(Controller_M, _rt_error_message);
-    }
-  }
+  /* Sum: '<Root>/u' incorporates:
+   *  Saturate: '<Root>/Saturation1'
+   */
+  Controller_B.u = tmp + Controller_B.Gain1;
 
   /* S-Function (hil_read_encoder_block): '<Root>/HIL Read Encoder' */
 
@@ -101,21 +97,45 @@ void Controller_output(void)
   /* Step: '<Root>/Step1' incorporates:
    *  Step: '<Root>/Step'
    */
-  rtb_Saturation = Controller_M->Timing.t[0];
-  if (rtb_Saturation < Controller_P.Step1_Time) {
-    /* Step: '<Root>/Step1' */
-    Controller_B.Step1 = Controller_P.Step1_Y0;
+  tmp = Controller_M->Timing.t[0];
+  if (tmp < Controller_P.Step1_Time) {
+    rtb_Saturation = Controller_P.Step1_Y0;
   } else {
-    /* Step: '<Root>/Step1' */
-    Controller_B.Step1 = Controller_P.Step1_YFinal;
+    rtb_Saturation = Controller_P.Step1_YFinal;
   }
 
-  /* End of Step: '<Root>/Step1' */
-  /* Sum: '<Root>/Sum' */
-  Controller_B.Sum = Controller_B.raag[1] - Controller_B.Step1;
+  /* Sum: '<Root>/e' incorporates:
+   *  Step: '<Root>/Step1'
+   */
+  Controller_B.e = Controller_B.raag[1] - rtb_Saturation;
+
+  /* Saturate: '<Root>/Saturation' */
+  if (Controller_B.u > Controller_P.Saturation_UpperSat) {
+    rtb_Saturation = Controller_P.Saturation_UpperSat;
+  } else if (Controller_B.u < Controller_P.Saturation_LowerSat) {
+    rtb_Saturation = Controller_P.Saturation_LowerSat;
+  } else {
+    rtb_Saturation = Controller_B.u;
+  }
+
+  /* End of Saturate: '<Root>/Saturation' */
+
+  /* S-Function (hil_write_analog_block): '<Root>/HIL Write Analog' */
+
+  /* S-Function Block: Controller/HIL Write Analog (hil_write_analog_block) */
+  {
+    t_error result;
+    result = hil_write_analog(Controller_DW.HILInitialize_Card,
+      &Controller_P.HILWriteAnalog_channels, 1, &rtb_Saturation);
+    if (result < 0) {
+      msg_get_error_messageA(NULL, result, _rt_error_message, sizeof
+        (_rt_error_message));
+      rtmSetErrorStatus(Controller_M, _rt_error_message);
+    }
+  }
 
   /* Step: '<Root>/Step' */
-  if (rtb_Saturation < Controller_P.Step_Time) {
+  if (tmp < Controller_P.Step_Time) {
     /* Step: '<Root>/Step' */
     Controller_B.Step = Controller_P.Step_Y0;
   } else {
@@ -129,8 +149,23 @@ void Controller_update(void)
 {
   real_T denAccum;
 
+  /* Update for DiscreteIntegrator: '<Root>/Discrete-Time Integrator' */
+  Controller_DW.DiscreteTimeIntegrator_DSTATE +=
+    Controller_P.DiscreteTimeIntegrator_gainval * Controller_B.Gain1;
+  if (Controller_DW.DiscreteTimeIntegrator_DSTATE >=
+      Controller_P.DiscreteTimeIntegrator_UpperSat) {
+    Controller_DW.DiscreteTimeIntegrator_DSTATE =
+      Controller_P.DiscreteTimeIntegrator_UpperSat;
+  } else if (Controller_DW.DiscreteTimeIntegrator_DSTATE <=
+             Controller_P.DiscreteTimeIntegrator_LowerSat) {
+    Controller_DW.DiscreteTimeIntegrator_DSTATE =
+      Controller_P.DiscreteTimeIntegrator_LowerSat;
+  }
+
+  /* End of Update for DiscreteIntegrator: '<Root>/Discrete-Time Integrator' */
+
   /* Update for DiscreteTransferFcn: '<Root>/Discrete Transfer Fcn' */
-  denAccum = (((Controller_B.Sum - Controller_DW.DiscreteTransferFcn_states[0] *
+  denAccum = (((Controller_B.e - Controller_DW.DiscreteTransferFcn_states[0] *
                 Controller_P.den_d[1]) -
                Controller_DW.DiscreteTransferFcn_states[1] * Controller_P.den_d
                [2]) - Controller_DW.DiscreteTransferFcn_states[2] *
@@ -199,15 +234,6 @@ void Controller_initialize(void)
     }
 
     is_switching = false;
-    result = hil_set_card_specific_options(Controller_DW.HILInitialize_Card, " ",
-      2);
-    if (result < 0) {
-      msg_get_error_messageA(NULL, result, _rt_error_message, sizeof
-        (_rt_error_message));
-      rtmSetErrorStatus(Controller_M, _rt_error_message);
-      return;
-    }
-
     if ((Controller_P.HILInitialize_CKPStart && !is_switching) ||
         (Controller_P.HILInitialize_CKPEnter && is_switching)) {
       result = hil_set_clock_mode(Controller_DW.HILInitialize_Card, (t_clock *)
@@ -391,6 +417,10 @@ void Controller_initialize(void)
     }
   }
 
+  /* InitializeConditions for DiscreteIntegrator: '<Root>/Discrete-Time Integrator' */
+  Controller_DW.DiscreteTimeIntegrator_DSTATE =
+    Controller_P.DiscreteTimeIntegrator_IC;
+
   /* InitializeConditions for DiscreteTransferFcn: '<Root>/Discrete Transfer Fcn' */
   Controller_DW.DiscreteTransferFcn_states[0] =
     Controller_P.DiscreteTransferFcn_InitialStat;
@@ -547,10 +577,10 @@ RT_MODEL_Controller_T *Controller(void)
   Controller_M->Timing.stepSize1 = 0.001;
 
   /* External mode info */
-  Controller_M->Sizes.checksums[0] = (3081422316U);
-  Controller_M->Sizes.checksums[1] = (3408551798U);
-  Controller_M->Sizes.checksums[2] = (3406130745U);
-  Controller_M->Sizes.checksums[3] = (34675764U);
+  Controller_M->Sizes.checksums[0] = (733908520U);
+  Controller_M->Sizes.checksums[1] = (3511837635U);
+  Controller_M->Sizes.checksums[2] = (2830656412U);
+  Controller_M->Sizes.checksums[3] = (349607948U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;
@@ -606,9 +636,9 @@ RT_MODEL_Controller_T *Controller(void)
   Controller_M->Sizes.numU = (0);      /* Number of model inputs */
   Controller_M->Sizes.sysDirFeedThru = (0);/* The model is not direct feedthrough */
   Controller_M->Sizes.numSampTimes = (2);/* Number of sample times */
-  Controller_M->Sizes.numBlocks = (15);/* Number of blocks */
+  Controller_M->Sizes.numBlocks = (20);/* Number of blocks */
   Controller_M->Sizes.numBlockIO = (5);/* Number of block outputs */
-  Controller_M->Sizes.numBlockPrms = (95);/* Sum of parameter "widths" */
+  Controller_M->Sizes.numBlockPrms = (102);/* Sum of parameter "widths" */
   return Controller_M;
 }
 
