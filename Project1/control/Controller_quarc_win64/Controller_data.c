@@ -9,7 +9,7 @@
  *
  * Model version              : 1.10
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Mon Apr 21 20:49:50 2025
+ * C source code generated on : Mon Apr 28 20:34:40 2025
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -25,24 +25,24 @@ P_Controller_T Controller_P = {
   /* Variable: den_d
    * Referenced by: '<Root>/Discrete Transfer Fcn'
    */
-  { 1.0, -3.7768181818011719, 5.3551492868397883, -3.3783403447858569,
-    0.80004899610314406 },
+  { 1.0, -3.8796132517644377, 5.646258366136621, -3.6534171479064326,
+    0.88677617088704686 },
 
   /* Variable: num_d
    * Referenced by: '<Root>/Discrete Transfer Fcn'
    */
-  { 0.0, -194.67166098757326, 581.66408215096487, -579.37505688844044,
-    192.38225293807272 },
-
-  /* Mask Parameter: HILWriteAnalog_channels
-   * Referenced by: '<Root>/HIL Write Analog'
-   */
-  0U,
+  { 0.0, -20.669061629686105, 61.76650451643188, -61.532343407537,
+    20.43486195516423 },
 
   /* Mask Parameter: HILReadEncoder_channels
    * Referenced by: '<Root>/HIL Read Encoder'
    */
   { 0U, 1U },
+
+  /* Mask Parameter: HILWriteAnalog_channels
+   * Referenced by: '<Root>/HIL Write Analog'
+   */
+  0U,
 
   /* Expression: set_other_outputs_at_terminate
    * Referenced by: '<Root>/HIL Initialize'
@@ -119,25 +119,45 @@ P_Controller_T Controller_P = {
    */
   0.0,
 
+  /* Computed Parameter: DiscreteTimeIntegrator_gainval
+   * Referenced by: '<Root>/Discrete-Time Integrator'
+   */
+  0.01,
+
+  /* Expression: 0
+   * Referenced by: '<Root>/Discrete-Time Integrator'
+   */
+  0.0,
+
+  /* Expression: 1
+   * Referenced by: '<Root>/Discrete-Time Integrator'
+   */
+  1.0,
+
+  /* Expression: -1
+   * Referenced by: '<Root>/Discrete-Time Integrator'
+   */
+  -1.0,
+
+  /* Expression: 1
+   * Referenced by: '<Root>/Saturation1'
+   */
+  1.0,
+
+  /* Expression: -1
+   * Referenced by: '<Root>/Saturation1'
+   */
+  -1.0,
+
   /* Expression: 0
    * Referenced by: '<Root>/Discrete Transfer Fcn'
    */
   0.0,
 
   /* Expression: 5
-   * Referenced by: '<Root>/Saturation'
+   * Referenced by: '<Root>/Gain1'
    */
   5.0,
-
-  /* Expression: -5
-   * Referenced by: '<Root>/Saturation'
-   */
-  -5.0,
-
-  /* Expression: 0.1524/5000
-   * Referenced by: '<Root>/Gain'
-   */
-  3.0480000000000003E-5,
 
   /* Expression: 1
    * Referenced by: '<Root>/Step1'
@@ -153,6 +173,21 @@ P_Controller_T Controller_P = {
    * Referenced by: '<Root>/Step1'
    */
   0.3,
+
+  /* Expression: 0.1524/5000
+   * Referenced by: '<Root>/Gain'
+   */
+  3.0480000000000003E-5,
+
+  /* Expression: 5
+   * Referenced by: '<Root>/Saturation'
+   */
+  5.0,
+
+  /* Expression: -5
+   * Referenced by: '<Root>/Saturation'
+   */
+  -5.0,
 
   /* Expression: 0.001
    * Referenced by: '<Root>/Step'
@@ -389,13 +424,13 @@ P_Controller_T Controller_P = {
    */
   true,
 
-  /* Computed Parameter: HILWriteAnalog_Active
-   * Referenced by: '<Root>/HIL Write Analog'
-   */
-  false,
-
   /* Computed Parameter: HILReadEncoder_Active
    * Referenced by: '<Root>/HIL Read Encoder'
    */
-  true
+  true,
+
+  /* Computed Parameter: HILWriteAnalog_Active
+   * Referenced by: '<Root>/HIL Write Analog'
+   */
+  false
 };

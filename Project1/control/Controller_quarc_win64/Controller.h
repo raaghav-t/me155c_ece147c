@@ -9,7 +9,7 @@
  *
  * Model version              : 1.10
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Mon Apr 21 20:49:50 2025
+ * C source code generated on : Mon Apr 28 20:34:40 2025
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -866,15 +866,16 @@
 
 /* Block signals (default storage) */
 typedef struct {
-  real_T DiscreteTransferFcn;          /* '<Root>/Discrete Transfer Fcn' */
+  real_T Gain1;                        /* '<Root>/Gain1' */
+  real_T u;                            /* '<Root>/u' */
   real_T raag[2];                      /* '<Root>/Gain' */
-  real_T Step1;                        /* '<Root>/Step1' */
-  real_T Sum;                          /* '<Root>/Sum' */
+  real_T e;                            /* '<Root>/e' */
   real_T Step;                         /* '<Root>/Step' */
 } B_Controller_T;
 
 /* Block states (default storage) for system '<Root>' */
 typedef struct {
+  real_T DiscreteTimeIntegrator_DSTATE;/* '<Root>/Discrete-Time Integrator' */
   real_T DiscreteTransferFcn_states[4];/* '<Root>/Discrete Transfer Fcn' */
   real_T HILInitialize_AIMinimums[4];  /* '<Root>/HIL Initialize' */
   real_T HILInitialize_AIMaximums[4];  /* '<Root>/HIL Initialize' */
@@ -883,8 +884,8 @@ typedef struct {
   real_T HILInitialize_AOVoltages[4];  /* '<Root>/HIL Initialize' */
   real_T HILInitialize_FilterFrequency[4];/* '<Root>/HIL Initialize' */
   t_card HILInitialize_Card;           /* '<Root>/HIL Initialize' */
-  void *HILWriteAnalog_PWORK;          /* '<Root>/HIL Write Analog' */
   void *HILReadEncoder_PWORK;          /* '<Root>/HIL Read Encoder' */
+  void *HILWriteAnalog_PWORK;          /* '<Root>/HIL Write Analog' */
   struct {
     void *LoggedData;
   } Scope_PWORK;                       /* '<Root>/Scope' */
@@ -894,8 +895,8 @@ typedef struct {
   } Scope1_PWORK;                      /* '<Root>/Scope1' */
 
   struct {
-    void *LoggedData[3];
-  } Scope2_PWORK;                      /* '<Root>/Scope2' */
+    void *LoggedData;
+  } Scope4_PWORK;                      /* '<Root>/Scope4' */
 
   struct {
     void *LoggedData;
@@ -926,11 +927,11 @@ struct P_Controller_T_ {
   real_T num_d[5];                     /* Variable: num_d
                                         * Referenced by: '<Root>/Discrete Transfer Fcn'
                                         */
-  uint32_T HILWriteAnalog_channels;   /* Mask Parameter: HILWriteAnalog_channels
-                                       * Referenced by: '<Root>/HIL Write Analog'
-                                       */
   uint32_T HILReadEncoder_channels[2];/* Mask Parameter: HILReadEncoder_channels
                                        * Referenced by: '<Root>/HIL Read Encoder'
+                                       */
+  uint32_T HILWriteAnalog_channels;   /* Mask Parameter: HILWriteAnalog_channels
+                                       * Referenced by: '<Root>/HIL Write Analog'
                                        */
   real_T HILInitialize_OOTerminate;/* Expression: set_other_outputs_at_terminate
                                     * Referenced by: '<Root>/HIL Initialize'
@@ -977,17 +978,30 @@ struct P_Controller_T_ {
   real_T HILInitialize_POInitial;      /* Expression: initial_pwm_outputs
                                         * Referenced by: '<Root>/HIL Initialize'
                                         */
+  real_T DiscreteTimeIntegrator_gainval;
+                           /* Computed Parameter: DiscreteTimeIntegrator_gainval
+                            * Referenced by: '<Root>/Discrete-Time Integrator'
+                            */
+  real_T DiscreteTimeIntegrator_IC;    /* Expression: 0
+                                        * Referenced by: '<Root>/Discrete-Time Integrator'
+                                        */
+  real_T DiscreteTimeIntegrator_UpperSat;/* Expression: 1
+                                          * Referenced by: '<Root>/Discrete-Time Integrator'
+                                          */
+  real_T DiscreteTimeIntegrator_LowerSat;/* Expression: -1
+                                          * Referenced by: '<Root>/Discrete-Time Integrator'
+                                          */
+  real_T Saturation1_UpperSat;         /* Expression: 1
+                                        * Referenced by: '<Root>/Saturation1'
+                                        */
+  real_T Saturation1_LowerSat;         /* Expression: -1
+                                        * Referenced by: '<Root>/Saturation1'
+                                        */
   real_T DiscreteTransferFcn_InitialStat;/* Expression: 0
                                           * Referenced by: '<Root>/Discrete Transfer Fcn'
                                           */
-  real_T Saturation_UpperSat;          /* Expression: 5
-                                        * Referenced by: '<Root>/Saturation'
-                                        */
-  real_T Saturation_LowerSat;          /* Expression: -5
-                                        * Referenced by: '<Root>/Saturation'
-                                        */
-  real_T Gain_Gain;                    /* Expression: 0.1524/5000
-                                        * Referenced by: '<Root>/Gain'
+  real_T Gain1_Gain;                   /* Expression: 5
+                                        * Referenced by: '<Root>/Gain1'
                                         */
   real_T Step1_Time;                   /* Expression: 1
                                         * Referenced by: '<Root>/Step1'
@@ -997,6 +1011,15 @@ struct P_Controller_T_ {
                                         */
   real_T Step1_YFinal;                 /* Expression: 0.3
                                         * Referenced by: '<Root>/Step1'
+                                        */
+  real_T Gain_Gain;                    /* Expression: 0.1524/5000
+                                        * Referenced by: '<Root>/Gain'
+                                        */
+  real_T Saturation_UpperSat;          /* Expression: 5
+                                        * Referenced by: '<Root>/Saturation'
+                                        */
+  real_T Saturation_LowerSat;          /* Expression: -5
+                                        * Referenced by: '<Root>/Saturation'
                                         */
   real_T Step_Time;                    /* Expression: 0.001
                                         * Referenced by: '<Root>/Step'
@@ -1149,11 +1172,11 @@ struct P_Controller_T_ {
                                   /* Computed Parameter: HILInitialize_DOInitial
                                    * Referenced by: '<Root>/HIL Initialize'
                                    */
-  boolean_T HILWriteAnalog_Active;  /* Computed Parameter: HILWriteAnalog_Active
-                                     * Referenced by: '<Root>/HIL Write Analog'
-                                     */
   boolean_T HILReadEncoder_Active;  /* Computed Parameter: HILReadEncoder_Active
                                      * Referenced by: '<Root>/HIL Read Encoder'
+                                     */
+  boolean_T HILWriteAnalog_Active;  /* Computed Parameter: HILWriteAnalog_Active
+                                     * Referenced by: '<Root>/HIL Write Analog'
                                      */
 };
 
