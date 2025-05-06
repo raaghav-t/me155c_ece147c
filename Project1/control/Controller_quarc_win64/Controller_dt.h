@@ -7,9 +7,9 @@
  *
  * Code generation for model "Controller".
  *
- * Model version              : 1.10
+ * Model version              : 1.12
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Mon Apr 28 20:34:40 2025
+ * C source code generated on : Mon May  5 18:42:11 2025
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -90,7 +90,7 @@ static DataTypeTransitionTable rtBTransTable = {
 
 /* data type transitions for Parameters structure */
 static DataTypeTransition rtPTransitions[] = {
-  { (char_T *)(&Controller_P.den_d[0]), 0, 0, 10 },
+  { (char_T *)(&Controller_P.den_d[0]), 0, 0, 11 },
 
   { (char_T *)(&Controller_P.HILReadEncoder_channels[0]), 7, 0, 3 },
 

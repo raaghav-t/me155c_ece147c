@@ -7,9 +7,9 @@
  *
  * Code generation for model "Controller".
  *
- * Model version              : 1.10
+ * Model version              : 1.12
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Mon Apr 28 20:34:40 2025
+ * C source code generated on : Mon May  5 18:42:11 2025
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -19,6 +19,7 @@
  */
 
 #include "Controller.h"
+#include <math.h>
 #include "rtwtypes.h"
 #include "Controller_private.h"
 #include <string.h>
@@ -39,8 +40,8 @@ RT_MODEL_Controller_T *const Controller_M = &Controller_M_;
 void Controller_output(void)
 {
   real_T rtb_HILReadEncoder[2];
+  real_T e_tmp;
   real_T rtb_Saturation;
-  real_T tmp;
 
   /* DiscreteTransferFcn: '<Root>/Discrete Transfer Fcn' */
   rtb_Saturation = Controller_DW.DiscreteTransferFcn_states[0] *
@@ -60,18 +61,18 @@ void Controller_output(void)
    */
   if (Controller_DW.DiscreteTimeIntegrator_DSTATE >
       Controller_P.Saturation1_UpperSat) {
-    tmp = Controller_P.Saturation1_UpperSat;
+    rtb_Saturation = Controller_P.Saturation1_UpperSat;
   } else if (Controller_DW.DiscreteTimeIntegrator_DSTATE <
              Controller_P.Saturation1_LowerSat) {
-    tmp = Controller_P.Saturation1_LowerSat;
+    rtb_Saturation = Controller_P.Saturation1_LowerSat;
   } else {
-    tmp = Controller_DW.DiscreteTimeIntegrator_DSTATE;
+    rtb_Saturation = Controller_DW.DiscreteTimeIntegrator_DSTATE;
   }
 
   /* Sum: '<Root>/u' incorporates:
    *  Saturate: '<Root>/Saturation1'
    */
-  Controller_B.u = tmp + Controller_B.Gain1;
+  Controller_B.u = rtb_Saturation + Controller_B.Gain1;
 
   /* S-Function (hil_read_encoder_block): '<Root>/HIL Read Encoder' */
 
@@ -94,20 +95,17 @@ void Controller_output(void)
   Controller_B.raag[0] = Controller_P.Gain_Gain * rtb_HILReadEncoder[0];
   Controller_B.raag[1] = Controller_P.Gain_Gain * rtb_HILReadEncoder[1];
 
-  /* Step: '<Root>/Step1' incorporates:
+  /* Sin: '<Root>/Sine Wave' incorporates:
    *  Step: '<Root>/Step'
    */
-  tmp = Controller_M->Timing.t[0];
-  if (tmp < Controller_P.Step1_Time) {
-    rtb_Saturation = Controller_P.Step1_Y0;
-  } else {
-    rtb_Saturation = Controller_P.Step1_YFinal;
-  }
+  e_tmp = Controller_M->Timing.t[0];
 
   /* Sum: '<Root>/e' incorporates:
-   *  Step: '<Root>/Step1'
+   *  Sin: '<Root>/Sine Wave'
    */
-  Controller_B.e = Controller_B.raag[1] - rtb_Saturation;
+  Controller_B.e = Controller_B.raag[1] - (sin(Controller_P.omega * e_tmp +
+    Controller_P.SineWave_Phase) * Controller_P.SineWave_Amp +
+    Controller_P.SineWave_Bias);
 
   /* Saturate: '<Root>/Saturation' */
   if (Controller_B.u > Controller_P.Saturation_UpperSat) {
@@ -135,7 +133,7 @@ void Controller_output(void)
   }
 
   /* Step: '<Root>/Step' */
-  if (tmp < Controller_P.Step_Time) {
+  if (e_tmp < Controller_P.Step_Time) {
     /* Step: '<Root>/Step' */
     Controller_B.Step = Controller_P.Step_Y0;
   } else {
@@ -234,6 +232,15 @@ void Controller_initialize(void)
     }
 
     is_switching = false;
+    result = hil_set_card_specific_options(Controller_DW.HILInitialize_Card, " ",
+      2);
+    if (result < 0) {
+      msg_get_error_messageA(NULL, result, _rt_error_message, sizeof
+        (_rt_error_message));
+      rtmSetErrorStatus(Controller_M, _rt_error_message);
+      return;
+    }
+
     if ((Controller_P.HILInitialize_CKPStart && !is_switching) ||
         (Controller_P.HILInitialize_CKPEnter && is_switching)) {
       result = hil_set_clock_mode(Controller_DW.HILInitialize_Card, (t_clock *)
@@ -572,15 +579,15 @@ RT_MODEL_Controller_T *Controller(void)
     Controller_M->Timing.sampleHits = (&mdlSampleHits[0]);
   }
 
-  rtmSetTFinal(Controller_M, -1);
+  rtmSetTFinal(Controller_M, 10.0);
   Controller_M->Timing.stepSize0 = 0.001;
   Controller_M->Timing.stepSize1 = 0.001;
 
   /* External mode info */
-  Controller_M->Sizes.checksums[0] = (733908520U);
-  Controller_M->Sizes.checksums[1] = (3511837635U);
-  Controller_M->Sizes.checksums[2] = (2830656412U);
-  Controller_M->Sizes.checksums[3] = (349607948U);
+  Controller_M->Sizes.checksums[0] = (2097841070U);
+  Controller_M->Sizes.checksums[1] = (612550101U);
+  Controller_M->Sizes.checksums[2] = (4108400901U);
+  Controller_M->Sizes.checksums[3] = (4050918358U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;
@@ -638,7 +645,7 @@ RT_MODEL_Controller_T *Controller(void)
   Controller_M->Sizes.numSampTimes = (2);/* Number of sample times */
   Controller_M->Sizes.numBlocks = (20);/* Number of blocks */
   Controller_M->Sizes.numBlockIO = (5);/* Number of block outputs */
-  Controller_M->Sizes.numBlockPrms = (102);/* Sum of parameter "widths" */
+  Controller_M->Sizes.numBlockPrms = (103);/* Sum of parameter "widths" */
   return Controller_M;
 }
 

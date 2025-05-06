@@ -7,9 +7,9 @@
  *
  * Code generation for model "Controller".
  *
- * Model version              : 1.10
+ * Model version              : 1.12
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Mon Apr 28 20:34:40 2025
+ * C source code generated on : Mon May  5 18:42:11 2025
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -927,6 +927,9 @@ struct P_Controller_T_ {
   real_T num_d[5];                     /* Variable: num_d
                                         * Referenced by: '<Root>/Discrete Transfer Fcn'
                                         */
+  real_T omega;                        /* Variable: omega
+                                        * Referenced by: '<Root>/Sine Wave'
+                                        */
   uint32_T HILReadEncoder_channels[2];/* Mask Parameter: HILReadEncoder_channels
                                        * Referenced by: '<Root>/HIL Read Encoder'
                                        */
@@ -1003,14 +1006,14 @@ struct P_Controller_T_ {
   real_T Gain1_Gain;                   /* Expression: 5
                                         * Referenced by: '<Root>/Gain1'
                                         */
-  real_T Step1_Time;                   /* Expression: 1
-                                        * Referenced by: '<Root>/Step1'
+  real_T SineWave_Amp;                 /* Expression: 0.1
+                                        * Referenced by: '<Root>/Sine Wave'
                                         */
-  real_T Step1_Y0;                     /* Expression: 0
-                                        * Referenced by: '<Root>/Step1'
+  real_T SineWave_Bias;                /* Expression: 0
+                                        * Referenced by: '<Root>/Sine Wave'
                                         */
-  real_T Step1_YFinal;                 /* Expression: 0.3
-                                        * Referenced by: '<Root>/Step1'
+  real_T SineWave_Phase;               /* Expression: 0
+                                        * Referenced by: '<Root>/Sine Wave'
                                         */
   real_T Gain_Gain;                    /* Expression: 0.1524/5000
                                         * Referenced by: '<Root>/Gain'

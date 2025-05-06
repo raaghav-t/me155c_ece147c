@@ -7,9 +7,9 @@
  *
  * Code generation for model "Controller".
  *
- * Model version              : 1.10
+ * Model version              : 1.12
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Mon Apr 28 20:34:40 2025
+ * C source code generated on : Mon May  5 18:42:11 2025
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -33,6 +33,11 @@ P_Controller_T Controller_P = {
    */
   { 0.0, -20.669061629686105, 61.76650451643188, -61.532343407537,
     20.43486195516423 },
+
+  /* Variable: omega
+   * Referenced by: '<Root>/Sine Wave'
+   */
+  62.831853071795862,
 
   /* Mask Parameter: HILReadEncoder_channels
    * Referenced by: '<Root>/HIL Read Encoder'
@@ -159,20 +164,20 @@ P_Controller_T Controller_P = {
    */
   5.0,
 
-  /* Expression: 1
-   * Referenced by: '<Root>/Step1'
+  /* Expression: 0.1
+   * Referenced by: '<Root>/Sine Wave'
    */
-  1.0,
+  0.1,
 
   /* Expression: 0
-   * Referenced by: '<Root>/Step1'
+   * Referenced by: '<Root>/Sine Wave'
    */
   0.0,
 
-  /* Expression: 0.3
-   * Referenced by: '<Root>/Step1'
+  /* Expression: 0
+   * Referenced by: '<Root>/Sine Wave'
    */
-  0.3,
+  0.0,
 
   /* Expression: 0.1524/5000
    * Referenced by: '<Root>/Gain'
