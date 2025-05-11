@@ -10,27 +10,8 @@ MSEs = zeros(length(npnz),1);
 StdDevs = zeros(length(npnz),1);
 figure(2); clf;
 
-Ts = 0.001;
-
-ws = logspace(-0.5,1,20)*2*pi;
-
-data
-data = cell(length(ws),1);
-
-for w = 1:length(ws)
-    t = data2(w, 1:end-1, 1);
-    
-    
-    ybar = diff(data2(w, :, 3))/Ts;
-
-    n = max(abs(ybar));
-
-    u = sin(ws(w)*t)*3;
-    data{w} = iddata(ybar'/n, u'/n, Ts);
-end
-
-mdata = merge(data{:});
-
+Ts = t(2)-t(1);
+data = iddata(y,u,Ts);
 for i = 1:size(npnz,1)
     np = npnz(i,1);
     nz = npnz(i,2);
