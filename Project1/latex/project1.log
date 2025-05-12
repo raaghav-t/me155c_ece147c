@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.22)  11 MAY 2025 23:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.22)  11 MAY 2025 23:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -264,7 +264,11 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count293
 \l__pdf_internal_box=\box53
-) (./project1.aux)
+) (./project1.aux
+
+LaTeX Warning: Label `fig:bodecompsense' multiply defined.
+
+)
 \openout1 = `project1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -354,27 +358,27 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<./images/two-cart-system.png, id=66, 1256.44406pt x 394.47375pt>
+<./images/two-cart-system.png, id=70, 1256.44406pt x 394.47375pt>
 File: ./images/two-cart-system.png Graphic file (type png)
 <use ./images/two-cart-system.png>
 Package pdftex.def Info: ./images/two-cart-system.png  used on input line 89.
 (pdftex.def)             Requested size: 234.8775pt x 73.74094pt.
-<./images/bodeid-corr.pdf, id=68, 620.3175pt x 276.03125pt>
+<./images/bodeid-corr.pdf, id=72, 620.3175pt x 276.03125pt>
 File: ./images/bodeid-corr.pdf Graphic file (type pdf)
 <use ./images/bodeid-corr.pdf>
 Package pdftex.def Info: ./images/bodeid-corr.pdf  used on input line 104.
 (pdftex.def)             Requested size: 469.75502pt x 209.03198pt.
-<./images/sysid-outputs.pdf, id=69, 753.81625pt x 225.84375pt>
+<./images/sysid-outputs.pdf, id=73, 753.81625pt x 225.84375pt>
 File: ./images/sysid-outputs.pdf Graphic file (type pdf)
 <use ./images/sysid-outputs.pdf>
 Package pdftex.def Info: ./images/sysid-outputs.pdf  used on input line 121.
 (pdftex.def)             Requested size: 469.75502pt x 140.73845pt.
-<./images/sysid-errors-fig.pdf, id=70, 648.4225pt x 563.10374pt>
+<./images/sysid-errors-fig.pdf, id=74, 648.4225pt x 563.10374pt>
 File: ./images/sysid-errors-fig.pdf Graphic file (type pdf)
 <use ./images/sysid-errors-fig.pdf>
 Package pdftex.def Info: ./images/sysid-errors-fig.pdf  used on input line 129.
 (pdftex.def)             Requested size: 469.75502pt x 407.95192pt.
-<./images/bodeid-param.pdf, id=71, 627.34375pt x 283.0575pt>
+<./images/bodeid-param.pdf, id=75, 627.34375pt x 283.0575pt>
 File: ./images/bodeid-param.pdf Graphic file (type pdf)
 <use ./images/bodeid-param.pdf>
 Package pdftex.def Info: ./images/bodeid-param.pdf  used on input line 137.
@@ -384,63 +388,71 @@ Package pdftex.def Info: ./images/bodeid-param.pdf  used on input line 137.
 LaTeX Warning: Text page 4 contains only floats.
 
 [4 <./images/sysid-outputs.pdf> <./images/sysid-errors-fig.pdf>] [5 <./images/bodeid-param.pdf>]
-<./images/bodecompsense.pdf, id=248, 428.60126pt x 192.72pt>
+<./images/bodecompsense.pdf, id=252, 428.60126pt x 192.72pt>
 File: ./images/bodecompsense.pdf Graphic file (type pdf)
 <use ./images/bodecompsense.pdf>
 Package pdftex.def Info: ./images/bodecompsense.pdf  used on input line 178.
 (pdftex.def)             Requested size: 328.82707pt x 147.8567pt.
-<./images/bodecompsenseStep.pdf, id=249, 425.59pt x 191.71625pt>
+<./images/bodecompsenseStep.pdf, id=253, 425.59pt x 191.71625pt>
 File: ./images/bodecompsenseStep.pdf Graphic file (type pdf)
 <use ./images/bodecompsenseStep.pdf>
 Package pdftex.def Info: ./images/bodecompsenseStep.pdf  used on input line 184.
 (pdftex.def)             Requested size: 328.82707pt x 148.1339pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[6
+ [6
 
  <./images/bodecompsense.pdf> <./images/bodecompsenseStep.pdf>]
-<./images/CLStepResponse.png, id=401, 421.575pt x 316.18124pt>
+File: ./images/bodecompsense.pdf Graphic file (type pdf)
+<use ./images/bodecompsense.pdf>
+Package pdftex.def Info: ./images/bodecompsense.pdf  used on input line 225.
+(pdftex.def)             Requested size: 469.75502pt x 211.22511pt.
+File: ./images/bodecompsenseStep.pdf Graphic file (type pdf)
+<use ./images/bodecompsenseStep.pdf>
+Package pdftex.def Info: ./images/bodecompsenseStep.pdf  used on input line 232.
+(pdftex.def)             Requested size: 469.75502pt x 211.62277pt.
+<./images/CLStepResponse.png, id=406, 421.575pt x 316.18124pt>
 File: ./images/CLStepResponse.png Graphic file (type png)
 <use ./images/CLStepResponse.png>
-Package pdftex.def Info: ./images/CLStepResponse.png  used on input line 227.
+Package pdftex.def Info: ./images/CLStepResponse.png  used on input line 246.
 (pdftex.def)             Requested size: 328.82707pt x 246.6252pt.
-<./images/CLFreqResp.png, id=402, 1445.4pt x 799.00508pt>
+<./images/CLFreqResp.png, id=407, 1445.4pt x 799.00508pt>
 File: ./images/CLFreqResp.png Graphic file (type png)
 <use ./images/CLFreqResp.png>
-Package pdftex.def Info: ./images/CLFreqResp.png  used on input line 240.
+Package pdftex.def Info: ./images/CLFreqResp.png  used on input line 259.
 (pdftex.def)             Requested size: 469.75502pt x 259.67357pt.
-<./images/CLFreqRespError.png, id=403, 1445.4pt x 799.00508pt>
+<./images/CLFreqRespError.png, id=408, 1445.4pt x 799.00508pt>
 File: ./images/CLFreqRespError.png Graphic file (type png)
 <use ./images/CLFreqRespError.png>
-Package pdftex.def Info: ./images/CLFreqRespError.png  used on input line 250.
+Package pdftex.def Info: ./images/CLFreqRespError.png  used on input line 269.
 (pdftex.def)             Requested size: 469.75502pt x 259.67357pt.
 
 
-LaTeX Warning: Empty `thebibliography' environment on input line 272.
+LaTeX Warning: Empty `thebibliography' environment on input line 291.
 
-[7 <./images/CLStepResponse.png (PNG copy)>] [8 <./images/CLFreqResp.png (PNG copy)> <./images/CLFreqRespError.png (PNG copy)>] (./project1.aux)
+[7] [8 <./images/CLStepResponse.png (PNG copy)>] [9 <./images/CLFreqResp.png (PNG copy)> <./images/CLFreqRespError.png (PNG copy)>] (./project1.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `project1.out' has not changed.
-(rerunfilecheck)             Checksum: 5DC11485EC361E26CE8C9C265EE8FC84;1993.
+(rerunfilecheck)             Checksum: 27418F65D290984B631033219C549B57;2207.
  ) 
 Here is how much of TeX's memory you used:
- 10282 strings out of 474116
- 158008 string characters out of 5743681
- 1931187 words of memory out of 5000000
- 32493 multiletter control sequences out of 15000+600000
+ 10288 strings out of 474116
+ 158085 string characters out of 5743681
+ 1932187 words of memory out of 5000000
+ 32495 multiletter control sequences out of 15000+600000
  566089 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,8n,79p,663b,443s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on project1.pdf (8 pages, 5372715 bytes).
+Output written on project1.pdf (9 pages, 5373354 bytes).
 PDF statistics:
- 474 PDF objects out of 1000 (max. 8388607)
- 414 compressed objects within 5 object streams
- 33 named destinations out of 1000 (max. 500000)
- 147 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 487 PDF objects out of 1000 (max. 8388607)
+ 426 compressed objects within 5 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 155 words of extra memory for PDF output out of 10000 (max. 10000000)
 

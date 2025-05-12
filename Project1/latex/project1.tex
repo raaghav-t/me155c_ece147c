@@ -194,6 +194,16 @@ seen in Figure \ref{fig:stepresponse}.
 
 % [Report] Summarize the experiments performed in the lab with the actual hardware:
 % 1) Step response data: include overshoot, rise time, settling time, max control input
+
+
+% 2) Frequency response identification for the closed-loop (how you performed it, the results)
+For the frequency response identification of the closed loop system, we ran a sinusoidal sweep across frequencies: $\omega \in 2 \pi [10^{-0.5},10]$
+% 3) Discuss any discrepancies between theoretical and experimental results 
+%    and possible reasons for them
+The theoretical and experimental bode diagrams seem to disagree in phase and magnitude. This can be due to an inaccurate estimation of the order of the transfer function but ultimately we end up with a real closed loop that performs well so it is not too important.
+
+\subsection{Step Response Experiments}
+% [Report] Include a relevant plot/table with performance metrics (overshoot, rise time, etc.)
 \begin{table}[h!]
     \centering
     \begin{tabular}{@{}lcc@{}}
@@ -210,19 +220,28 @@ seen in Figure \ref{fig:stepresponse}.
     \label{tab:step_response}
 \end{table}
     
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth]{bodecompsense.pdf}
+\caption{Bode plot of complementary sensitivity function of simulated controller}
+\label{fig:bodecompsense}
+\end{figure}
 
-% 2) Frequency response identification for the closed-loop (how you performed it, the results)
-For the frequency response identification of the closed loop system, we ran a sinusoidal sweep across frequencies: $\omega \in 2 \pi [10^{-0.5},10]$
-% 3) Discuss any discrepancies between theoretical and experimental results 
-%    and possible reasons for them
-The theoretical and experimental bode diagrams seem to disagree in phase and magnitude. This can be due to an inaccurate estimation of the order of the transfer function but ultimately we end up with a real closed loop that performs well so it is not too important.
-
-\subsection{Step Response Experiments}
-% [Report] Include a relevant plot/table with performance metrics (overshoot, rise time, etc.)
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth]{bodecompsenseStep.pdf}
+\caption{Simulated closed-loop step response}
+\label{fig:bodecompsenseStep}
+\end{figure}
 
 
 
-\begin{figure}[!h]
+\subsection{Closed-loop Frequency Response}
+% [Report] Show how you identified the closed-loop frequency response
+% (method used, plots, comparison with simulated predictions, etc.)
+
+
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=0.7\textwidth]{CLStepResponse.png}
 \caption{Closed-loop step response}

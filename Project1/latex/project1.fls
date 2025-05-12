@@ -190,6 +190,12 @@ INPUT ./images/bodecompsenseStep.pdf
 INPUT ./images/bodecompsenseStep.pdf
 INPUT ./images/bodecompsenseStep.pdf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT ./images/bodecompsense.pdf
+INPUT ./images/bodecompsense.pdf
+INPUT ./images/bodecompsense.pdf
+INPUT ./images/bodecompsenseStep.pdf
+INPUT ./images/bodecompsenseStep.pdf
+INPUT ./images/bodecompsenseStep.pdf
 INPUT ./images/CLStepResponse.png
 INPUT ./images/CLStepResponse.png
 INPUT ./images/CLStepResponse.png
