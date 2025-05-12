@@ -72,8 +72,8 @@
 % Possibly include a figure
 
 The process we are controlling is a two cart system
-connected by a spring. The system is driven by a motor that
-applies a force $F$ to the first cart with mass $m_1$ [kg], and the second cart
+connected by a spring. The system is driven by a motor that's given a voltage $V$ [Volt], which
+produces a force $F$ [N] applied to the first cart with mass $m_1$ [kg], and the second cart
 with mass $m_2$ [kg] is connected to the first cart via a spring with spring constant $k$ [N/m].
 In this system, $x_1$ [m] is the position of the first cart, and $x_2$ [m] is the position of the second cart.
 The control input is the voltage $u := V$ [Volt] applied to the motor, and the measured output
@@ -90,6 +90,11 @@ is the position $y := x_2$ [m] of the second cart.
 % 1) Frequencies/amplitudes used and why
 % 2) Plots with magnitude/phase
 % 3) Comparison with parametric identification
+
+The non-parametric identification method used was sine-wave testing in conjunction with
+the correleation method. This strategy consists of applying sinusoidal inputs at distinct frequencies
+to calculate the magnitude and phase of the frequency response at that frequency from the
+output of the system.
 
 \begin{figure}[!ht]
 \centering
@@ -152,6 +157,8 @@ is the position $y := x_2$ [m] of the second cart.
 % - Any relevant discussion about stability, noise, etc.
 
 
+
+
 % ---------------------------------------------------
 % 4. Closed-loop Performance
 % ---------------------------------------------------
@@ -167,6 +174,25 @@ is the position $y := x_2$ [m] of the second cart.
 \subsection{Step Response Experiments}
 % [Report] Include a relevant plot/table with performance metrics (overshoot, rise time, etc.)
 
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth]{bodecompsense.pdf}
+\caption{Bode plot of complementary sensitivity function of simulated controller}
+\label{fig:bodecompsense}
+\end{figure}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth]{bodecompsenseStep.pdf}
+\caption{Simulated closed-loop step response}
+\label{fig:bodecompsenseStep}
+\end{figure}
+
+
+
+\subsection{Closed-loop Frequency Response}
+% [Report] Show how you identified the closed-loop frequency response
+% (method used, plots, comparison with simulated predictions, etc.)
 
 
 \begin{figure}[!ht]
@@ -175,11 +201,6 @@ is the position $y := x_2$ [m] of the second cart.
 \caption{Closed-loop step response}
 \label{fig:CLStepResponse}
 \end{figure}
-
-\subsection{Closed-loop Frequency Response}
-% [Report] Show how you identified the closed-loop frequency response
-% (method used, plots, comparison with simulated predictions, etc.)
-
 
 
 \begin{figure}[!ht]

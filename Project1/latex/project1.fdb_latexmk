@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1747027035.33478 "c:/Users/blixo/Documents/UCSB/classes/ECE 147C/me155c_ece147c/Project1/latex/project1.tex" "project1.pdf" "project1" 1747027036.44014 0
+["pdflatex"] 1747030150.49132 "c:/Users/blixo/Documents/UCSB/classes/ECE 147C/me155c_ece147c/Project1/latex/project1.tex" "project1.pdf" "project1" 1747030151.58381 0
   "C:/Users/blixo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1746998980 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/blixo/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1746998901 24225046 54d9481565bb0b3fe37271238a187b04 ""
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -83,18 +83,20 @@
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/blixo/Documents/UCSB/classes/ECE 147C/me155c_ece147c/Project1/latex/project1.tex" 1747027034 7613 ffa9c3f4ec64d096172ac6c4216a2523 ""
+  "c:/Users/blixo/Documents/UCSB/classes/ECE 147C/me155c_ece147c/Project1/latex/project1.tex" 1747030148 8374 2182c05a45c8a8e9a5da2f02bad9934d ""
   "images/CLFreqResp.png" 1747018483 2407276 f8a63e4416a81c69d3559a1bd0f54690 ""
   "images/CLFreqRespError.png" 1747018483 2289898 7b74f564bf625ce849ebb3822edfbd3d ""
   "images/CLStepResponse.png" 1746994168 334744 f7fbb39f7db91c7e0c6f6c1edb157be0 ""
+  "images/bodecompsense.pdf" 1747029693 21636 b97cd5cdd68b5d7e772b3cddd8f5fddb ""
+  "images/bodecompsenseStep.pdf" 1747029693 39635 2439a45d25c16c9c5be7f8ae074a56bf ""
   "images/bodeid-corr.pdf" 1747026533 6979 0651807ea807d4014a1166a10a037c2d ""
   "images/bodeid-param.pdf" 1747026515 8337 39b9df46f87e983a5ea9312975c9217a ""
   "images/sysid-errors-fig.pdf" 1746499568 10614 4f8fada100fb821b5b8163f7b1b785e5 ""
   "images/sysid-outputs.pdf" 1747025633 103488 0a3f37b642374bb8792b7bbb0e6a55bb ""
   "images/two-cart-system.png" 1747021689 60998 f24c85c3d7cc7bd722ae7a3f2d735bae ""
-  "project1.aux" 1747027036 4174 ad38cfba77b80f17acf03c94a73ff1ad "pdflatex"
-  "project1.out" 1747027036 1993 5dc11485ec361e26ce8c9c265ee8fc84 "pdflatex"
-  "project1.tex" 1747027034 7613 ffa9c3f4ec64d096172ac6c4216a2523 ""
+  "project1.aux" 1747030151 4718 3bf89892810016c27cbb67113153e36d "pdflatex"
+  "project1.out" 1747030151 1993 5dc11485ec361e26ce8c9c265ee8fc84 "pdflatex"
+  "project1.tex" 1747030148 8374 2182c05a45c8a8e9a5da2f02bad9934d ""
   (generated)
   "project1.aux"
   "project1.log"
