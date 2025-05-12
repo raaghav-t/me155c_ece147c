@@ -23,7 +23,9 @@
 % [Report] Abstract:
 % Summarize the content of the entire document in one or two paragraphs.
 % Focus on key achievements.
-%
+
+In this project, we design a controller for a two mass - one spring, cart system. The goal is to optimize the performance of the second cart's response to a step input to the reference through control of the first cart's behavior, with respect to several key control metrics. We look at optimizing for a very short settling time along with minimizing the amount of overshoot. The 'undershoot' is treated as an acceptable behavior since the cart will pass through this region, so we give ourselves the difficulty of treating the overshoot as a highly undesirable set.
+We achieve our goals with a settling time under three seconds along with less than one percent overshoot. 
 % Example structure:
 % - One paragraph explaining the overall problem or project goal
 % - One paragraph highlighting main results and conclusions
@@ -38,7 +40,7 @@
 % 1) Brief, self-contained description of the basic problem 
 % 2) Summary and references to prior/related work 
 % 3) Short paragraph on organization of this report.
-
+We begin our control journey with the search of an optimal controller. The first idea here is LQR, but it is clear that we have noise in our system and uncertainty in our data, so we consider going to LQG. We try to decrease our uncertainty by doing a sinusoidal sweep of 20 frequencies. 
 % Provide context on the overall goal of your project:
 % - E.g., “This lab project deals with … [controller design / system identification / etc.]”
 % - Summarize what is known or what has been done before.
