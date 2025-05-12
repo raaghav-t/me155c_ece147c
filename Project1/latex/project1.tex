@@ -78,19 +78,26 @@ with mass $m_2$ [kg] is connected to the first cart via a spring with spring con
 In this system, $x_1$ [m] is the position of the first cart, and $x_2$ [m] is the position of the second cart.
 The control input is the voltage $u := V$ [Volt] applied to the motor, and the measured output
 is the position $y := x_2$ [m] of the second cart.
-\begin{figure}[h]
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=0.5\textwidth]{two-cart-system.png}
 \caption{Two cart system}
 \label{fig:two-cart-system}
 \end{figure}
 
-
 \subsection{Non-Parametric Identification}
 % [Report] For the non-parametric approach:
 % 1) Frequencies/amplitudes used and why
 % 2) Plots with magnitude/phase
 % 3) Comparison with parametric identification
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth]{bodeid-corr.pdf}
+\caption{Bode plot of the identified system using non-parametric identification}
+\label{fig:bodeid_corr}
+\end{figure}
+
 
 \subsection{Parametric Identification}
 % [Report] For the parametric approach:
@@ -100,6 +107,29 @@ is the position $y := x_2$ [m] of the second cart.
 % 4) Bode plots (magnitude and phase) of identified model
 % 5) Comparison with non-parametric approach
 
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth]{sysid-outputs.pdf}
+\caption{Output signals of all experiments for parametric identification}
+\label{fig:outputs-param}
+\end{figure}
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth]{sysid-errors-fig.pdf}
+\caption{Normalized MSE and worst parameter standard deviation for different model orders}
+\label{fig:errors-param}
+\end{figure}
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth]{bodeid-param.pdf}
+\caption{Bode plot of the identified system using parametric identification}
+\label{fig:bodeid_param}
+\end{figure}
 
 % ---------------------------------------------------
 % 3. Controller Design
@@ -137,9 +167,38 @@ is the position $y := x_2$ [m] of the second cart.
 \subsection{Step Response Experiments}
 % [Report] Include a relevant plot/table with performance metrics (overshoot, rise time, etc.)
 
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.7\textwidth]{CLStepResponse.png}
+\caption{Closed-loop step response}
+\label{fig:CLStepResponse}
+\end{figure}
+
 \subsection{Closed-loop Frequency Response}
 % [Report] Show how you identified the closed-loop frequency response
 % (method used, plots, comparison with simulated predictions, etc.)
+
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth]{CLFreqResp.png}
+\caption{Closed-loop frequency response of the transfer function from reference to output}
+\label{fig:CLFreqResponse}
+\end{figure}
+
+
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth]{CLFreqRespError.png}
+\caption{Closed-loop frequency response of the transfer function from reference to error}
+\label{fig:CLFreqResponseError}
+\end{figure}
+
 
 
 % ---------------------------------------------------

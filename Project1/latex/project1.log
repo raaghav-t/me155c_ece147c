@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.11)  11 MAY 2025 21:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.11)  11 MAY 2025 22:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -337,13 +337,52 @@ File: ./images/two-cart-system.png Graphic file (type png)
 <use ./images/two-cart-system.png>
 Package pdftex.def Info: ./images/two-cart-system.png  used on input line 83.
 (pdftex.def)             Requested size: 234.8775pt x 73.74094pt.
+<./images/bodeid-corr.pdf, id=53, 620.3175pt x 276.03125pt>
+File: ./images/bodeid-corr.pdf Graphic file (type pdf)
+<use ./images/bodeid-corr.pdf>
+Package pdftex.def Info: ./images/bodeid-corr.pdf  used on input line 96.
+(pdftex.def)             Requested size: 469.75502pt x 209.03198pt.
+<./images/sysid-outputs.pdf, id=54, 753.81625pt x 225.84375pt>
+File: ./images/sysid-outputs.pdf Graphic file (type pdf)
+<use ./images/sysid-outputs.pdf>
+Package pdftex.def Info: ./images/sysid-outputs.pdf  used on input line 113.
+(pdftex.def)             Requested size: 469.75502pt x 140.73845pt.
+<./images/sysid-errors-fig.pdf, id=55, 648.4225pt x 563.10374pt>
+File: ./images/sysid-errors-fig.pdf Graphic file (type pdf)
+<use ./images/sysid-errors-fig.pdf>
+Package pdftex.def Info: ./images/sysid-errors-fig.pdf  used on input line 121.
+(pdftex.def)             Requested size: 469.75502pt x 407.95192pt.
+<./images/bodeid-param.pdf, id=56, 627.34375pt x 283.0575pt>
+File: ./images/bodeid-param.pdf Graphic file (type pdf)
+<use ./images/bodeid-param.pdf>
+Package pdftex.def Info: ./images/bodeid-param.pdf  used on input line 129.
+(pdftex.def)             Requested size: 469.75502pt x 211.96002pt.
+<./images/CLStepResponse.png, id=57, 421.575pt x 316.18124pt>
+File: ./images/CLStepResponse.png Graphic file (type png)
+<use ./images/CLStepResponse.png>
+Package pdftex.def Info: ./images/CLStepResponse.png  used on input line 174.
+(pdftex.def)             Requested size: 328.82707pt x 246.6252pt.
+<./images/CLFreqResp.png, id=58, 1445.4pt x 799.00508pt>
+File: ./images/CLFreqResp.png Graphic file (type png)
+<use ./images/CLFreqResp.png>
+Package pdftex.def Info: ./images/CLFreqResp.png  used on input line 187.
+(pdftex.def)             Requested size: 469.75502pt x 259.67357pt.
+ [1
+
+{C:/Users/blixo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./images/two-cart-system.png>]
+<./images/CLFreqRespError.png, id=73, 1445.4pt x 799.00508pt>
+File: ./images/CLFreqRespError.png Graphic file (type png)
+<use ./images/CLFreqRespError.png>
+Package pdftex.def Info: ./images/CLFreqRespError.png  used on input line 197.
+(pdftex.def)             Requested size: 469.75502pt x 259.67357pt.
 
 
-LaTeX Warning: Empty `thebibliography' environment on input line 160.
+LaTeX Warning: Empty `thebibliography' environment on input line 219.
 
-[1
+[2 <./images/bodeid-corr.pdf> <./images/sysid-outputs.pdf>]
+Overfull \vbox (41.55629pt too high) has occurred while \output is active []
 
-{C:/Users/blixo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./images/two-cart-system.png>] [2] (project1.aux)
+ [3 <./images/sysid-errors-fig.pdf>] [4 <./images/bodeid-param.pdf> <./images/CLStepResponse.png (PNG copy)>] [5 <./images/CLFreqResp.png (PNG copy)> <./images/CLFreqRespError.png (PNG copy)>] (project1.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -352,17 +391,17 @@ Package rerunfilecheck Info: File `project1.out' has not changed.
 (rerunfilecheck)             Checksum: 5DC11485EC361E26CE8C9C265EE8FC84;1993.
  ) 
 Here is how much of TeX's memory you used:
- 10102 strings out of 474486
- 155631 string characters out of 5743755
- 1932542 words of memory out of 5000000
- 32255 multiletter control sequences out of 15000+600000
+ 10182 strings out of 474486
+ 157870 string characters out of 5743755
+ 1934542 words of memory out of 5000000
+ 32325 multiletter control sequences out of 15000+600000
  565781 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,79p,341b,439s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,79p,341b,467s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on project1.pdf (2 pages, 151729 bytes).
+Output written on project1.pdf (5 pages, 5310046 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 17 named destinations out of 1000 (max. 500000)
- 102 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 288 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 500000)
+ 137 words of extra memory for PDF output out of 10000 (max. 10000000)
 

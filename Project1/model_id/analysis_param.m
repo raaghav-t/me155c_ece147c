@@ -26,6 +26,9 @@ trfu = tfest(mdata, 3, 2);
 
 Gs = tf(trfu)
 %%
-figure(2)
+figure(2);clf;
 bode(Gs)
+grid on
 hold on
+set(gcf,'Position',[0,0,1000,400]);
+exportgraphics(gcf,'./bodeid-param.pdf');
