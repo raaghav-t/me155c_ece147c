@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1747018582.06504 "c:/Users/blixo/Documents/UCSB/classes/ECE 147C/me155c_ece147c/Project1/latex/project1.tex" "project1.pdf" "project1" 1747018582.90796 0
+["pdflatex"] 1747022519.0639 "c:/Users/blixo/Documents/UCSB/classes/ECE 147C/me155c_ece147c/Project1/latex/project1.tex" "project1.pdf" "project1" 1747022520.06979 0
   "C:/Users/blixo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1746998980 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/blixo/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1746998901 24225046 54d9481565bb0b3fe37271238a187b04 ""
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -11,6 +11,7 @@
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm" 1136765053 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmex10.tfm" 1136765053 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
+  "C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi10.tfm" 1136765053 1528 abec98dbc43e172678c11b3b9031252a ""
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi12.tfm" 1136765053 1524 4414a8315f39513458b80dfc63bff03a ""
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi6.tfm" 1136765053 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi8.tfm" 1136765053 1520 eccf95517727cb11801f4f1aee3a21b4 ""
@@ -24,9 +25,11 @@
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136765053 1120 8b7d695260f3cff42e636090a8002094 ""
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247596666 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
+  "C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
+  "C:/Users/blixo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/tex/generic/atbegshi/atbegshi.sty" 1575571100 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/tex/generic/bigintcalc/bigintcalc.sty" 1576433602 40635 c40361e206be584d448876bba8a64a3b ""
@@ -80,10 +83,11 @@
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/blixo/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/blixo/Documents/UCSB/classes/ECE 147C/me155c_ece147c/Project1/latex/project1.tex" 1747018580 5349 b7c6fe40dfc4f965199b4836349bfee6 ""
-  "project1.aux" 1747018582 1916 cfe07c97bfffb31428e3ffecd6a821b9 "pdflatex"
-  "project1.out" 1747018582 1993 5dc11485ec361e26ce8c9c265ee8fc84 "pdflatex"
-  "project1.tex" 1747018580 5349 b7c6fe40dfc4f965199b4836349bfee6 ""
+  "c:/Users/blixo/Documents/UCSB/classes/ECE 147C/me155c_ece147c/Project1/latex/project1.tex" 1747022517 6120 58069d5c3195b904b50ab3bc317fc2ab ""
+  "images/two-cart-system.png" 1747021689 60998 f24c85c3d7cc7bd722ae7a3f2d735bae ""
+  "project1.aux" 1747022519 2110 a60e11532579a086907d0bdd754b1d02 "pdflatex"
+  "project1.out" 1747022519 1993 5dc11485ec361e26ce8c9c265ee8fc84 "pdflatex"
+  "project1.tex" 1747022517 6120 58069d5c3195b904b50ab3bc317fc2ab ""
   (generated)
   "project1.aux"
   "project1.log"

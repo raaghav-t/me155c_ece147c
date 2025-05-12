@@ -6,6 +6,8 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{hyperref}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
 
 \title{Project 1 Report - ME155C/ECE147C}
 \author{Cole Giusto, Raaghav Thirumaligai, Tien Nguyen}
@@ -68,6 +70,21 @@
 % - Control input(s) and measured output(s)
 % For example, mention x1, x2, etc., masses, motor parameters, etc.
 % Possibly include a figure
+
+The process we are controlling is a two cart system
+connected by a spring. The system is driven by a motor that
+applies a force $F$ to the first cart with mass $m_1$ [kg], and the second cart
+with mass $m_2$ [kg] is connected to the first cart via a spring with spring constant $k$ [N/m].
+In this system, $x_1$ [m] is the position of the first cart, and $x_2$ [m] is the position of the second cart.
+The control input is the voltage $u := V$ [Volt] applied to the motor, and the measured output
+is the position $y := x_2$ [m] of the second cart.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{two-cart-system.png}
+\caption{Two cart system}
+\label{fig:two-cart-system}
+\end{figure}
+
 
 \subsection{Non-Parametric Identification}
 % [Report] For the non-parametric approach:
