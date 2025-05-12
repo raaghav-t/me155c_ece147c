@@ -156,6 +156,11 @@ However, even with the optimal linear controller, the unmodelled dead zone of th
 there to be a large steady state error. To fix this, we added an integrator to the controller, which successfully
 eliminated the steady state error. The final controller is an LQR/LQG controller in parallel with an integrator, which led
 to a closed loop system with an adequate performance.
+
+In order to combat integral windup and saturation of the motor, we added a 
+clamping function to the integrator and controller output. This saturation
+allowed us to achieve the limited steady state error of the integrator without 
+suffering from the overshoot and instabilities that come from integral windup.
 % [Report] Summarize the design approach:
 % - Requirements (overshoot, settling time, etc.)
 % - The control method chosen (PID, state-feedback, etc.)
@@ -170,7 +175,8 @@ to a closed loop system with an adequate performance.
 % - Any relevant discussion about stability, noise, etc.
 We simulated the closed-loop system in Simulink using the identified model. The frequency response
 can be seen in Figure \ref{fig:bodecompsense}. The simulated step response is unstable, as 
-seen in Figure \ref{fig:stepresponse}.
+seen in Figure \ref{fig:stepresponse}. However, as we will show, the controller still performs well in 
+the actual system, as we tuned the parameters using the real setup in the lab.
 
 
 \begin{figure}
@@ -220,26 +226,24 @@ The theoretical and experimental bode diagrams seem to disagree in phase and mag
     \label{tab:step_response}
 \end{table}
     
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=\textwidth]{bodecompsense.pdf}
-\caption{Bode plot of complementary sensitivity function of simulated controller}
-\label{fig:bodecompsense}
-\end{figure}
+% \begin{figure}[!ht]
+% \centering
+% \includegraphics[width=\textwidth]{bodecompsense.pdf}
+% \caption{Bode plot of complementary sensitivity function of simulated controller}
+% \label{fig:bodecompsense}
+% \end{figure}
 
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=\textwidth]{bodecompsenseStep.pdf}
-\caption{Simulated closed-loop step response}
-\label{fig:bodecompsenseStep}
-\end{figure}
+% \begin{figure}[!ht]
+% \centering
+% \includegraphics[width=\textwidth]{bodecompsenseStep.pdf}
+% \caption{Simulated closed-loop step response}
+% \label{fig:bodecompsenseStep}
+% \end{figure}
 
 
 
 \subsection{Closed-loop Frequency Response}
-% [Report] Show how you identified the closed-loop frequency response
-% (method used, plots, comparison with simulated predictions, etc.)
-
+The closed-loop frequency response was identified using a sinusoidal sweep of the system. The results are shown in Figure \ref{fig:CLFreqResponse} and Figure \ref{fig:CLFreqResponseError}. The first figure shows the transfer function from reference to output, while the second figure shows the transfer function from reference to error.
 
 \begin{figure}[!ht]
 \centering
@@ -248,7 +252,7 @@ The theoretical and experimental bode diagrams seem to disagree in phase and mag
 \label{fig:CLStepResponse}
 \end{figure}
 
-\subsection{Closed-loop Frequency Response}
+
 % [Report] Show how you identified the closed-loop frequency response
 % (method used, plots, comparison with simulated predictions, etc.)
 
