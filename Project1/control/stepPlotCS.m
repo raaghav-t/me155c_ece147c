@@ -10,4 +10,4 @@ ylabel("Position $[m]$",'Interpreter','latex')
 title("\textbf{Step Response of Closed Loop System}",'Interpreter','latex')
 
 
-print(gcf, "StepResponse", "-dpng", "-r1200")
+%print(gcf, "StepResponse", "-dpng", "-r1200")
