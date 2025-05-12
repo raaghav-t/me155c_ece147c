@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.15)  11 MAY 2025 23:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.15)  11 MAY 2025 23:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -413,21 +413,21 @@ File: ./images//CLStepResponse.png Graphic file (type png)
 <use ./images//CLStepResponse.png>
 Package pdftex.def Info: ./images//CLStepResponse.png  used on input line 246.
 (pdftex.def)             Requested size: 328.82707pt x 246.6252pt.
-<./images//CLFreqResp.png, id=407, 1445.4pt x 799.00508pt>
+<./images//CLFreqResp.png, id=407, 562.07993pt x 421.575pt>
 File: ./images//CLFreqResp.png Graphic file (type png)
 <use ./images//CLFreqResp.png>
 Package pdftex.def Info: ./images//CLFreqResp.png  used on input line 259.
-(pdftex.def)             Requested size: 469.75502pt x 259.67357pt.
-<./images//CLFreqRespError.png, id=408, 1445.4pt x 799.00508pt>
+(pdftex.def)             Requested size: 469.75502pt x 352.33871pt.
+<./images//CLFreqRespError.png, id=408, 562.07993pt x 421.575pt>
 File: ./images//CLFreqRespError.png Graphic file (type png)
 <use ./images//CLFreqRespError.png>
 Package pdftex.def Info: ./images//CLFreqRespError.png  used on input line 269.
-(pdftex.def)             Requested size: 469.75502pt x 259.67357pt.
+(pdftex.def)             Requested size: 469.75502pt x 352.33871pt.
  [7]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 293.
 
-[8 <./images//CLStepResponse.png (PNG copy)>] [9 <./images//CLFreqResp.png (PNG copy)> <./images//CLFreqRespError.png (PNG copy)>] (./project1.aux)
+[8 <./images//CLStepResponse.png (PNG copy)>] [9 <./images//CLFreqResp.png (PNG copy)>] [10 <./images//CLFreqRespError.png (PNG copy)>] (./project1.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -435,18 +435,18 @@ Package rerunfilecheck Info: File `project1.out' has not changed.
 (rerunfilecheck)             Checksum: 27418F65D290984B631033219C549B57;2207.
  ) 
 Here is how much of TeX's memory you used:
- 10353 strings out of 478268
- 161055 string characters out of 5846347
- 456419 words of memory out of 5000000
+ 10354 strings out of 478268
+ 161062 string characters out of 5846347
+ 456422 words of memory out of 5000000
  28390 multiletter control sequences out of 15000+600000
  477279 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,8n,63p,692b,328s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on project1.pdf (9 pages, 5374261 bytes).
+Output written on project1.pdf (10 pages, 2167454 bytes).
 PDF statistics:
- 487 PDF objects out of 1000 (max. 8388607)
- 426 compressed objects within 5 object streams
- 37 named destinations out of 1000 (max. 500000)
+ 491 PDF objects out of 1000 (max. 8388607)
+ 429 compressed objects within 5 object streams
+ 38 named destinations out of 1000 (max. 500000)
  155 words of extra memory for PDF output out of 10000 (max. 10000000)
 

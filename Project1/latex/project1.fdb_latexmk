@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1747032012 "/Users/raaghavt/Desktop/UCSB/Fourth Year/Spring 2025/ME155C/me155c_ece147c/Project1/latex/project1.tex" "project1.pdf" "project1" 1747032013
-  "/Users/raaghavt/Desktop/UCSB/Fourth Year/Spring 2025/ME155C/me155c_ece147c/Project1/latex/project1.tex" 1747031992 12098 6df6c94d063854eb18e84878ba8e912e ""
+["pdflatex"] 1747032625 "/Users/raaghavt/Desktop/UCSB/Fourth Year/Spring 2025/ME155C/me155c_ece147c/Project1/latex/project1.tex" "project1.pdf" "project1" 1747032625
+  "/Users/raaghavt/Desktop/UCSB/Fourth Year/Spring 2025/ME155C/me155c_ece147c/Project1/latex/project1.tex" 1747032624 12066 df6c7098141a0d57bd7b19304c65554e ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -92,8 +92,8 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1673828139 2826444 871454068774c89eafa6172f34236276 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "images//CLFreqResp.png" 1747025430 2407276 b78316db7a8c8206e446a6a0b6681211 ""
-  "images//CLFreqRespError.png" 1747025430 2289898 651e8d8c4047a6c6c072dbe2b941d961 ""
+  "images//CLFreqResp.png" 1747032163 762659 974ebfd4990c11230b911e15d054e6e6 ""
+  "images//CLFreqRespError.png" 1747032163 723065 1e7432defa18e4c5af29dff31252e180 ""
   "images//CLStepResponse.png" 1747025430 334744 a5d1e8e590ae0e1935c5abeb21beaf5e ""
   "images//bodecompsense.pdf" 1747030186 21636 b97cd5cdd68b5d7e772b3cddd8f5fddb ""
   "images//bodecompsenseStep.pdf" 1747030186 39635 2439a45d25c16c9c5be7f8ae074a56bf ""
@@ -102,9 +102,9 @@
   "images//sysid-errors-fig.pdf" 1747025430 10614 cc88167e1c8f486f391eb6aa2d032afa ""
   "images//sysid-outputs.pdf" 1747028032 103488 07a26cea1fd1f6f7f5befc25edc20eb9 ""
   "images//two-cart-system.png" 1747025430 60998 d76ddc008c12c8950a9c7461c15439dc ""
-  "project1.aux" 1747032012 6063 846badd40c7486cbd881972f4eab8da0 "pdflatex"
-  "project1.out" 1747032012 2207 27418f65d290984b631033219c549b57 "pdflatex"
-  "project1.tex" 1747031992 12098 6df6c94d063854eb18e84878ba8e912e ""
+  "project1.aux" 1747032625 6066 041795ebb7abd0282a07b9560e98e190 "pdflatex"
+  "project1.out" 1747032625 2207 27418f65d290984b631033219c549b57 "pdflatex"
+  "project1.tex" 1747032624 12066 df6c7098141a0d57bd7b19304c65554e ""
   (generated)
   "project1.aux"
   "project1.log"
