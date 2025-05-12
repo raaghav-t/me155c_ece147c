@@ -7,6 +7,7 @@
 \usepackage{amssymb}
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage{parskip}
 \graphicspath{ {./images/} }
 
 \title{Project 1 Report - ME155C/ECE147C}
@@ -72,8 +73,8 @@
 % Possibly include a figure
 
 The process we are controlling is a two cart system
-connected by a spring. The system is driven by a motor that's given a voltage $V$ [Volt], which
-produces a force $F$ [N] applied to the first cart with mass $m_1$ [kg], and the second cart
+connected by a spring. The system is driven by a motor that
+applies a force $F$ to the first cart with mass $m_1$ [kg], and the second cart
 with mass $m_2$ [kg] is connected to the first cart via a spring with spring constant $k$ [N/m].
 In this system, $x_1$ [m] is the position of the first cart, and $x_2$ [m] is the position of the second cart.
 The control input is the voltage $u := V$ [Volt] applied to the motor, and the measured output
@@ -90,11 +91,6 @@ is the position $y := x_2$ [m] of the second cart.
 % 1) Frequencies/amplitudes used and why
 % 2) Plots with magnitude/phase
 % 3) Comparison with parametric identification
-
-The non-parametric identification method used was sine-wave testing in conjunction with
-the correleation method. This strategy consists of applying sinusoidal inputs at distinct frequencies
-to calculate the magnitude and phase of the frequency response at that frequency from the
-output of the system.
 
 \begin{figure}[!ht]
 \centering
@@ -139,10 +135,20 @@ output of the system.
 % ---------------------------------------------------
 % 3. Controller Design
 % ---------------------------------------------------
+\clearpage
 \section{Controller Design}
 \label{sec:control}
 
 \subsection{Design Methodology}
+
+Next, we were tasked to design a controller for the system. We shot for an overshoot of less than 15\%
+and a settling time of less than 2 seconds. To achieve this, we chose to use an LQR/LQG design. Using our 
+identified model, we used Matlab to calculate the optimal LQR gains and Kalman filter. 
+
+However, even with the optimal linear controller, the unmodelled dead zone of the motor still caused
+there to be a large steady state error. To fix this, we added an integrator to the controller, which successfully
+eliminated the steady state error. The final controller is an LQR/LQG controller in parallel with an integrator, which led
+to a closed loop system with an adequate performance.
 % [Report] Summarize the design approach:
 % - Requirements (overshoot, settling time, etc.)
 % - The control method chosen (PID, state-feedback, etc.)
@@ -155,9 +161,23 @@ output of the system.
 %   (using the identified model AND the nominal model from ECE147A&B, if relevant)
 % - Bode plots for the closed-loop
 % - Any relevant discussion about stability, noise, etc.
+We simulated the closed-loop system in Simulink using the identified model. The frequency response
+can be seen in Figure \ref{fig:bodecompsense}. The simulated step response is unstable, as 
+seen in Figure \ref{fig:stepresponse}.
 
 
-
+\begin{figure}
+\centering
+    \includegraphics[width=0.7\textwidth]{bodecompsense.pdf}
+    \caption{Closed-loop frequency response (simulated)}
+    \label{fig:bodecompsense}
+\end{figure}
+\begin{figure}
+\centering
+    \includegraphics[width=0.7\textwidth]{bodecompsenseStep.pdf}
+    \caption{Closed-loop step response (simulated)}
+    \label{fig:stepresponse}
+\end{figure}
 
 % ---------------------------------------------------
 % 4. Closed-loop Performance
@@ -174,33 +194,19 @@ output of the system.
 \subsection{Step Response Experiments}
 % [Report] Include a relevant plot/table with performance metrics (overshoot, rise time, etc.)
 
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=\textwidth]{bodecompsense.pdf}
-\caption{Bode plot of complementary sensitivity function of simulated controller}
-\label{fig:bodecompsense}
-\end{figure}
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=\textwidth]{bodecompsenseStep.pdf}
-\caption{Simulated closed-loop step response}
-\label{fig:bodecompsenseStep}
-\end{figure}
 
 
-
-\subsection{Closed-loop Frequency Response}
-% [Report] Show how you identified the closed-loop frequency response
-% (method used, plots, comparison with simulated predictions, etc.)
-
-
-\begin{figure}[!ht]
+\begin{figure}[!h]
 \centering
 \includegraphics[width=0.7\textwidth]{CLStepResponse.png}
 \caption{Closed-loop step response}
 \label{fig:CLStepResponse}
 \end{figure}
+
+\subsection{Closed-loop Frequency Response}
+% [Report] Show how you identified the closed-loop frequency response
+% (method used, plots, comparison with simulated predictions, etc.)
+
 
 
 \begin{figure}[!ht]
