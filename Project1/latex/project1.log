@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.22)  11 MAY 2025 23:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.22)  11 MAY 2025 23:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -241,31 +241,50 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip53
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen164
+\lightrulewidth=\dimen165
+\cmidrulewidth=\dimen166
+\belowrulesep=\dimen167
+\belowbottomsep=\dimen168
+\aboverulesep=\dimen169
+\abovetopsep=\dimen170
+\cmidrulesep=\dimen171
+\cmidrulekern=\dimen172
+\defaultaddspace=\dimen173
+\@cmidla=\count289
+\@cmidlb=\count290
+\@aboverulesep=\dimen174
+\@belowrulesep=\dimen175
+\@thisruleclass=\count291
+\@lastruleclass=\count292
+\@thisrulewidth=\dimen176
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count289
+\l__color_backend_stack_int=\count293
 \l__pdf_internal_box=\box53
 ) (./project1.aux)
 \openout1 = `project1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -303,16 +322,16 @@ LaTeX Font Info:    ... okay on input line 17.
 
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count290
-\scratchdimen=\dimen164
+\scratchcounter=\count294
+\scratchdimen=\dimen177
 \scratchbox=\box54
-\nofMPsegments=\count291
-\nofMParguments=\count292
+\nofMPsegments=\count295
+\nofMParguments=\count296
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count293
-\MPscratchDim=\dimen165
-\MPnumerator=\count294
-\makeMPintoPDFobject=\count295
+\MPscratchCnt=\count297
+\MPscratchDim=\dimen178
+\MPnumerator=\count298
+\makeMPintoPDFobject=\count299
 \everyMPtoPDFconversion=\toks25
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -320,80 +339,88 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 17.
+Package hyperref Info: Link coloring OFF on input line 18.
  (./project1.out) (./project1.out)
 \@outlinefile=\write3
 \openout3 = `project1.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-<./images/two-cart-system.png, id=52, 1256.44406pt x 394.47375pt>
+) [1
+
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+<./images/two-cart-system.png, id=66, 1256.44406pt x 394.47375pt>
 File: ./images/two-cart-system.png Graphic file (type png)
 <use ./images/two-cart-system.png>
-Package pdftex.def Info: ./images/two-cart-system.png  used on input line 84.
+Package pdftex.def Info: ./images/two-cart-system.png  used on input line 89.
 (pdftex.def)             Requested size: 234.8775pt x 73.74094pt.
-<./images/bodeid-corr.pdf, id=54, 620.3175pt x 276.03125pt>
+<./images/bodeid-corr.pdf, id=68, 620.3175pt x 276.03125pt>
 File: ./images/bodeid-corr.pdf Graphic file (type pdf)
 <use ./images/bodeid-corr.pdf>
-Package pdftex.def Info: ./images/bodeid-corr.pdf  used on input line 97.
+Package pdftex.def Info: ./images/bodeid-corr.pdf  used on input line 104.
 (pdftex.def)             Requested size: 469.75502pt x 209.03198pt.
-<./images/sysid-outputs.pdf, id=55, 753.81625pt x 225.84375pt>
+<./images/sysid-outputs.pdf, id=69, 753.81625pt x 225.84375pt>
 File: ./images/sysid-outputs.pdf Graphic file (type pdf)
 <use ./images/sysid-outputs.pdf>
-Package pdftex.def Info: ./images/sysid-outputs.pdf  used on input line 114.
+Package pdftex.def Info: ./images/sysid-outputs.pdf  used on input line 121.
 (pdftex.def)             Requested size: 469.75502pt x 140.73845pt.
-<./images/sysid-errors-fig.pdf, id=56, 648.4225pt x 563.10374pt>
+<./images/sysid-errors-fig.pdf, id=70, 648.4225pt x 563.10374pt>
 File: ./images/sysid-errors-fig.pdf Graphic file (type pdf)
 <use ./images/sysid-errors-fig.pdf>
-Package pdftex.def Info: ./images/sysid-errors-fig.pdf  used on input line 122.
+Package pdftex.def Info: ./images/sysid-errors-fig.pdf  used on input line 129.
 (pdftex.def)             Requested size: 469.75502pt x 407.95192pt.
-<./images/bodeid-param.pdf, id=57, 627.34375pt x 283.0575pt>
+<./images/bodeid-param.pdf, id=71, 627.34375pt x 283.0575pt>
 File: ./images/bodeid-param.pdf Graphic file (type pdf)
 <use ./images/bodeid-param.pdf>
-Package pdftex.def Info: ./images/bodeid-param.pdf  used on input line 130.
+Package pdftex.def Info: ./images/bodeid-param.pdf  used on input line 137.
 (pdftex.def)             Requested size: 469.75502pt x 211.96002pt.
- [1
+ [3 <./images/two-cart-system.png> <./images/bodeid-corr.pdf>]
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./images/two-cart-system.png>] [2 <./images/bodeid-corr.pdf> <./images/sysid-outputs.pdf>] [3 <./images/sysid-errors-fig.pdf>] [4 <./images/bodeid-param.pdf>]
-<./images/bodecompsense.pdf, id=244, 428.60126pt x 192.72pt>
+LaTeX Warning: Text page 4 contains only floats.
+
+[4 <./images/sysid-outputs.pdf> <./images/sysid-errors-fig.pdf>] [5 <./images/bodeid-param.pdf>]
+<./images/bodecompsense.pdf, id=248, 428.60126pt x 192.72pt>
 File: ./images/bodecompsense.pdf Graphic file (type pdf)
 <use ./images/bodecompsense.pdf>
-Package pdftex.def Info: ./images/bodecompsense.pdf  used on input line 171.
+Package pdftex.def Info: ./images/bodecompsense.pdf  used on input line 178.
 (pdftex.def)             Requested size: 328.82707pt x 147.8567pt.
-<./images/bodecompsenseStep.pdf, id=245, 425.59pt x 191.71625pt>
+<./images/bodecompsenseStep.pdf, id=249, 425.59pt x 191.71625pt>
 File: ./images/bodecompsenseStep.pdf Graphic file (type pdf)
 <use ./images/bodecompsenseStep.pdf>
-Package pdftex.def Info: ./images/bodecompsenseStep.pdf  used on input line 177.
+Package pdftex.def Info: ./images/bodecompsenseStep.pdf  used on input line 184.
 (pdftex.def)             Requested size: 328.82707pt x 148.1339pt.
-<./images/CLStepResponse.png, id=246, 421.575pt x 316.18124pt>
-File: ./images/CLStepResponse.png Graphic file (type png)
-<use ./images/CLStepResponse.png>
-Package pdftex.def Info: ./images/CLStepResponse.png  used on input line 201.
-(pdftex.def)             Requested size: 328.82707pt x 246.6252pt.
- [5
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6
 
  <./images/bodecompsense.pdf> <./images/bodecompsenseStep.pdf>]
-<./images/CLFreqResp.png, id=398, 1445.4pt x 799.00508pt>
+<./images/CLStepResponse.png, id=401, 421.575pt x 316.18124pt>
+File: ./images/CLStepResponse.png Graphic file (type png)
+<use ./images/CLStepResponse.png>
+Package pdftex.def Info: ./images/CLStepResponse.png  used on input line 227.
+(pdftex.def)             Requested size: 328.82707pt x 246.6252pt.
+<./images/CLFreqResp.png, id=402, 1445.4pt x 799.00508pt>
 File: ./images/CLFreqResp.png Graphic file (type png)
 <use ./images/CLFreqResp.png>
-Package pdftex.def Info: ./images/CLFreqResp.png  used on input line 214.
+Package pdftex.def Info: ./images/CLFreqResp.png  used on input line 240.
 (pdftex.def)             Requested size: 469.75502pt x 259.67357pt.
-<./images/CLFreqRespError.png, id=399, 1445.4pt x 799.00508pt>
+<./images/CLFreqRespError.png, id=403, 1445.4pt x 799.00508pt>
 File: ./images/CLFreqRespError.png Graphic file (type png)
 <use ./images/CLFreqRespError.png>
-Package pdftex.def Info: ./images/CLFreqRespError.png  used on input line 224.
+Package pdftex.def Info: ./images/CLFreqRespError.png  used on input line 250.
 (pdftex.def)             Requested size: 469.75502pt x 259.67357pt.
 
 
-LaTeX Warning: Empty `thebibliography' environment on input line 246.
+LaTeX Warning: Empty `thebibliography' environment on input line 272.
 
-[6 <./images/CLStepResponse.png (PNG copy)>] [7 <./images/CLFreqResp.png (PNG copy)> <./images/CLFreqRespError.png (PNG copy)>] (./project1.aux)
+[7 <./images/CLStepResponse.png (PNG copy)>] [8 <./images/CLFreqResp.png (PNG copy)> <./images/CLFreqRespError.png (PNG copy)>] (./project1.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -402,18 +429,18 @@ Package rerunfilecheck Info: File `project1.out' has not changed.
 (rerunfilecheck)             Checksum: 5DC11485EC361E26CE8C9C265EE8FC84;1993.
  ) 
 Here is how much of TeX's memory you used:
- 10205 strings out of 474116
- 156739 string characters out of 5743681
- 1934187 words of memory out of 5000000
- 32422 multiletter control sequences out of 15000+600000
- 565781 words of font info for 65 fonts, out of 8000000 for 9000
+ 10282 strings out of 474116
+ 158008 string characters out of 5743681
+ 1931187 words of memory out of 5000000
+ 32493 multiletter control sequences out of 15000+600000
+ 566089 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,79p,592b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on project1.pdf (7 pages, 5342899 bytes).
+ 75i,8n,79p,663b,443s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on project1.pdf (8 pages, 5372715 bytes).
 PDF statistics:
- 454 PDF objects out of 1000 (max. 8388607)
- 401 compressed objects within 5 object streams
- 31 named destinations out of 1000 (max. 500000)
+ 474 PDF objects out of 1000 (max. 8388607)
+ 414 compressed objects within 5 object streams
+ 33 named destinations out of 1000 (max. 500000)
  147 words of extra memory for PDF output out of 10000 (max. 10000000)
 
