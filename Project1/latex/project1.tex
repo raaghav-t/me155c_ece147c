@@ -66,7 +66,7 @@ We begin our control journey with the search of an optimal controller. The first
 \label{sec:systemID}
 
 % [Report] System description:
-% “Briefly describe the model of the process you are controlling, 
+% “Briefly describe the model of the process you are controlling,
 % explain meaning of the variables, their units, control input(s), measured output(s).”
 
 \subsection{Process to be controlled}
@@ -78,8 +78,8 @@ We begin our control journey with the search of an optimal controller. The first
 % Possibly include a figure
 
 The process we are controlling is a two cart system
-connected by a spring. The system is driven by a motor that
-applies a force $F$ to the first cart with mass $m_1$ [kg], and the second cart
+connected by a spring. The system is driven by a motor that's given a voltage $V$ [Volt], which
+produces a force $F$ [N] applied to the first cart with mass $m_1$ [kg], and the second cart
 with mass $m_2$ [kg] is connected to the first cart via a spring with spring constant $k$ [N/m].
 In this system, $x_1$ [m] is the position of the first cart, and $x_2$ [m] is the position of the second cart.
 The control input is the voltage $u := V$ [Volt] applied to the motor, and the measured output
@@ -97,7 +97,18 @@ is the position $y := x_2$ [m] of the second cart.
 % 2) Plots with magnitude/phase
 % 3) Comparison with parametric identification
 
-The non-parametric identification method used was sine-wave testing in conjunction with the correleation method. This strategy consists of applying sinusoidal inputs at distinct frequencies to calculate the magnitude and phase of the frequency response at that frequency from the output of the system.
+The non-parametric identification method used was sine-wave testing in conjunction with
+the correlation method. This strategy consists of applying sinusoidal inputs at distinct frequencies
+to calculate the magnitude and phase of the frequency response at that frequency from the correlation of
+the time output of the system.
+
+The frequencies used were 20 logarithmically spaced frequencies between 0.3 Hz and 10 Hz.
+Too low of a frequency would not excite the system enough past the dry friction to get a good estimate of the
+frequency response, while too high of a frequency would not be able to be accurately measured.
+The amplitude chosen was 3V, which is a moderate amount of voltage to apply to the motor.
+We experimented with different amplitudes; smaller voltages would not move the carts enough to overcome the static friction,
+while larger voltages would cause the carts to drive off the railing. FIgure \ref{fig:bodeid_corr}
+shows the Bode plot of the identified system using non-parametric identification.
 
 \begin{figure}[!ht]
 \centering
@@ -115,6 +126,14 @@ The non-parametric identification method used was sine-wave testing in conjuncti
 % 4) Bode plots (magnitude and phase) of identified model
 % 5) Comparison with non-parametric approach
 
+In parametric identification, a constant number of poles and zeros are assumed in the transfer function.
+Least-squares estimation is used to estimate the parameters of the transfer function given an experimentally obtained
+set of time-domain input and output signals of the system.
+
+The inputs used for the experiments were 20 sine waves with amplitude 3V and logarithmically spaced frequencies between 0.3 Hz and 10 Hz.
+This was chosen to match the frequencies that worked well in the non-parametric identification method, and also to use the data obtained
+from the non-parametric identification method to help estimate the parameters of the transfer function. A plot of the 20 outputs
+obtained from the experiments is shown in Figure \ref{fig:outputs-param}.
 
 \begin{figure}[!ht]
 \centering
@@ -122,6 +141,10 @@ The non-parametric identification method used was sine-wave testing in conjuncti
 \caption{Output signals of all experiments for parametric identification}
 \label{fig:outputs-param}
 \end{figure}
+
+Least-squares estimation using the \verb|tfest| Matlab command was then performed for different numbers of
+poles and zeros. The normalized mean square error (MSE) and the worst-case standard deviation of the parameters
+were calculated for each model order, so the best model order could be chosen. These two metrics are shown in Figure \ref{fig:errors-param}.
 
 
 \begin{figure}[!ht]
@@ -131,6 +154,11 @@ The non-parametric identification method used was sine-wave testing in conjuncti
 \label{fig:errors-param}
 \end{figure}
 
+Observing both plots in Figure \ref{fig:errors-param}, it can be seen that both metrics are minimized
+for multiple different model orders. However, the choice of 3 poles and 2 zeros was chosen because it not only
+minimized both metrics, but also produced the best Bode plot out of all of the estimated models.
+The Bode plot of the identified system using parametric identification is shown in Figure \ref{fig:bodeid_param}
+
 
 \begin{figure}[!ht]
 \centering
@@ -139,6 +167,15 @@ The non-parametric identification method used was sine-wave testing in conjuncti
 \label{fig:bodeid_param}
 \end{figure}
 
+\subsection{Comparison of Non-Parametric and Parametric Identification}
+
+The results of the non-parametric identification method in Figure \ref{fig:bodeid_corr} and parametric identification method in Figure \ref{fig:bodeid_param}
+are comparable in shape to each other. The non-parametric method has a higher gain at lower frequencies,
+and its resonant frequency is also slightly higher. Also, with the non-parametric method,
+the resolution of the Bode plot is limited to just the frequencies of the tested sine waves, but with
+parametric identification, the resolution of the Bode plot is effectively infinite since it returns
+an exact numerical transfer function.
+However, all in all, both Bode plots look physically reasonable.
 % ---------------------------------------------------
 % 3. Controller Design
 % ---------------------------------------------------
