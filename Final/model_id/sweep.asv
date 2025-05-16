@@ -1,10 +1,10 @@
 model = "ModelId";
-u_ws = logspace(-0.5,0.5,30)*2*pi;
+ws = logspace(-0.5,0.5,30)*2*pi;
 
-resp = zeros(length(u_ws),10000,5);
-for i = 1:length(u_ws)
-    omega = u_ws(i);
-    amp = 4;
+resp = zeros(length(ws),10000,5);
+for i = 1:length(ws)
+    omega = ws(i);
+    amp = 3;
     set_param(model, 'Dirty', 'on')
     rtwbuild(model)
     disp(i)
