@@ -9,7 +9,7 @@
  *
  * Model version              : 1.8
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Thu May 15 20:26:48 2025
+ * C source code generated on : Thu May 15 20:55:19 2025
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -25,12 +25,12 @@ P_ModelId_T ModelId_P = {
   /* Variable: amp
    * Referenced by: '<Root>/Sine Wave'
    */
-  0.0,
+  3.0,
 
   /* Variable: omega
    * Referenced by: '<Root>/Sine Wave'
    */
-  1.0,
+  19.869176531592203,
 
   /* Mask Parameter: HILReadEncoder1_channels
    * Referenced by: '<Root>/HIL Read Encoder1'
@@ -127,10 +127,10 @@ P_ModelId_T ModelId_P = {
    */
   0.0015384615384615385,
 
-  /* Expression: 0.1524/5000*100
+  /* Expression: 0.1524/5000
    * Referenced by: '<Root>/Gain'
    */
-  0.0030480000000000004,
+  3.0480000000000003E-5,
 
   /* Expression: 0
    * Referenced by: '<Root>/Sine Wave'
@@ -140,22 +140,22 @@ P_ModelId_T ModelId_P = {
   /* Computed Parameter: SineWave_Hsin
    * Referenced by: '<Root>/Sine Wave'
    */
-  0.00099999983333334168,
+  0.019867869217983523,
 
   /* Computed Parameter: SineWave_HCos
    * Referenced by: '<Root>/Sine Wave'
    */
-  0.99999950000004167,
+  0.99980261440583218,
 
   /* Computed Parameter: SineWave_PSin
    * Referenced by: '<Root>/Sine Wave'
    */
-  -0.00099999983333334168,
+  -0.019867869217983523,
 
   /* Computed Parameter: SineWave_PCos
    * Referenced by: '<Root>/Sine Wave'
    */
-  0.99999950000004167,
+  0.99980261440583218,
 
   /* Expression: 0.001
    * Referenced by: '<Root>/Step'

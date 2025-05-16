@@ -9,7 +9,7 @@
  *
  * Model version              : 1.8
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Thu May 15 20:26:48 2025
+ * C source code generated on : Thu May 15 20:55:19 2025
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -979,7 +979,7 @@ struct P_ModelId_T_ {
   real_T Gain1_Gain;                   /* Expression: 1/650
                                         * Referenced by: '<Root>/Gain1'
                                         */
-  real_T Gain_Gain;                    /* Expression: 0.1524/5000*100
+  real_T Gain_Gain;                    /* Expression: 0.1524/5000
                                         * Referenced by: '<Root>/Gain'
                                         */
   real_T SineWave_Bias;                /* Expression: 0
@@ -1304,6 +1304,5 @@ extern RT_MODEL_ModelId_T *const ModelId_M;
  * Here is the system hierarchy for this model
  *
  * '<Root>' : 'ModelId'
- * '<S1>'   : 'ModelId/Saturation Dynamic'
  */
 #endif                                 /* RTW_HEADER_ModelId_h_ */
