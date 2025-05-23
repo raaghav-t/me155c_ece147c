@@ -1,0 +1,17 @@
+load test2a3.mat
+
+tf = zeros(length(u_ws), 4);
+Ts = 0.001;
+
+for i = 1:length(u_ws)
+    t = resp(i,:,1);
+    u = 3*sin(u_ws(i)*t(1:end-1))';
+    ysize = size(resp(i, :, 2:5));
+    ysize = ysize(2:3);
+    y = reshape(resp(i, :, 2:5), ysize);
+    bary = (y(2:end, :)-y(1:end-1, :))/Ts;
+    Y = exp(-1i*u_ws(i).*t(1:end-1))*bary/9999;
+    U = exp(-1i*u_ws(i).*t(1:end-1))*u/9999;
+    
+    tf() = Y/U;
+end

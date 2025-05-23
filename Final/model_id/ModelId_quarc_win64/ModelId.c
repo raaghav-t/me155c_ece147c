@@ -7,9 +7,9 @@
  *
  * Code generation for model "ModelId".
  *
- * Model version              : 1.8
+ * Model version              : 1.9
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Thu May 15 20:55:19 2025
+ * C source code generated on : Thu May 15 20:58:41 2025
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -205,6 +205,14 @@ void ModelId_initialize(void)
     }
 
     is_switching = false;
+    result = hil_set_card_specific_options(ModelId_DW.HILInitialize_Card, " ", 2);
+    if (result < 0) {
+      msg_get_error_messageA(NULL, result, _rt_error_message, sizeof
+        (_rt_error_message));
+      rtmSetErrorStatus(ModelId_M, _rt_error_message);
+      return;
+    }
+
     if ((ModelId_P.HILInitialize_CKPStart && !is_switching) ||
         (ModelId_P.HILInitialize_CKPEnter && is_switching)) {
       result = hil_set_clock_mode(ModelId_DW.HILInitialize_Card, (t_clock *)
@@ -510,10 +518,10 @@ RT_MODEL_ModelId_T *ModelId(void)
   ModelId_M->Timing.stepSize1 = 0.001;
 
   /* External mode info */
-  ModelId_M->Sizes.checksums[0] = (1063501243U);
-  ModelId_M->Sizes.checksums[1] = (1130628355U);
-  ModelId_M->Sizes.checksums[2] = (2396768026U);
-  ModelId_M->Sizes.checksums[3] = (877115440U);
+  ModelId_M->Sizes.checksums[0] = (1419010513U);
+  ModelId_M->Sizes.checksums[1] = (3399079289U);
+  ModelId_M->Sizes.checksums[2] = (3412522819U);
+  ModelId_M->Sizes.checksums[3] = (3796284906U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;
