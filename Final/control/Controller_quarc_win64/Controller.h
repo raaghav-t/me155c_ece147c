@@ -9,7 +9,7 @@
  *
  * Model version              : 1.13
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Thu May 22 20:57:03 2025
+ * C source code generated on : Wed May 28 16:20:29 2025
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -1016,7 +1016,7 @@ struct P_Controller_T_ {
   real_T DiscreteTransferFcn4_InitialSta;/* Expression: 0
                                           * Referenced by: '<Root>/Discrete Transfer Fcn4'
                                           */
-  real_T Gain1_Gain;                   /* Expression: 10^(-300)
+  real_T Gain1_Gain;                   /* Expression: 1
                                         * Referenced by: '<Root>/Gain1'
                                         */
   real_T Gain_Gain;                    /* Expression: 1/650

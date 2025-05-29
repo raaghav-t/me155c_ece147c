@@ -1,7 +1,7 @@
 
 [A, B, C, D] = ssdata(sys);
 
-sigma = 0.01;
+sigma = 10000000;
 
 BB = B;
 
