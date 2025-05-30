@@ -1,4 +1,4 @@
-load ../model_id/model.mat est
+load ../analysis/model.mat est
 sys = est;
 
 gamma = 1000000;

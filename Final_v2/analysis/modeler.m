@@ -1,5 +1,5 @@
 load ../model_id/resp.mat
-
+Ts = 0.001
 clear data;
 cutoff = 10000;
 
@@ -27,4 +27,4 @@ hold on
 plot(resp(trial,:,1), resp(trial, :, 3));
 
 legend('cart angle', 'cart pos')
-est = tfest(data,[4;4]);
+est = tfest(data,[3;1], [2;1]);
