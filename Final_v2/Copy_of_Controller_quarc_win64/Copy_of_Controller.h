@@ -7,9 +7,9 @@
  *
  * Code generation for model "Copy_of_Controller".
  *
- * Model version              : 1.17
+ * Model version              : 1.27
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Thu May 29 16:33:10 2025
+ * C source code generated on : Fri May 30 17:35:17 2025
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -33,6 +33,7 @@
 #endif                                 /* Copy_of_Controller_COMMON_INCLUDES_ */
 
 #include "Copy_of_Controller_types.h"
+#include "rtGetNaN.h"
 #include "rt_defines.h"
 #include <string.h>
 #include "rt_nonfinite.h"
@@ -864,21 +865,81 @@
 /* Definition for use in the target main file */
 #define Copy_of_Controller_rtModel     RT_MODEL_Copy_of_Controller_T
 
+/* Block states (default storage) for system '<S53>/SqrtUsedFcn' */
+typedef struct {
+  int32_T sfEvent;                     /* '<S53>/SqrtUsedFcn' */
+  uint8_T is_active_c7_ctrlSharedLib;  /* '<S53>/SqrtUsedFcn' */
+  boolean_T doneDoubleBufferReInit;    /* '<S53>/SqrtUsedFcn' */
+} DW_SqrtUsedFcn_Copy_of_Contro_T;
+
+/* Block signals for system '<S25>/MeasurementUpdate' */
+typedef struct {
+  real_T Product3[6];                  /* '<S55>/Product3' */
+} B_MeasurementUpdate_Copy_of_C_T;
+
+/* Block states (default storage) for system '<S25>/MeasurementUpdate' */
+typedef struct {
+  int8_T MeasurementUpdate_SubsysRanBC;/* '<S25>/MeasurementUpdate' */
+  boolean_T MeasurementUpdate_MODE;    /* '<S25>/MeasurementUpdate' */
+} DW_MeasurementUpdate_Copy_of__T;
+
+/* Block signals for system '<S31>/Enabled Subsystem' */
+typedef struct {
+  real_T Product2[6];                  /* '<S57>/Product2' */
+} B_EnabledSubsystem_Copy_of_Co_T;
+
+/* Block states (default storage) for system '<S31>/Enabled Subsystem' */
+typedef struct {
+  int8_T EnabledSubsystem_SubsysRanBC; /* '<S31>/Enabled Subsystem' */
+  boolean_T EnabledSubsystem_MODE;     /* '<S31>/Enabled Subsystem' */
+} DW_EnabledSubsystem_Copy_of_C_T;
+
 /* Block signals (default storage) */
 typedef struct {
-  real_T raag;                         /* '<Root>/Gain' */
-  real_T raag_d;                       /* '<Root>/Gain2' */
+  real_T Mod;                          /* '<Root>/Mod' */
+  real_T raagpos;                      /* '<Root>/Gain2' */
+  real_T Probe[2];                     /* '<S150>/Probe' */
+  real_T TSamp;                        /* '<S139>/TSamp' */
+  real_T Probe_o[2];                   /* '<S143>/Probe' */
+  real_T TSamp_n;                      /* '<S138>/TSamp' */
+  real_T Sum1;                         /* '<Root>/Sum1' */
   real_T TmpSignalConversionAtToWorkspac[2];
-  real_T Gain3;                        /* '<Root>/Gain3' */
-  real_T Add[7];                       /* '<S22>/Add' */
+  real_T uT;                           /* '<S140>/1//T' */
+  real_T uT_e;                         /* '<S141>/1//T' */
   real_T Step;                         /* '<Root>/Step' */
-  real_T Product2[7];                  /* '<S55>/Product2' */
-  real_T Product3[7];                  /* '<S53>/Product3' */
+  real_T TSamp_a;                      /* '<S122>/TSamp' */
+  real_T Probe_h[2];                   /* '<S124>/Probe' */
+  real_T uT_i;                         /* '<S123>/1//T' */
+  real_T Sum;                          /* '<S3>/Sum' */
+  real_T Add[6];                       /* '<S81>/Add' */
+  real_T Sum5;                         /* '<S2>/Sum5' */
+  real_T Gain3;                        /* '<S1>/Gain3' */
+  real_T Add_e[6];                     /* '<S25>/Add' */
+  boolean_T LogicalOperator;           /* '<S150>/Logical Operator' */
+  boolean_T LogicalOperator_g;         /* '<S143>/Logical Operator' */
+  boolean_T Compare;                   /* '<S131>/Compare' */
+  boolean_T Down;                      /* '<S4>/Down' */
+  boolean_T Swing;                     /* '<S4>/Swing' */
+  boolean_T NOT2;                      /* '<S4>/NOT2' */
+  boolean_T D;                         /* '<S142>/D' */
+  boolean_T LogicalOperator_f;         /* '<S124>/Logical Operator' */
+  B_EnabledSubsystem_Copy_of_Co_T EnabledSubsystem_p;/* '<S87>/Enabled Subsystem' */
+  B_MeasurementUpdate_Copy_of_C_T MeasurementUpdate_p;/* '<S81>/MeasurementUpdate' */
+  B_EnabledSubsystem_Copy_of_Co_T EnabledSubsystem;/* '<S31>/Enabled Subsystem' */
+  B_MeasurementUpdate_Copy_of_C_T MeasurementUpdate;/* '<S25>/MeasurementUpdate' */
 } B_Copy_of_Controller_T;
 
 /* Block states (default storage) for system '<Root>' */
 typedef struct {
-  real_T MemoryX_DSTATE[7];            /* '<S1>/MemoryX' */
+  real_T Delay_DSTATE;                 /* '<Root>/Delay' */
+  real_T UD_DSTATE;                    /* '<S139>/UD' */
+  real_T Integrator_DSTATE;            /* '<S156>/Integrator' */
+  real_T UD_DSTATE_b;                  /* '<S138>/UD' */
+  real_T Integrator_DSTATE_f;          /* '<S149>/Integrator' */
+  real_T UD_DSTATE_j;                  /* '<S122>/UD' */
+  real_T Integrator_DSTATE_i;          /* '<S130>/Integrator' */
+  real_T MemoryX_DSTATE[6];            /* '<S60>/MemoryX' */
+  real_T MemoryX_DSTATE_o[6];          /* '<S5>/MemoryX' */
   real_T HILInitialize_AIMinimums[4];  /* '<Root>/HIL Initialize' */
   real_T HILInitialize_AIMaximums[4];  /* '<Root>/HIL Initialize' */
   real_T HILInitialize_AOMinimums[4];  /* '<Root>/HIL Initialize' */
@@ -895,15 +956,19 @@ typedef struct {
 
   struct {
     void *LoggedData;
-  } Scope1_PWORK;                      /* '<Root>/Scope1' */
-
-  struct {
-    void *LoggedData;
   } Scope4_PWORK;                      /* '<Root>/Scope4' */
 
   struct {
     void *LoggedData;
   } ToWorkspace_PWORK;                 /* '<Root>/To Workspace' */
+
+  struct {
+    void *LoggedData;
+  } systemInput_PWORK;                 /* '<Root>/systemInput' */
+
+  struct {
+    void *LoggedData[3];
+  } Scope_PWORK_m;                     /* '<S4>/Scope' */
 
   struct {
     void *LoggedData;
@@ -913,15 +978,35 @@ typedef struct {
   int32_T HILInitialize_InitialEICounts[4];/* '<Root>/HIL Initialize' */
   int32_T cartangle_Buffer;            /* '<Root>/cart angle' */
   int32_T cartpos_Buffer;              /* '<Root>/cart pos' */
-  int32_T sfEvent;                     /* '<S51>/SqrtUsedFcn' */
-  int8_T EnabledSubsystem_SubsysRanBC; /* '<S29>/Enabled Subsystem' */
-  int8_T MeasurementUpdate_SubsysRanBC;/* '<S22>/MeasurementUpdate' */
-  uint8_T is_active_c7_ctrlSharedLib;  /* '<S51>/SqrtUsedFcn' */
-  boolean_T icLoad;                    /* '<S1>/MemoryX' */
-  boolean_T doneDoubleBufferReInit;    /* '<S51>/SqrtUsedFcn' */
-  boolean_T EnabledSubsystem_MODE;     /* '<S29>/Enabled Subsystem' */
-  boolean_T MeasurementUpdate_MODE;    /* '<S22>/MeasurementUpdate' */
+  boolean_T Delay_DSTATE_f[2];         /* '<S4>/Delay' */
+  int8_T Integrator_PrevResetState;    /* '<S156>/Integrator' */
+  int8_T Integrator_PrevResetState_l;  /* '<S149>/Integrator' */
+  int8_T DLatch_SubsysRanBC;           /* '<S137>/D Latch' */
+  int8_T swing_SubsysRanBC;            /* '<Root>/swing' */
+  int8_T Integrator_PrevResetState_a;  /* '<S130>/Integrator' */
+  int8_T down_SubsysRanBC;             /* '<Root>/down' */
+  int8_T balancing_SubsysRanBC;        /* '<Root>/balancing' */
+  uint8_T Integrator_IC_LOADING;       /* '<S156>/Integrator' */
+  uint8_T Integrator_IC_LOADING_i;     /* '<S149>/Integrator' */
+  uint8_T Integrator_IC_LOADING_m;     /* '<S130>/Integrator' */
+  boolean_T icLoad;                    /* '<S60>/MemoryX' */
+  boolean_T icLoad_p;                  /* '<S5>/MemoryX' */
+  boolean_T swing_MODE;                /* '<Root>/swing' */
+  boolean_T down_MODE;                 /* '<Root>/down' */
+  boolean_T balancing_MODE;            /* '<Root>/balancing' */
+  DW_EnabledSubsystem_Copy_of_C_T EnabledSubsystem_p;/* '<S87>/Enabled Subsystem' */
+  DW_MeasurementUpdate_Copy_of__T MeasurementUpdate_p;/* '<S81>/MeasurementUpdate' */
+  DW_SqrtUsedFcn_Copy_of_Contro_T sf_SqrtUsedFcn_m;/* '<S109>/SqrtUsedFcn' */
+  DW_EnabledSubsystem_Copy_of_C_T EnabledSubsystem;/* '<S31>/Enabled Subsystem' */
+  DW_MeasurementUpdate_Copy_of__T MeasurementUpdate;/* '<S25>/MeasurementUpdate' */
+  DW_SqrtUsedFcn_Copy_of_Contro_T sf_SqrtUsedFcn;/* '<S53>/SqrtUsedFcn' */
 } DW_Copy_of_Controller_T;
+
+/* Zero-crossing (trigger) state */
+typedef struct {
+  ZCSigState MemoryX_Reset_ZCE;        /* '<S60>/MemoryX' */
+  ZCSigState MemoryX_Reset_ZCE_g;      /* '<S5>/MemoryX' */
+} PrevZCX_Copy_of_Controller_T;
 
 /* Backward compatible GRT Identifiers */
 #define rtB                            Copy_of_Controller_B
@@ -930,12 +1015,109 @@ typedef struct {
 #define Parameters                     P_Copy_of_Controller_T
 #define rtDWork                        Copy_of_Controller_DW
 #define D_Work                         DW_Copy_of_Controller_T
+#define rtPrevZCSigState               Copy_of_Controller_PrevZCX
+#define PrevZCSigStates                PrevZCX_Copy_of_Controller_T
+
+/* Parameters for system: '<S25>/MeasurementUpdate' */
+struct P_MeasurementUpdate_Copy_of_C_T_ {
+  real_T Lykyhatkk1_Y0;                /* Expression: 0
+                                        * Referenced by: '<S55>/L*(y[k]-yhat[k|k-1])'
+                                        */
+};
+
+/* Parameters for system: '<S31>/Enabled Subsystem' */
+struct P_EnabledSubsystem_Copy_of_Co_T_ {
+  real_T deltax_Y0;                    /* Expression: 0
+                                        * Referenced by: '<S57>/deltax'
+                                        */
+};
 
 /* Parameters (default storage) */
 struct P_Copy_of_Controller_T_ {
-  real_T K[7];                         /* Variable: K
-                                        * Referenced by: '<Root>/Gain3'
+  real_T K[6];                         /* Variable: K
+                                        * Referenced by: '<S1>/Gain3'
                                         */
+  real_T K_down[6];                    /* Variable: K_down
+                                        * Referenced by: '<S2>/Gain3'
+                                        */
+  real_T DiscreteDerivative_ICPrevScaled;
+                              /* Mask Parameter: DiscreteDerivative_ICPrevScaled
+                               * Referenced by: '<S122>/UD'
+                               */
+  real_T DiscreteDerivative1_ICPrevScale;
+                              /* Mask Parameter: DiscreteDerivative1_ICPrevScale
+                               * Referenced by: '<S139>/UD'
+                               */
+  real_T DiscreteDerivative_ICPrevScal_f;
+                              /* Mask Parameter: DiscreteDerivative_ICPrevScal_f
+                               * Referenced by: '<S138>/UD'
+                               */
+  real_T LowPassFilterDiscreteorContinuo;
+                              /* Mask Parameter: LowPassFilterDiscreteorContinuo
+                               * Referenced by: '<S123>/K'
+                               */
+  real_T LowPassFilterDiscreteorContin_o;
+                              /* Mask Parameter: LowPassFilterDiscreteorContin_o
+                               * Referenced by: '<S141>/K'
+                               */
+  real_T LowPassFilterDiscreteorContin_b;
+                              /* Mask Parameter: LowPassFilterDiscreteorContin_b
+                               * Referenced by: '<S140>/K'
+                               */
+  real_T LowPassFilterDiscreteorContin_d;
+                              /* Mask Parameter: LowPassFilterDiscreteorContin_d
+                               * Referenced by: '<S124>/Time constant'
+                               */
+  real_T LowPassFilterDiscreteorContin_m;
+                              /* Mask Parameter: LowPassFilterDiscreteorContin_m
+                               * Referenced by: '<S150>/Time constant'
+                               */
+  real_T LowPassFilterDiscreteorConti_b2;
+                              /* Mask Parameter: LowPassFilterDiscreteorConti_b2
+                               * Referenced by: '<S143>/Time constant'
+                               */
+  real_T CompareToConstant_const;     /* Mask Parameter: CompareToConstant_const
+                                       * Referenced by: '<S121>/Constant'
+                                       */
+  real_T CompareToConstant_const_o; /* Mask Parameter: CompareToConstant_const_o
+                                     * Referenced by: '<S127>/Constant'
+                                     */
+  real_T CompareToConstant1_const;   /* Mask Parameter: CompareToConstant1_const
+                                      * Referenced by: '<S132>/Constant'
+                                      */
+  real_T CompareToConstant5_const;   /* Mask Parameter: CompareToConstant5_const
+                                      * Referenced by: '<S136>/Constant'
+                                      */
+  real_T CompareToConstant_const_l; /* Mask Parameter: CompareToConstant_const_l
+                                     * Referenced by: '<S153>/Constant'
+                                     */
+  real_T CompareToConstant3_const;   /* Mask Parameter: CompareToConstant3_const
+                                      * Referenced by: '<S134>/Constant'
+                                      */
+  real_T CompareToConstant4_const;   /* Mask Parameter: CompareToConstant4_const
+                                      * Referenced by: '<S135>/Constant'
+                                      */
+  real_T CompareToConstant_const_c; /* Mask Parameter: CompareToConstant_const_c
+                                     * Referenced by: '<S146>/Constant'
+                                     */
+  real_T CompareToConstant2_const;   /* Mask Parameter: CompareToConstant2_const
+                                      * Referenced by: '<S133>/Constant'
+                                      */
+  real_T Balance_const;                /* Mask Parameter: Balance_const
+                                        * Referenced by: '<S131>/Constant'
+                                        */
+  real_T LowPassFilterDiscreteorConti_b0;
+                              /* Mask Parameter: LowPassFilterDiscreteorConti_b0
+                               * Referenced by: '<S124>/Constant'
+                               */
+  real_T LowPassFilterDiscreteorConti_mr;
+                              /* Mask Parameter: LowPassFilterDiscreteorConti_mr
+                               * Referenced by: '<S150>/Constant'
+                               */
+  real_T LowPassFilterDiscreteorConti_oe;
+                              /* Mask Parameter: LowPassFilterDiscreteorConti_oe
+                               * Referenced by: '<S143>/Constant'
+                               */
   uint32_T cartangle_channels;         /* Mask Parameter: cartangle_channels
                                         * Referenced by: '<Root>/cart angle'
                                         */
@@ -945,11 +1127,110 @@ struct P_Copy_of_Controller_T_ {
   uint32_T HILWriteAnalog_channels;   /* Mask Parameter: HILWriteAnalog_channels
                                        * Referenced by: '<Root>/HIL Write Analog'
                                        */
-  real_T Lykyhatkk1_Y0;                /* Expression: 0
-                                        * Referenced by: '<S53>/L*(y[k]-yhat[k|k-1])'
+  real_T u_out_Y0;                     /* Expression: [0]
+                                        * Referenced by: '<S1>/u_out'
                                         */
-  real_T deltax_Y0;                    /* Expression: 0
-                                        * Referenced by: '<S55>/deltax'
+  real_T Constant_Value[2];            /* Expression: [-pi 0]
+                                        * Referenced by: '<S1>/Constant'
+                                        */
+  real_T KalmanGainM_Value[12];        /* Expression: pInitialization.M
+                                        * Referenced by: '<S6>/KalmanGainM'
+                                        */
+  real_T C_Value[12];                  /* Expression: pInitialization.C
+                                        * Referenced by: '<S5>/C'
+                                        */
+  real_T X0_Value[6];                  /* Expression: pInitialization.X0
+                                        * Referenced by: '<S5>/X0'
+                                        */
+  real_T A_Value[36];                  /* Expression: pInitialization.A
+                                        * Referenced by: '<S5>/A'
+                                        */
+  real_T B_Value[6];                   /* Expression: pInitialization.B
+                                        * Referenced by: '<S5>/B'
+                                        */
+  real_T CovarianceZ_Value[36];        /* Expression: pInitialization.Z
+                                        * Referenced by: '<S6>/CovarianceZ'
+                                        */
+  real_T KalmanGainL_Value[12];        /* Expression: pInitialization.L
+                                        * Referenced by: '<S6>/KalmanGainL'
+                                        */
+  real_T D_Value[2];                   /* Expression: pInitialization.D
+                                        * Referenced by: '<S5>/D'
+                                        */
+  real_T u_out_Y0_h;                   /* Expression: [0]
+                                        * Referenced by: '<S2>/u_out'
+                                        */
+  real_T Constant_Value_e;             /* Expression: pi
+                                        * Referenced by: '<S2>/Constant'
+                                        */
+  real_T Constant1_Value;              /* Expression: 2*pi
+                                        * Referenced by: '<S2>/Constant1'
+                                        */
+  real_T KalmanGainM_Value_d[12];      /* Expression: pInitialization.M
+                                        * Referenced by: '<S62>/KalmanGainM'
+                                        */
+  real_T C_Value_h[12];                /* Expression: pInitialization.C
+                                        * Referenced by: '<S60>/C'
+                                        */
+  real_T X0_Value_j[6];                /* Expression: pInitialization.X0
+                                        * Referenced by: '<S60>/X0'
+                                        */
+  real_T A_Value_j[36];                /* Expression: pInitialization.A
+                                        * Referenced by: '<S60>/A'
+                                        */
+  real_T B_Value_o[6];                 /* Expression: pInitialization.B
+                                        * Referenced by: '<S60>/B'
+                                        */
+  real_T CovarianceZ_Value_e[36];      /* Expression: pInitialization.Z
+                                        * Referenced by: '<S62>/CovarianceZ'
+                                        */
+  real_T KalmanGainL_Value_d[12];      /* Expression: pInitialization.L
+                                        * Referenced by: '<S62>/KalmanGainL'
+                                        */
+  real_T D_Value_d[2];                 /* Expression: pInitialization.D
+                                        * Referenced by: '<S60>/D'
+                                        */
+  real_T u_out_Y0_k;                   /* Expression: [0]
+                                        * Referenced by: '<S3>/u_out'
+                                        */
+  real_T Constant_Value_n;             /* Expression: 0
+                                        * Referenced by: '<S128>/Constant'
+                                        */
+  real_T Constant_Value_m;             /* Expression: pi
+                                        * Referenced by: '<S3>/Constant'
+                                        */
+  real_T Constant1_Value_n;            /* Expression: 2*pi
+                                        * Referenced by: '<S3>/Constant1'
+                                        */
+  real_T TSamp_WtEt;                   /* Computed Parameter: TSamp_WtEt
+                                        * Referenced by: '<S122>/TSamp'
+                                        */
+  real_T Gain_Gain;                    /* Expression: -10
+                                        * Referenced by: '<S3>/Gain'
+                                        */
+  real_T Integrator_gainval;           /* Computed Parameter: Integrator_gainval
+                                        * Referenced by: '<S130>/Integrator'
+                                        */
+  real_T Integrator_UpperSat;          /* Expression: antiwindupUpperLimit
+                                        * Referenced by: '<S130>/Integrator'
+                                        */
+  real_T Integrator_LowerSat;          /* Expression: antiwindupLowerLimit
+                                        * Referenced by: '<S130>/Integrator'
+                                        */
+  real_T Saturation_UpperSat;          /* Expression: windupUpperLimit
+                                        * Referenced by: '<S130>/Saturation'
+                                        */
+  real_T Saturation_LowerSat;          /* Expression: windupLowerLimit
+                                        * Referenced by: '<S130>/Saturation'
+                                        */
+  real_T Gain1_Gain;                   /* Expression: -0.8
+                                        * Referenced by: '<S3>/Gain1'
+                                        */
+  real_T Constant_Value_j;             /* Expression: 0
+                                        * Referenced by: '<S147>/Constant'
+                                        */
+  real_T Constant_Value_ew;            /* Expression: 0
+                                        * Referenced by: '<S154>/Constant'
                                         */
   real_T HILInitialize_OOTerminate;/* Expression: set_other_outputs_at_terminate
                                     * Referenced by: '<Root>/HIL Initialize'
@@ -996,41 +1277,65 @@ struct P_Copy_of_Controller_T_ {
   real_T HILInitialize_POInitial;      /* Expression: initial_pwm_outputs
                                         * Referenced by: '<Root>/HIL Initialize'
                                         */
-  real_T KalmanGainM_Value[14];        /* Expression: pInitialization.M
-                                        * Referenced by: '<S2>/KalmanGainM'
+  real_T Delay_InitialCondition;       /* Expression: 0.0
+                                        * Referenced by: '<Root>/Delay'
                                         */
-  real_T C_Value[14];                  /* Expression: pInitialization.C
-                                        * Referenced by: '<S1>/C'
+  real_T Saturation_UpperSat_k;        /* Expression: 5
+                                        * Referenced by: '<Root>/Saturation'
                                         */
-  real_T Gain_Gain;                    /* Expression: 1/650
+  real_T Saturation_LowerSat_k;        /* Expression: -5
+                                        * Referenced by: '<Root>/Saturation'
+                                        */
+  real_T Gain_Gain_k;                  /* Expression: 1/650
                                         * Referenced by: '<Root>/Gain'
+                                        */
+  real_T Constant_Value_h;             /* Expression: 2*pi
+                                        * Referenced by: '<Root>/Constant'
                                         */
   real_T Gain2_Gain;                   /* Expression: 0.1524/5000
                                         * Referenced by: '<Root>/Gain2'
                                         */
-  real_T X0_Value[7];                  /* Expression: pInitialization.X0
-                                        * Referenced by: '<S1>/X0'
+  real_T Constant2_Value;              /* Expression: -pi
+                                        * Referenced by: '<S4>/Constant2'
                                         */
-  real_T Saturation_UpperSat;          /* Expression: 5
-                                        * Referenced by: '<Root>/Saturation'
+  real_T TSamp_WtEt_n;                 /* Computed Parameter: TSamp_WtEt_n
+                                        * Referenced by: '<S139>/TSamp'
                                         */
-  real_T Saturation_LowerSat;          /* Expression: -5
-                                        * Referenced by: '<Root>/Saturation'
+  real_T Integrator_gainval_m;       /* Computed Parameter: Integrator_gainval_m
+                                      * Referenced by: '<S156>/Integrator'
+                                      */
+  real_T Integrator_UpperSat_p;        /* Expression: antiwindupUpperLimit
+                                        * Referenced by: '<S156>/Integrator'
                                         */
-  real_T A_Value[49];                  /* Expression: pInitialization.A
-                                        * Referenced by: '<S1>/A'
+  real_T Integrator_LowerSat_l;        /* Expression: antiwindupLowerLimit
+                                        * Referenced by: '<S156>/Integrator'
                                         */
-  real_T B_Value[7];                   /* Expression: pInitialization.B
-                                        * Referenced by: '<S1>/B'
+  real_T Saturation_UpperSat_m;        /* Expression: windupUpperLimit
+                                        * Referenced by: '<S156>/Saturation'
                                         */
-  real_T CovarianceZ_Value[49];        /* Expression: pInitialization.Z
-                                        * Referenced by: '<S2>/CovarianceZ'
+  real_T Saturation_LowerSat_j;        /* Expression: windupLowerLimit
+                                        * Referenced by: '<S156>/Saturation'
                                         */
-  real_T KalmanGainL_Value[14];        /* Expression: pInitialization.L
-                                        * Referenced by: '<S2>/KalmanGainL'
+  real_T TSamp_WtEt_k;                 /* Computed Parameter: TSamp_WtEt_k
+                                        * Referenced by: '<S138>/TSamp'
                                         */
-  real_T D_Value[2];                   /* Expression: pInitialization.D
-                                        * Referenced by: '<S1>/D'
+  real_T Integrator_gainval_o;       /* Computed Parameter: Integrator_gainval_o
+                                      * Referenced by: '<S149>/Integrator'
+                                      */
+  real_T Integrator_UpperSat_i;        /* Expression: antiwindupUpperLimit
+                                        * Referenced by: '<S149>/Integrator'
+                                        */
+  real_T Integrator_LowerSat_k;        /* Expression: antiwindupLowerLimit
+                                        * Referenced by: '<S149>/Integrator'
+                                        */
+  real_T Saturation_UpperSat_c;        /* Expression: windupUpperLimit
+                                        * Referenced by: '<S149>/Saturation'
+                                        */
+  real_T Saturation_LowerSat_jk;       /* Expression: windupLowerLimit
+                                        * Referenced by: '<S149>/Saturation'
+                                        */
+  real_T Constant1_Value_k;            /* Expression: 1
+                                        * Referenced by: '<S4>/Constant1'
                                         */
   real_T Step_Time;                    /* Expression: 0.001
                                         * Referenced by: '<Root>/Step'
@@ -1074,6 +1379,24 @@ struct P_Copy_of_Controller_T_ {
                                /* Computed Parameter: HILInitialize_EIQuadrature
                                 * Referenced by: '<Root>/HIL Initialize'
                                 */
+  boolean_T Enable_Value;              /* Expression: true()
+                                        * Referenced by: '<S5>/Enable'
+                                        */
+  boolean_T isSqrtUsed_Value;          /* Expression: pInitialization.isSqrtUsed
+                                        * Referenced by: '<S53>/isSqrtUsed'
+                                        */
+  boolean_T Enable_Value_d;            /* Expression: true()
+                                        * Referenced by: '<S60>/Enable'
+                                        */
+  boolean_T isSqrtUsed_Value_f;        /* Expression: pInitialization.isSqrtUsed
+                                        * Referenced by: '<S109>/isSqrtUsed'
+                                        */
+  boolean_T Q_Y0;                      /* Computed Parameter: Q_Y0
+                                        * Referenced by: '<S142>/Q'
+                                        */
+  boolean_T Q_Y0_b;                    /* Computed Parameter: Q_Y0_b
+                                        * Referenced by: '<S142>/!Q'
+                                        */
   boolean_T HILInitialize_Active;    /* Computed Parameter: HILInitialize_Active
                                       * Referenced by: '<Root>/HIL Initialize'
                                       */
@@ -1189,15 +1512,17 @@ struct P_Copy_of_Controller_T_ {
   boolean_T cartpos_Active;            /* Computed Parameter: cartpos_Active
                                         * Referenced by: '<Root>/cart pos'
                                         */
-  boolean_T Enable_Value;              /* Expression: true()
-                                        * Referenced by: '<S1>/Enable'
-                                        */
+  boolean_T Delay_InitialCondition_e;
+                                 /* Computed Parameter: Delay_InitialCondition_e
+                                  * Referenced by: '<S4>/Delay'
+                                  */
   boolean_T HILWriteAnalog_Active;  /* Computed Parameter: HILWriteAnalog_Active
                                      * Referenced by: '<Root>/HIL Write Analog'
                                      */
-  boolean_T isSqrtUsed_Value;          /* Expression: pInitialization.isSqrtUsed
-                                        * Referenced by: '<S51>/isSqrtUsed'
-                                        */
+  P_EnabledSubsystem_Copy_of_Co_T EnabledSubsystem_p;/* '<S87>/Enabled Subsystem' */
+  P_MeasurementUpdate_Copy_of_C_T MeasurementUpdate_p;/* '<S81>/MeasurementUpdate' */
+  P_EnabledSubsystem_Copy_of_Co_T EnabledSubsystem;/* '<S31>/Enabled Subsystem' */
+  P_MeasurementUpdate_Copy_of_C_T MeasurementUpdate;/* '<S25>/MeasurementUpdate' */
 };
 
 /* Real-time Model Data Structure */
@@ -1309,6 +1634,9 @@ extern B_Copy_of_Controller_T Copy_of_Controller_B;
 /* Block states (default storage) */
 extern DW_Copy_of_Controller_T Copy_of_Controller_DW;
 
+/* Zero-crossing (trigger) state */
+extern PrevZCX_Copy_of_Controller_T Copy_of_Controller_PrevZCX;
+
 /* Model entry point functions */
 extern void Copy_of_Controller_initialize(void);
 extern void Copy_of_Controller_output(void);
@@ -1345,60 +1673,161 @@ extern RT_MODEL_Copy_of_Controller_T *const Copy_of_Controller_M;
  * Here is the system hierarchy for this model
  *
  * '<Root>' : 'Copy_of_Controller'
- * '<S1>'   : 'Copy_of_Controller/Kalman Filter'
- * '<S2>'   : 'Copy_of_Controller/Kalman Filter/CalculatePL'
- * '<S3>'   : 'Copy_of_Controller/Kalman Filter/CalculateYhat'
- * '<S4>'   : 'Copy_of_Controller/Kalman Filter/CovarianceOutputConfigurator'
- * '<S5>'   : 'Copy_of_Controller/Kalman Filter/DataTypeConversionA'
- * '<S6>'   : 'Copy_of_Controller/Kalman Filter/DataTypeConversionB'
- * '<S7>'   : 'Copy_of_Controller/Kalman Filter/DataTypeConversionC'
- * '<S8>'   : 'Copy_of_Controller/Kalman Filter/DataTypeConversionD'
- * '<S9>'   : 'Copy_of_Controller/Kalman Filter/DataTypeConversionEnable'
- * '<S10>'  : 'Copy_of_Controller/Kalman Filter/DataTypeConversionG'
- * '<S11>'  : 'Copy_of_Controller/Kalman Filter/DataTypeConversionH'
- * '<S12>'  : 'Copy_of_Controller/Kalman Filter/DataTypeConversionN'
- * '<S13>'  : 'Copy_of_Controller/Kalman Filter/DataTypeConversionP'
- * '<S14>'  : 'Copy_of_Controller/Kalman Filter/DataTypeConversionP0'
- * '<S15>'  : 'Copy_of_Controller/Kalman Filter/DataTypeConversionQ'
- * '<S16>'  : 'Copy_of_Controller/Kalman Filter/DataTypeConversionR'
- * '<S17>'  : 'Copy_of_Controller/Kalman Filter/DataTypeConversionReset'
- * '<S18>'  : 'Copy_of_Controller/Kalman Filter/DataTypeConversionX'
- * '<S19>'  : 'Copy_of_Controller/Kalman Filter/DataTypeConversionX0'
- * '<S20>'  : 'Copy_of_Controller/Kalman Filter/DataTypeConversionu'
- * '<S21>'  : 'Copy_of_Controller/Kalman Filter/MemoryP'
- * '<S22>'  : 'Copy_of_Controller/Kalman Filter/Observer'
- * '<S23>'  : 'Copy_of_Controller/Kalman Filter/ReducedQRN'
- * '<S24>'  : 'Copy_of_Controller/Kalman Filter/Reset'
- * '<S25>'  : 'Copy_of_Controller/Kalman Filter/Reshapeyhat'
- * '<S26>'  : 'Copy_of_Controller/Kalman Filter/ScalarExpansionP0'
- * '<S27>'  : 'Copy_of_Controller/Kalman Filter/ScalarExpansionQ'
- * '<S28>'  : 'Copy_of_Controller/Kalman Filter/ScalarExpansionR'
- * '<S29>'  : 'Copy_of_Controller/Kalman Filter/UseCurrentEstimator'
- * '<S30>'  : 'Copy_of_Controller/Kalman Filter/checkA'
- * '<S31>'  : 'Copy_of_Controller/Kalman Filter/checkB'
- * '<S32>'  : 'Copy_of_Controller/Kalman Filter/checkC'
- * '<S33>'  : 'Copy_of_Controller/Kalman Filter/checkD'
- * '<S34>'  : 'Copy_of_Controller/Kalman Filter/checkEnable'
- * '<S35>'  : 'Copy_of_Controller/Kalman Filter/checkG'
- * '<S36>'  : 'Copy_of_Controller/Kalman Filter/checkH'
- * '<S37>'  : 'Copy_of_Controller/Kalman Filter/checkN'
- * '<S38>'  : 'Copy_of_Controller/Kalman Filter/checkP0'
- * '<S39>'  : 'Copy_of_Controller/Kalman Filter/checkQ'
- * '<S40>'  : 'Copy_of_Controller/Kalman Filter/checkR'
- * '<S41>'  : 'Copy_of_Controller/Kalman Filter/checkReset'
- * '<S42>'  : 'Copy_of_Controller/Kalman Filter/checkX0'
- * '<S43>'  : 'Copy_of_Controller/Kalman Filter/checku'
- * '<S44>'  : 'Copy_of_Controller/Kalman Filter/checky'
- * '<S45>'  : 'Copy_of_Controller/Kalman Filter/CalculatePL/DataTypeConversionL'
- * '<S46>'  : 'Copy_of_Controller/Kalman Filter/CalculatePL/DataTypeConversionM'
- * '<S47>'  : 'Copy_of_Controller/Kalman Filter/CalculatePL/DataTypeConversionP'
- * '<S48>'  : 'Copy_of_Controller/Kalman Filter/CalculatePL/DataTypeConversionZ'
- * '<S49>'  : 'Copy_of_Controller/Kalman Filter/CalculatePL/Ground'
- * '<S50>'  : 'Copy_of_Controller/Kalman Filter/CalculateYhat/Ground'
- * '<S51>'  : 'Copy_of_Controller/Kalman Filter/CovarianceOutputConfigurator/decideOutput'
- * '<S52>'  : 'Copy_of_Controller/Kalman Filter/CovarianceOutputConfigurator/decideOutput/SqrtUsedFcn'
- * '<S53>'  : 'Copy_of_Controller/Kalman Filter/Observer/MeasurementUpdate'
- * '<S54>'  : 'Copy_of_Controller/Kalman Filter/ReducedQRN/Ground'
- * '<S55>'  : 'Copy_of_Controller/Kalman Filter/UseCurrentEstimator/Enabled Subsystem'
+ * '<S1>'   : 'Copy_of_Controller/balancing'
+ * '<S2>'   : 'Copy_of_Controller/down'
+ * '<S3>'   : 'Copy_of_Controller/swing'
+ * '<S4>'   : 'Copy_of_Controller/switching'
+ * '<S5>'   : 'Copy_of_Controller/balancing/Kalman Filter'
+ * '<S6>'   : 'Copy_of_Controller/balancing/Kalman Filter/CalculatePL'
+ * '<S7>'   : 'Copy_of_Controller/balancing/Kalman Filter/CalculateYhat'
+ * '<S8>'   : 'Copy_of_Controller/balancing/Kalman Filter/CovarianceOutputConfigurator'
+ * '<S9>'   : 'Copy_of_Controller/balancing/Kalman Filter/DataTypeConversionA'
+ * '<S10>'  : 'Copy_of_Controller/balancing/Kalman Filter/DataTypeConversionB'
+ * '<S11>'  : 'Copy_of_Controller/balancing/Kalman Filter/DataTypeConversionC'
+ * '<S12>'  : 'Copy_of_Controller/balancing/Kalman Filter/DataTypeConversionD'
+ * '<S13>'  : 'Copy_of_Controller/balancing/Kalman Filter/DataTypeConversionEnable'
+ * '<S14>'  : 'Copy_of_Controller/balancing/Kalman Filter/DataTypeConversionG'
+ * '<S15>'  : 'Copy_of_Controller/balancing/Kalman Filter/DataTypeConversionH'
+ * '<S16>'  : 'Copy_of_Controller/balancing/Kalman Filter/DataTypeConversionN'
+ * '<S17>'  : 'Copy_of_Controller/balancing/Kalman Filter/DataTypeConversionP'
+ * '<S18>'  : 'Copy_of_Controller/balancing/Kalman Filter/DataTypeConversionP0'
+ * '<S19>'  : 'Copy_of_Controller/balancing/Kalman Filter/DataTypeConversionQ'
+ * '<S20>'  : 'Copy_of_Controller/balancing/Kalman Filter/DataTypeConversionR'
+ * '<S21>'  : 'Copy_of_Controller/balancing/Kalman Filter/DataTypeConversionX'
+ * '<S22>'  : 'Copy_of_Controller/balancing/Kalman Filter/DataTypeConversionX0'
+ * '<S23>'  : 'Copy_of_Controller/balancing/Kalman Filter/DataTypeConversionu'
+ * '<S24>'  : 'Copy_of_Controller/balancing/Kalman Filter/MemoryP'
+ * '<S25>'  : 'Copy_of_Controller/balancing/Kalman Filter/Observer'
+ * '<S26>'  : 'Copy_of_Controller/balancing/Kalman Filter/ReducedQRN'
+ * '<S27>'  : 'Copy_of_Controller/balancing/Kalman Filter/Reshapeyhat'
+ * '<S28>'  : 'Copy_of_Controller/balancing/Kalman Filter/ScalarExpansionP0'
+ * '<S29>'  : 'Copy_of_Controller/balancing/Kalman Filter/ScalarExpansionQ'
+ * '<S30>'  : 'Copy_of_Controller/balancing/Kalman Filter/ScalarExpansionR'
+ * '<S31>'  : 'Copy_of_Controller/balancing/Kalman Filter/UseCurrentEstimator'
+ * '<S32>'  : 'Copy_of_Controller/balancing/Kalman Filter/checkA'
+ * '<S33>'  : 'Copy_of_Controller/balancing/Kalman Filter/checkB'
+ * '<S34>'  : 'Copy_of_Controller/balancing/Kalman Filter/checkC'
+ * '<S35>'  : 'Copy_of_Controller/balancing/Kalman Filter/checkD'
+ * '<S36>'  : 'Copy_of_Controller/balancing/Kalman Filter/checkEnable'
+ * '<S37>'  : 'Copy_of_Controller/balancing/Kalman Filter/checkG'
+ * '<S38>'  : 'Copy_of_Controller/balancing/Kalman Filter/checkH'
+ * '<S39>'  : 'Copy_of_Controller/balancing/Kalman Filter/checkN'
+ * '<S40>'  : 'Copy_of_Controller/balancing/Kalman Filter/checkP0'
+ * '<S41>'  : 'Copy_of_Controller/balancing/Kalman Filter/checkQ'
+ * '<S42>'  : 'Copy_of_Controller/balancing/Kalman Filter/checkR'
+ * '<S43>'  : 'Copy_of_Controller/balancing/Kalman Filter/checkReset'
+ * '<S44>'  : 'Copy_of_Controller/balancing/Kalman Filter/checkX0'
+ * '<S45>'  : 'Copy_of_Controller/balancing/Kalman Filter/checku'
+ * '<S46>'  : 'Copy_of_Controller/balancing/Kalman Filter/checky'
+ * '<S47>'  : 'Copy_of_Controller/balancing/Kalman Filter/CalculatePL/DataTypeConversionL'
+ * '<S48>'  : 'Copy_of_Controller/balancing/Kalman Filter/CalculatePL/DataTypeConversionM'
+ * '<S49>'  : 'Copy_of_Controller/balancing/Kalman Filter/CalculatePL/DataTypeConversionP'
+ * '<S50>'  : 'Copy_of_Controller/balancing/Kalman Filter/CalculatePL/DataTypeConversionZ'
+ * '<S51>'  : 'Copy_of_Controller/balancing/Kalman Filter/CalculatePL/Ground'
+ * '<S52>'  : 'Copy_of_Controller/balancing/Kalman Filter/CalculateYhat/Ground'
+ * '<S53>'  : 'Copy_of_Controller/balancing/Kalman Filter/CovarianceOutputConfigurator/decideOutput'
+ * '<S54>'  : 'Copy_of_Controller/balancing/Kalman Filter/CovarianceOutputConfigurator/decideOutput/SqrtUsedFcn'
+ * '<S55>'  : 'Copy_of_Controller/balancing/Kalman Filter/Observer/MeasurementUpdate'
+ * '<S56>'  : 'Copy_of_Controller/balancing/Kalman Filter/ReducedQRN/Ground'
+ * '<S57>'  : 'Copy_of_Controller/balancing/Kalman Filter/UseCurrentEstimator/Enabled Subsystem'
+ * '<S58>'  : 'Copy_of_Controller/down/Compare To Constant'
+ * '<S59>'  : 'Copy_of_Controller/down/Discrete Derivative'
+ * '<S60>'  : 'Copy_of_Controller/down/Kalman Filter'
+ * '<S61>'  : 'Copy_of_Controller/down/Low-Pass Filter (Discrete or Continuous)'
+ * '<S62>'  : 'Copy_of_Controller/down/Kalman Filter/CalculatePL'
+ * '<S63>'  : 'Copy_of_Controller/down/Kalman Filter/CalculateYhat'
+ * '<S64>'  : 'Copy_of_Controller/down/Kalman Filter/CovarianceOutputConfigurator'
+ * '<S65>'  : 'Copy_of_Controller/down/Kalman Filter/DataTypeConversionA'
+ * '<S66>'  : 'Copy_of_Controller/down/Kalman Filter/DataTypeConversionB'
+ * '<S67>'  : 'Copy_of_Controller/down/Kalman Filter/DataTypeConversionC'
+ * '<S68>'  : 'Copy_of_Controller/down/Kalman Filter/DataTypeConversionD'
+ * '<S69>'  : 'Copy_of_Controller/down/Kalman Filter/DataTypeConversionEnable'
+ * '<S70>'  : 'Copy_of_Controller/down/Kalman Filter/DataTypeConversionG'
+ * '<S71>'  : 'Copy_of_Controller/down/Kalman Filter/DataTypeConversionH'
+ * '<S72>'  : 'Copy_of_Controller/down/Kalman Filter/DataTypeConversionN'
+ * '<S73>'  : 'Copy_of_Controller/down/Kalman Filter/DataTypeConversionP'
+ * '<S74>'  : 'Copy_of_Controller/down/Kalman Filter/DataTypeConversionP0'
+ * '<S75>'  : 'Copy_of_Controller/down/Kalman Filter/DataTypeConversionQ'
+ * '<S76>'  : 'Copy_of_Controller/down/Kalman Filter/DataTypeConversionR'
+ * '<S77>'  : 'Copy_of_Controller/down/Kalman Filter/DataTypeConversionX'
+ * '<S78>'  : 'Copy_of_Controller/down/Kalman Filter/DataTypeConversionX0'
+ * '<S79>'  : 'Copy_of_Controller/down/Kalman Filter/DataTypeConversionu'
+ * '<S80>'  : 'Copy_of_Controller/down/Kalman Filter/MemoryP'
+ * '<S81>'  : 'Copy_of_Controller/down/Kalman Filter/Observer'
+ * '<S82>'  : 'Copy_of_Controller/down/Kalman Filter/ReducedQRN'
+ * '<S83>'  : 'Copy_of_Controller/down/Kalman Filter/Reshapeyhat'
+ * '<S84>'  : 'Copy_of_Controller/down/Kalman Filter/ScalarExpansionP0'
+ * '<S85>'  : 'Copy_of_Controller/down/Kalman Filter/ScalarExpansionQ'
+ * '<S86>'  : 'Copy_of_Controller/down/Kalman Filter/ScalarExpansionR'
+ * '<S87>'  : 'Copy_of_Controller/down/Kalman Filter/UseCurrentEstimator'
+ * '<S88>'  : 'Copy_of_Controller/down/Kalman Filter/checkA'
+ * '<S89>'  : 'Copy_of_Controller/down/Kalman Filter/checkB'
+ * '<S90>'  : 'Copy_of_Controller/down/Kalman Filter/checkC'
+ * '<S91>'  : 'Copy_of_Controller/down/Kalman Filter/checkD'
+ * '<S92>'  : 'Copy_of_Controller/down/Kalman Filter/checkEnable'
+ * '<S93>'  : 'Copy_of_Controller/down/Kalman Filter/checkG'
+ * '<S94>'  : 'Copy_of_Controller/down/Kalman Filter/checkH'
+ * '<S95>'  : 'Copy_of_Controller/down/Kalman Filter/checkN'
+ * '<S96>'  : 'Copy_of_Controller/down/Kalman Filter/checkP0'
+ * '<S97>'  : 'Copy_of_Controller/down/Kalman Filter/checkQ'
+ * '<S98>'  : 'Copy_of_Controller/down/Kalman Filter/checkR'
+ * '<S99>'  : 'Copy_of_Controller/down/Kalman Filter/checkReset'
+ * '<S100>' : 'Copy_of_Controller/down/Kalman Filter/checkX0'
+ * '<S101>' : 'Copy_of_Controller/down/Kalman Filter/checku'
+ * '<S102>' : 'Copy_of_Controller/down/Kalman Filter/checky'
+ * '<S103>' : 'Copy_of_Controller/down/Kalman Filter/CalculatePL/DataTypeConversionL'
+ * '<S104>' : 'Copy_of_Controller/down/Kalman Filter/CalculatePL/DataTypeConversionM'
+ * '<S105>' : 'Copy_of_Controller/down/Kalman Filter/CalculatePL/DataTypeConversionP'
+ * '<S106>' : 'Copy_of_Controller/down/Kalman Filter/CalculatePL/DataTypeConversionZ'
+ * '<S107>' : 'Copy_of_Controller/down/Kalman Filter/CalculatePL/Ground'
+ * '<S108>' : 'Copy_of_Controller/down/Kalman Filter/CalculateYhat/Ground'
+ * '<S109>' : 'Copy_of_Controller/down/Kalman Filter/CovarianceOutputConfigurator/decideOutput'
+ * '<S110>' : 'Copy_of_Controller/down/Kalman Filter/CovarianceOutputConfigurator/decideOutput/SqrtUsedFcn'
+ * '<S111>' : 'Copy_of_Controller/down/Kalman Filter/Observer/MeasurementUpdate'
+ * '<S112>' : 'Copy_of_Controller/down/Kalman Filter/ReducedQRN/Ground'
+ * '<S113>' : 'Copy_of_Controller/down/Kalman Filter/UseCurrentEstimator/Enabled Subsystem'
+ * '<S114>' : 'Copy_of_Controller/down/Low-Pass Filter (Discrete or Continuous)/Enable//disable time constant'
+ * '<S115>' : 'Copy_of_Controller/down/Low-Pass Filter (Discrete or Continuous)/Initialization'
+ * '<S116>' : 'Copy_of_Controller/down/Low-Pass Filter (Discrete or Continuous)/Integrator (Discrete or Continuous)'
+ * '<S117>' : 'Copy_of_Controller/down/Low-Pass Filter (Discrete or Continuous)/Enable//disable time constant/Compare To Constant'
+ * '<S118>' : 'Copy_of_Controller/down/Low-Pass Filter (Discrete or Continuous)/Enable//disable time constant/Compare To Zero'
+ * '<S119>' : 'Copy_of_Controller/down/Low-Pass Filter (Discrete or Continuous)/Initialization/Init_u'
+ * '<S120>' : 'Copy_of_Controller/down/Low-Pass Filter (Discrete or Continuous)/Integrator (Discrete or Continuous)/Discrete'
+ * '<S121>' : 'Copy_of_Controller/swing/Compare To Constant'
+ * '<S122>' : 'Copy_of_Controller/swing/Discrete Derivative'
+ * '<S123>' : 'Copy_of_Controller/swing/Low-Pass Filter (Discrete or Continuous)'
+ * '<S124>' : 'Copy_of_Controller/swing/Low-Pass Filter (Discrete or Continuous)/Enable//disable time constant'
+ * '<S125>' : 'Copy_of_Controller/swing/Low-Pass Filter (Discrete or Continuous)/Initialization'
+ * '<S126>' : 'Copy_of_Controller/swing/Low-Pass Filter (Discrete or Continuous)/Integrator (Discrete or Continuous)'
+ * '<S127>' : 'Copy_of_Controller/swing/Low-Pass Filter (Discrete or Continuous)/Enable//disable time constant/Compare To Constant'
+ * '<S128>' : 'Copy_of_Controller/swing/Low-Pass Filter (Discrete or Continuous)/Enable//disable time constant/Compare To Zero'
+ * '<S129>' : 'Copy_of_Controller/swing/Low-Pass Filter (Discrete or Continuous)/Initialization/Init_u'
+ * '<S130>' : 'Copy_of_Controller/swing/Low-Pass Filter (Discrete or Continuous)/Integrator (Discrete or Continuous)/Discrete'
+ * '<S131>' : 'Copy_of_Controller/switching/Balance'
+ * '<S132>' : 'Copy_of_Controller/switching/Compare To Constant1'
+ * '<S133>' : 'Copy_of_Controller/switching/Compare To Constant2'
+ * '<S134>' : 'Copy_of_Controller/switching/Compare To Constant3'
+ * '<S135>' : 'Copy_of_Controller/switching/Compare To Constant4'
+ * '<S136>' : 'Copy_of_Controller/switching/Compare To Constant5'
+ * '<S137>' : 'Copy_of_Controller/switching/D Latch'
+ * '<S138>' : 'Copy_of_Controller/switching/Discrete Derivative'
+ * '<S139>' : 'Copy_of_Controller/switching/Discrete Derivative1'
+ * '<S140>' : 'Copy_of_Controller/switching/Low-Pass Filter (Discrete or Continuous)'
+ * '<S141>' : 'Copy_of_Controller/switching/Low-Pass Filter (Discrete or Continuous)1'
+ * '<S142>' : 'Copy_of_Controller/switching/D Latch/D Latch'
+ * '<S143>' : 'Copy_of_Controller/switching/Low-Pass Filter (Discrete or Continuous)/Enable//disable time constant'
+ * '<S144>' : 'Copy_of_Controller/switching/Low-Pass Filter (Discrete or Continuous)/Initialization'
+ * '<S145>' : 'Copy_of_Controller/switching/Low-Pass Filter (Discrete or Continuous)/Integrator (Discrete or Continuous)'
+ * '<S146>' : 'Copy_of_Controller/switching/Low-Pass Filter (Discrete or Continuous)/Enable//disable time constant/Compare To Constant'
+ * '<S147>' : 'Copy_of_Controller/switching/Low-Pass Filter (Discrete or Continuous)/Enable//disable time constant/Compare To Zero'
+ * '<S148>' : 'Copy_of_Controller/switching/Low-Pass Filter (Discrete or Continuous)/Initialization/Init_u'
+ * '<S149>' : 'Copy_of_Controller/switching/Low-Pass Filter (Discrete or Continuous)/Integrator (Discrete or Continuous)/Discrete'
+ * '<S150>' : 'Copy_of_Controller/switching/Low-Pass Filter (Discrete or Continuous)1/Enable//disable time constant'
+ * '<S151>' : 'Copy_of_Controller/switching/Low-Pass Filter (Discrete or Continuous)1/Initialization'
+ * '<S152>' : 'Copy_of_Controller/switching/Low-Pass Filter (Discrete or Continuous)1/Integrator (Discrete or Continuous)'
+ * '<S153>' : 'Copy_of_Controller/switching/Low-Pass Filter (Discrete or Continuous)1/Enable//disable time constant/Compare To Constant'
+ * '<S154>' : 'Copy_of_Controller/switching/Low-Pass Filter (Discrete or Continuous)1/Enable//disable time constant/Compare To Zero'
+ * '<S155>' : 'Copy_of_Controller/switching/Low-Pass Filter (Discrete or Continuous)1/Initialization/Init_u'
+ * '<S156>' : 'Copy_of_Controller/switching/Low-Pass Filter (Discrete or Continuous)1/Integrator (Discrete or Continuous)/Discrete'
  */
 #endif                                 /* RTW_HEADER_Copy_of_Controller_h_ */

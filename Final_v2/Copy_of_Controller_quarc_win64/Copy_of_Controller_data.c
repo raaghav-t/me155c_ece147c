@@ -7,9 +7,9 @@
  *
  * Code generation for model "Copy_of_Controller".
  *
- * Model version              : 1.17
+ * Model version              : 1.27
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Thu May 29 16:33:10 2025
+ * C source code generated on : Fri May 30 17:35:17 2025
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -23,11 +23,126 @@
 /* Block parameters (default storage) */
 P_Copy_of_Controller_T Copy_of_Controller_P = {
   /* Variable: K
-   * Referenced by: '<Root>/Gain3'
+   * Referenced by: '<S1>/Gain3'
    */
-  { 11.076115771988857, 2.9474196853223695, 0.698181733944844,
-    43.886494335293818, 66.682239686208987, 47.176051442455318,
-    3.5359262843200621 },
+  { 61.673881547355172, 42.429905201963031, 39.017078618349579,
+    -0.090621953305622574, -450.54571555173851, -101.28481157448276 },
+
+  /* Variable: K_down
+   * Referenced by: '<S2>/Gain3'
+   */
+  { 32.450213562237977, 22.798214126770603, 4.5794372411157882,
+    0.029216435584111515, 145.05773005128574, 22.648268881779654 },
+
+  /* Mask Parameter: DiscreteDerivative_ICPrevScaled
+   * Referenced by: '<S122>/UD'
+   */
+  0.0,
+
+  /* Mask Parameter: DiscreteDerivative1_ICPrevScale
+   * Referenced by: '<S139>/UD'
+   */
+  0.0,
+
+  /* Mask Parameter: DiscreteDerivative_ICPrevScal_f
+   * Referenced by: '<S138>/UD'
+   */
+  0.0,
+
+  /* Mask Parameter: LowPassFilterDiscreteorContinuo
+   * Referenced by: '<S123>/K'
+   */
+  1.0,
+
+  /* Mask Parameter: LowPassFilterDiscreteorContin_o
+   * Referenced by: '<S141>/K'
+   */
+  1.0,
+
+  /* Mask Parameter: LowPassFilterDiscreteorContin_b
+   * Referenced by: '<S140>/K'
+   */
+  1.0,
+
+  /* Mask Parameter: LowPassFilterDiscreteorContin_d
+   * Referenced by: '<S124>/Time constant'
+   */
+  0.01,
+
+  /* Mask Parameter: LowPassFilterDiscreteorContin_m
+   * Referenced by: '<S150>/Time constant'
+   */
+  0.01,
+
+  /* Mask Parameter: LowPassFilterDiscreteorConti_b2
+   * Referenced by: '<S143>/Time constant'
+   */
+  0.01,
+
+  /* Mask Parameter: CompareToConstant_const
+   * Referenced by: '<S121>/Constant'
+   */
+  0.62831853071795862,
+
+  /* Mask Parameter: CompareToConstant_const_o
+   * Referenced by: '<S127>/Constant'
+   */
+  2.0,
+
+  /* Mask Parameter: CompareToConstant1_const
+   * Referenced by: '<S132>/Constant'
+   */
+  1.5707963267948966,
+
+  /* Mask Parameter: CompareToConstant5_const
+   * Referenced by: '<S136>/Constant'
+   */
+  0.1,
+
+  /* Mask Parameter: CompareToConstant_const_l
+   * Referenced by: '<S153>/Constant'
+   */
+  2.0,
+
+  /* Mask Parameter: CompareToConstant3_const
+   * Referenced by: '<S134>/Constant'
+   */
+  0.1,
+
+  /* Mask Parameter: CompareToConstant4_const
+   * Referenced by: '<S135>/Constant'
+   */
+  1.0,
+
+  /* Mask Parameter: CompareToConstant_const_c
+   * Referenced by: '<S146>/Constant'
+   */
+  2.0,
+
+  /* Mask Parameter: CompareToConstant2_const
+   * Referenced by: '<S133>/Constant'
+   */
+  0.1,
+
+  /* Mask Parameter: Balance_const
+   * Referenced by: '<S131>/Constant'
+   */
+  0.4,
+
+  /* Mask Parameter: LowPassFilterDiscreteorConti_b0
+   * Referenced by: '<S124>/Constant'
+   */
+  1.0,
+
+  /* Mask Parameter: LowPassFilterDiscreteorConti_mr
+   * Referenced by: '<S150>/Constant'
+   */
+  1.0,
+
+  /* Mask Parameter: LowPassFilterDiscreteorConti_oe
+   * Referenced by: '<S143>/Constant'
+   */
+  1.0,
 
   /* Mask Parameter: cartangle_channels
    * Referenced by: '<Root>/cart angle'
@@ -44,13 +159,227 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
    */
   0U,
 
-  /* Expression: 0
-   * Referenced by: '<S53>/L*(y[k]-yhat[k|k-1])'
+  /* Expression: [0]
+   * Referenced by: '<S1>/u_out'
+   */
+  0.0,
+
+  /* Expression: [-pi 0]
+   * Referenced by: '<S1>/Constant'
+   */
+  { -3.1415926535897931, 0.0 },
+
+  /* Expression: pInitialization.M
+   * Referenced by: '<S6>/KalmanGainM'
+   */
+  { 0.40206025714970023, 0.040682518847074134, 0.19131055678958617,
+    1.8721978824685984E-19, -7.8276716768415013E-15, -8.3311487444357287E-16,
+    -1.353347104086307E-16, -1.5869572218582996E-16, 6.0036824991315011E-16,
+    -1.3009600987130741E-8, 0.0881679129802658, 0.098119093555829234 },
+
+  /* Expression: pInitialization.C
+   * Referenced by: '<S5>/C'
+   */
+  { 0.29028, 0.0, 0.44289470999999997, 0.0, 0.20074735213124997, 0.0, 0.0, 0.0,
+    0.0, -1.1077420496732719, 0.0, 10.394832036070891 },
+
+  /* Expression: pInitialization.X0
+   * Referenced by: '<S5>/X0'
+   */
+  { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
+
+  /* Expression: pInitialization.A
+   * Referenced by: '<S5>/A'
+   */
+  { 1.0024703058545708, 0.0080099014061766043, 1.6013215329302366E-5, 0.0, 0.0,
+    0.0, -0.0045517392910462357, 0.99998178821992578, 0.0039999757144194509, 0.0,
+    0.0, 0.0, 0.0046218607517503887, 1.8479840808716814E-5, 1.0000000246347134,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.006968401249068279, 0.00019995121335460465,
+    1.6109328830475741E-7, 0.0, 0.0, 0.0, -1.1244571560871961E-8,
+    0.99999999999094069, 0.0009999999999961626, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0 },
+
+  /* Expression: pInitialization.B
+   * Referenced by: '<S5>/B'
+   */
+  { 0.00050061883788603755, 2.0016519161627954E-6, 2.6683195918706538E-9,
+    0.0031992194136736705, 2.5774926128761164E-6, 1.0918453479726534E-9 },
+
+  /* Expression: pInitialization.Z
+   * Referenced by: '<S6>/CovarianceZ'
+   */
+  { 124.61358845348678, -61.346814452162604, -24.81751433169326,
+    3.6057699372413289E-16, 2.3463410681455514E-13, 2.4873967987621177E-14,
+    -61.346814452162619, 72.726649990563615, -69.717831496214217,
+    -7.7065386621565882E-16, 1.1849980568368727E-12, 1.2612856220936458E-13,
+    -24.817514331693257, -69.717831496214217, 199.22948903602762,
+    1.1881722284249247E-15, -3.343584206226685E-12, -3.5573688218624887E-13,
+    3.6057699372413274E-16, -7.7065386621565882E-16, 1.1881722284249247E-15,
+    1.0000485609741423, -1.1049740492971361E-5, -1.1900488770753616E-6,
+    2.3463410681455514E-13, 1.1849980568368725E-12, -3.3435842062266854E-12,
+    -1.1049740492971366E-5, 1112.8662555889671, 118.6792073048684,
+    2.487396798762118E-14, 1.2612856220936455E-13, -3.5573688218624897E-13,
+    -1.1900488770753616E-6, 118.67920730486838, 12.741633422209253 },
+
+  /* Expression: pInitialization.L
+   * Referenced by: '<S6>/KalmanGainL'
+   */
+  { 0.40375250349113, 0.043905776353745013, 0.19147972886733766,
+    -4.4169091215432681E-18, -3.0125134344833252E-14, -3.2502901110773282E-15,
+    9.94286374333051E-16, -1.3489705577744769E-16, -6.5292418806433532E-16,
+    -1.08206653026955E-9, 0.088167912976869864, 0.098207261468807538 },
+
+  /* Expression: pInitialization.D
+   * Referenced by: '<S5>/D'
+   */
+  { 0.0, 0.0 },
+
+  /* Expression: [0]
+   * Referenced by: '<S2>/u_out'
+   */
+  0.0,
+
+  /* Expression: pi
+   * Referenced by: '<S2>/Constant'
+   */
+  3.1415926535897931,
+
+  /* Expression: 2*pi
+   * Referenced by: '<S2>/Constant1'
+   */
+  6.2831853071795862,
+
+  /* Expression: pInitialization.M
+   * Referenced by: '<S62>/KalmanGainM'
+   */
+  { -0.21191264815193642, -0.3728064115179085, 0.32427361160286788,
+    -9.9003269946551826E-18, 2.3247243139763057E-14, 2.4876277133998719E-15,
+    -4.0927723213939196E-15, -2.4074784283711992E-16, 5.9190092374028151E-15,
+    -1.3009600924195872E-8, 0.088167912980342059, 0.098119093555837367 },
+
+  /* Expression: pInitialization.C
+   * Referenced by: '<S60>/C'
+   */
+  { 0.29027681981462955, 0.0, -0.44286696392900859, 0.0, 0.20069932381855193,
+    0.0, 0.0, 0.0, 0.0, -1.1077420496732719, 0.0, 10.394832036070891 },
+
+  /* Expression: pInitialization.X0
+   * Referenced by: '<S60>/X0'
+   */
+  { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
+
+  /* Expression: pInitialization.A
+   * Referenced by: '<S60>/A'
+   */
+  { 0.99520254840361544, 0.0079808247354536781, 1.5974442682809616E-5, 0.0, 0.0,
+    0.0, -0.0055969868376773788, 0.99997760641846334, 0.0039999701381445273, 0.0,
+    0.0, 0.0, -0.0046050479615958369, -1.8434955572275255E-5,
+    0.99999997541022123, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.006968401249068279,
+    0.00019995121335460465, 1.6109328830475741E-7, 0.0, 0.0, 0.0,
+    -1.1244571560871961E-8, 0.99999999999094069, 0.0009999999999961626, 0.0, 0.0,
+    0.0, 0.0, 0.0, 1.0 },
+
+  /* Expression: pInitialization.B
+   * Referenced by: '<S60>/B'
+   */
+  { 0.00049880154596585488, 1.9968053353512024E-6, 2.6634727300653473E-9,
+    0.0031992194136736705, 2.5774926128761164E-6, 1.0918453479726534E-9 },
+
+  /* Expression: pInitialization.Z
+   * Referenced by: '<S62>/CovarianceZ'
+   */
+  { 199.16390396470553, 41.514288339509982, -207.008591355442,
+    1.154833763095265E-14, -2.2785179380136481E-11, -2.4320767227611105E-12,
+    41.514288339509974, 50.962974196109506, 33.837273661786391,
+    2.87744699116473E-15, 7.5696686619131768E-12, 8.0644235244761732E-13,
+    -207.008591355442, 33.8372736617864, 390.22524268207587,
+    -1.0846532700475852E-14, 5.0816504136506847E-11, 5.4210369485756757E-12,
+    1.1548337630952652E-14, 2.87744699116473E-15, -1.0846532700475852E-14,
+    1.0000485609741421, -1.1049740500801094E-5, -1.1900488778492045E-6,
+    -2.2785179380136481E-11, 7.5696686619131768E-12, 5.0816504136506841E-11,
+    -1.1049740500801091E-5, 1112.86625558975, 118.67920730495185,
+    -2.4320767227611109E-12, 8.0644235244761722E-13, 5.4210369485756749E-12,
+    -1.1900488778492045E-6, 118.67920730495187, 12.741633422218159 },
+
+  /* Expression: pInitialization.L
+   * Referenced by: '<S62>/KalmanGainL'
+   */
+  { -0.21030271043560803, -0.37449527872088384, 0.32277900392921888,
+    -2.2530764772264103E-17, 2.2956656121858317E-14, 2.4993423395323156E-15,
+    -4.3899079502012163E-15, -4.7472153264552479E-16, 5.9338212027435821E-15,
+    -1.0820665284886374E-9, 0.088167912976945748, 0.098207261468815643 },
+
+  /* Expression: pInitialization.D
+   * Referenced by: '<S60>/D'
+   */
+  { 0.0, 0.0 },
+
+  /* Expression: [0]
+   * Referenced by: '<S3>/u_out'
    */
   0.0,
 
   /* Expression: 0
-   * Referenced by: '<S55>/deltax'
+   * Referenced by: '<S128>/Constant'
+   */
+  0.0,
+
+  /* Expression: pi
+   * Referenced by: '<S3>/Constant'
+   */
+  3.1415926535897931,
+
+  /* Expression: 2*pi
+   * Referenced by: '<S3>/Constant1'
+   */
+  6.2831853071795862,
+
+  /* Computed Parameter: TSamp_WtEt
+   * Referenced by: '<S122>/TSamp'
+   */
+  1000.0,
+
+  /* Expression: -10
+   * Referenced by: '<S3>/Gain'
+   */
+  -10.0,
+
+  /* Computed Parameter: Integrator_gainval
+   * Referenced by: '<S130>/Integrator'
+   */
+  0.001,
+
+  /* Expression: antiwindupUpperLimit
+   * Referenced by: '<S130>/Integrator'
+   */
+  0.0,
+
+  /* Expression: antiwindupLowerLimit
+   * Referenced by: '<S130>/Integrator'
+   */
+  0.0,
+
+  /* Expression: windupUpperLimit
+   * Referenced by: '<S130>/Saturation'
+   */
+  0.0,
+
+  /* Expression: windupLowerLimit
+   * Referenced by: '<S130>/Saturation'
+   */
+  0.0,
+
+  /* Expression: -0.8
+   * Referenced by: '<S3>/Gain1'
+   */
+  -0.8,
+
+  /* Expression: 0
+   * Referenced by: '<S147>/Constant'
+   */
+  0.0,
+
+  /* Expression: 0
+   * Referenced by: '<S154>/Constant'
    */
   0.0,
 
@@ -129,36 +458,10 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
    */
   0.0,
 
-  /* Expression: pInitialization.M
-   * Referenced by: '<S2>/KalmanGainM'
+  /* Expression: 0.0
+   * Referenced by: '<Root>/Delay'
    */
-  { -0.28920055260846644, -0.24888237782782374, 0.3801762177343449,
-    -1.0834215301416256E-16, 6.8127223182204225E-15, -3.5455185278340044E-14,
-    9.8698384570250142E-14, 1.9503720526220671E-14, 5.0861084533038934E-14,
-    2.5830661727015087E-14, -0.00056639644853708946, 0.039722821166879793,
-    0.1589119882293224, 0.0248707691553097 },
-
-  /* Expression: pInitialization.C
-   * Referenced by: '<S1>/C'
-   */
-  { 0.14607531656797079, 0.0, -0.22759924860595954, 0.0, 0.27415274634808212,
-    0.0, 0.0, 0.0, 0.0, -0.20492862233830825, 0.0, 4.5549425256692864, 0.0,
-    1.6337356286073514 },
-
-  /* Expression: 1/650
-   * Referenced by: '<Root>/Gain'
-   */
-  0.0015384615384615385,
-
-  /* Expression: 0.1524/5000
-   * Referenced by: '<Root>/Gain2'
-   */
-  3.0480000000000003E-5,
-
-  /* Expression: pInitialization.X0
-   * Referenced by: '<S1>/X0'
-   */
-  { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
+  0.0,
 
   /* Expression: 5
    * Referenced by: '<Root>/Saturation'
@@ -170,60 +473,90 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
    */
   -5.0,
 
-  /* Expression: pInitialization.A
-   * Referenced by: '<S1>/A'
+  /* Expression: 1/650
+   * Referenced by: '<Root>/Gain'
    */
-  { 0.99754851031917791, 0.0079902191794931857, 7.9934878356860076E-6, 0.0, 0.0,
-    0.0, 0.0, -0.0054588566356524705, 0.99997815989847483, 0.001999985438378914,
-    0.0, 0.0, 0.0, 0.0, -0.0031892084094821455, -1.2762052231102897E-5,
-    0.99999999149022811, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-    -0.00010913252606716453, 0.0086459191535148052, 8.06710298543113E-6,
-    3.7814349494452941E-9, 0.0, 0.0, 0.0, -0.012647280918770423,
-    0.99848952491600984, 0.00099929196846958558, 4.9977778980787564E-7, 0.0, 0.0,
-    0.0, -1.1884414570090383E-9, -1.419365333308294E-10, 0.99999999999993328,
-    0.0009999999999999792, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0 },
+  0.0015384615384615385,
 
-  /* Expression: pInitialization.B
-   * Referenced by: '<S1>/B'
+  /* Expression: 2*pi
+   * Referenced by: '<Root>/Constant'
    */
-  { 0.00099877739743664865, 3.9967439178430046E-6, 2.6650398833200325E-9,
-    0.00027018497354733793, 3.226841194172455E-5, 1.5125739797781183E-8,
-    4.7470958596225035E-12 },
+  6.2831853071795862,
 
-  /* Expression: pInitialization.Z
-   * Referenced by: '<S2>/CovarianceZ'
+  /* Expression: 0.1524/5000
+   * Referenced by: '<Root>/Gain2'
    */
-  { 291.35939031377723, -18.983438147754477, -181.55220993632574,
-    2.1935698440521974E-14, -2.0321791555042612E-12, 3.0928867106548594E-11,
-    -8.6366866250013009E-11, -18.983438147754477, 192.08504449685444,
-    160.50395387526521, 8.9578586637572982E-15, 9.0055478769296954E-13,
-    -1.428607473584891E-11, 4.0254621668856455E-11, -181.55220993632574,
-    160.50395387526521, 243.85179031846144, -8.203031897172911E-15,
-    2.0789287623225269E-12, -2.9633100124243244E-11, 8.303755159177493E-11,
-    2.193569844052198E-14, 8.9578586637573108E-15, -8.20303189717286E-15,
-    1.046200721535953, -3.6476130353488512, -0.22814671199671371,
-    0.17507782588215354, -2.0321791555042596E-12, 9.0055478769297014E-13,
-    2.0789287623225229E-12, -3.6476130353488512, 288.98324185208673,
-    18.044485195800867, -13.817062402030411, 3.0928867106548587E-11,
-    -1.4286074735848919E-11, -2.9633100124243244E-11, -0.22814671199671371,
-    18.044485195800863, 175.9739790273353, -487.388776473788,
-    -8.6366866250013E-11, 4.0254621668856481E-11, 8.303755159177493E-11,
-    0.17507782588215359, -13.817062402030409, -487.38877647378808,
-    1357.2851211632958 },
+  3.0480000000000003E-5,
 
-  /* Expression: pInitialization.L
-   * Referenced by: '<S2>/KalmanGainL'
+  /* Expression: -pi
+   * Referenced by: '<S4>/Constant2'
    */
-  { -0.28834542840904082, -0.25119256984234595, 0.37967614164650842,
-    -1.0587197381828952E-16, 7.9111307780612539E-15, -3.5596332940634151E-14,
-    9.7681440502146E-14, 1.1345201835573281E-14, 4.9131450198449786E-14,
-    3.0210671837236491E-14, -0.00050232405476603346, 0.039657923794783938,
-    0.1589516783562917, 0.02502970099397589 },
+  -3.1415926535897931,
 
-  /* Expression: pInitialization.D
-   * Referenced by: '<S1>/D'
+  /* Computed Parameter: TSamp_WtEt_n
+   * Referenced by: '<S139>/TSamp'
    */
-  { 0.0, 0.0 },
+  1000.0,
+
+  /* Computed Parameter: Integrator_gainval_m
+   * Referenced by: '<S156>/Integrator'
+   */
+  0.001,
+
+  /* Expression: antiwindupUpperLimit
+   * Referenced by: '<S156>/Integrator'
+   */
+  0.0,
+
+  /* Expression: antiwindupLowerLimit
+   * Referenced by: '<S156>/Integrator'
+   */
+  0.0,
+
+  /* Expression: windupUpperLimit
+   * Referenced by: '<S156>/Saturation'
+   */
+  0.0,
+
+  /* Expression: windupLowerLimit
+   * Referenced by: '<S156>/Saturation'
+   */
+  0.0,
+
+  /* Computed Parameter: TSamp_WtEt_k
+   * Referenced by: '<S138>/TSamp'
+   */
+  1000.0,
+
+  /* Computed Parameter: Integrator_gainval_o
+   * Referenced by: '<S149>/Integrator'
+   */
+  0.001,
+
+  /* Expression: antiwindupUpperLimit
+   * Referenced by: '<S149>/Integrator'
+   */
+  0.0,
+
+  /* Expression: antiwindupLowerLimit
+   * Referenced by: '<S149>/Integrator'
+   */
+  0.0,
+
+  /* Expression: windupUpperLimit
+   * Referenced by: '<S149>/Saturation'
+   */
+  0.0,
+
+  /* Expression: windupLowerLimit
+   * Referenced by: '<S149>/Saturation'
+   */
+  0.0,
+
+  /* Expression: 1
+   * Referenced by: '<S4>/Constant1'
+   */
+  1.0,
 
   /* Expression: 0.001
    * Referenced by: '<Root>/Step'
@@ -284,6 +617,36 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
    * Referenced by: '<Root>/HIL Initialize'
    */
   4U,
+
+  /* Expression: true()
+   * Referenced by: '<S5>/Enable'
+   */
+  true,
+
+  /* Expression: pInitialization.isSqrtUsed
+   * Referenced by: '<S53>/isSqrtUsed'
+   */
+  false,
+
+  /* Expression: true()
+   * Referenced by: '<S60>/Enable'
+   */
+  true,
+
+  /* Expression: pInitialization.isSqrtUsed
+   * Referenced by: '<S109>/isSqrtUsed'
+   */
+  false,
+
+  /* Computed Parameter: Q_Y0
+   * Referenced by: '<S142>/Q'
+   */
+  false,
+
+  /* Computed Parameter: Q_Y0_b
+   * Referenced by: '<S142>/!Q'
+   */
+  true,
 
   /* Computed Parameter: HILInitialize_Active
    * Referenced by: '<Root>/HIL Initialize'
@@ -470,18 +833,55 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
    */
   true,
 
-  /* Expression: true()
-   * Referenced by: '<S1>/Enable'
+  /* Computed Parameter: Delay_InitialCondition_e
+   * Referenced by: '<S4>/Delay'
    */
-  true,
+  false,
 
   /* Computed Parameter: HILWriteAnalog_Active
    * Referenced by: '<Root>/HIL Write Analog'
    */
   false,
 
-  /* Expression: pInitialization.isSqrtUsed
-   * Referenced by: '<S51>/isSqrtUsed'
-   */
-  false
+  /* Start of '<S87>/Enabled Subsystem' */
+  {
+    /* Expression: 0
+     * Referenced by: '<S113>/deltax'
+     */
+    0.0
+  }
+  ,
+
+  /* End of '<S87>/Enabled Subsystem' */
+
+  /* Start of '<S81>/MeasurementUpdate' */
+  {
+    /* Expression: 0
+     * Referenced by: '<S111>/L*(y[k]-yhat[k|k-1])'
+     */
+    0.0
+  }
+  ,
+
+  /* End of '<S81>/MeasurementUpdate' */
+
+  /* Start of '<S31>/Enabled Subsystem' */
+  {
+    /* Expression: 0
+     * Referenced by: '<S57>/deltax'
+     */
+    0.0
+  }
+  ,
+
+  /* End of '<S31>/Enabled Subsystem' */
+
+  /* Start of '<S25>/MeasurementUpdate' */
+  {
+    /* Expression: 0
+     * Referenced by: '<S55>/L*(y[k]-yhat[k|k-1])'
+     */
+    0.0
+  }
+  /* End of '<S25>/MeasurementUpdate' */
 };
