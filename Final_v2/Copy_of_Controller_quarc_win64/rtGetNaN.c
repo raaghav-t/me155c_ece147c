@@ -7,9 +7,9 @@
  *
  * Code generation for model "Copy_of_Controller".
  *
- * Model version              : 1.27
+ * Model version              : 1.28
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Fri May 30 17:35:17 2025
+ * C source code generated on : Fri May 30 18:03:49 2025
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping

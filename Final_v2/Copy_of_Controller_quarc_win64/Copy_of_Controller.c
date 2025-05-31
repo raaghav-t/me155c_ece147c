@@ -7,9 +7,9 @@
  *
  * Code generation for model "Copy_of_Controller".
  *
- * Model version              : 1.27
+ * Model version              : 1.28
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Fri May 30 17:35:17 2025
+ * C source code generated on : Fri May 30 18:03:49 2025
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -49,7 +49,7 @@ RT_MODEL_Copy_of_Controller_T *const Copy_of_Controller_M =
 /*
  * System initialize for atomic system:
  *    '<S53>/SqrtUsedFcn'
- *    '<S109>/SqrtUsedFcn'
+ *    '<S111>/SqrtUsedFcn'
  */
 void Copy_of_Contro_SqrtUsedFcn_Init(DW_SqrtUsedFcn_Copy_of_Contro_T *localDW)
 {
@@ -60,7 +60,7 @@ void Copy_of_Contro_SqrtUsedFcn_Init(DW_SqrtUsedFcn_Copy_of_Contro_T *localDW)
 /*
  * System reset for atomic system:
  *    '<S53>/SqrtUsedFcn'
- *    '<S109>/SqrtUsedFcn'
+ *    '<S111>/SqrtUsedFcn'
  */
 void Copy_of_Contr_SqrtUsedFcn_Reset(DW_SqrtUsedFcn_Copy_of_Contro_T *localDW)
 {
@@ -71,7 +71,7 @@ void Copy_of_Contr_SqrtUsedFcn_Reset(DW_SqrtUsedFcn_Copy_of_Contro_T *localDW)
 /*
  * Output and update for atomic system:
  *    '<S53>/SqrtUsedFcn'
- *    '<S109>/SqrtUsedFcn'
+ *    '<S111>/SqrtUsedFcn'
  */
 void Copy_of_Controller_SqrtUsedFcn(DW_SqrtUsedFcn_Copy_of_Contro_T *localDW)
 {
@@ -81,7 +81,7 @@ void Copy_of_Controller_SqrtUsedFcn(DW_SqrtUsedFcn_Copy_of_Contro_T *localDW)
 /*
  * System initialize for enable system:
  *    '<S25>/MeasurementUpdate'
- *    '<S81>/MeasurementUpdate'
+ *    '<S82>/MeasurementUpdate'
  */
 void Copy_of__MeasurementUpdate_Init(B_MeasurementUpdate_Copy_of_C_T *localB,
   P_MeasurementUpdate_Copy_of_C_T *localP)
@@ -98,7 +98,7 @@ void Copy_of__MeasurementUpdate_Init(B_MeasurementUpdate_Copy_of_C_T *localB,
 /*
  * Disable for enable system:
  *    '<S25>/MeasurementUpdate'
- *    '<S81>/MeasurementUpdate'
+ *    '<S82>/MeasurementUpdate'
  */
 void Copy__MeasurementUpdate_Disable(B_MeasurementUpdate_Copy_of_C_T *localB,
   DW_MeasurementUpdate_Copy_of__T *localDW, P_MeasurementUpdate_Copy_of_C_T
@@ -118,7 +118,7 @@ void Copy__MeasurementUpdate_Disable(B_MeasurementUpdate_Copy_of_C_T *localB,
 /*
  * Start for enable system:
  *    '<S25>/MeasurementUpdate'
- *    '<S81>/MeasurementUpdate'
+ *    '<S82>/MeasurementUpdate'
  */
 void Copy_of_MeasurementUpdate_Start(DW_MeasurementUpdate_Copy_of__T *localDW)
 {
@@ -128,7 +128,7 @@ void Copy_of_MeasurementUpdate_Start(DW_MeasurementUpdate_Copy_of__T *localDW)
 /*
  * Output and update for enable system:
  *    '<S25>/MeasurementUpdate'
- *    '<S81>/MeasurementUpdate'
+ *    '<S82>/MeasurementUpdate'
  */
 void Copy_of_Contr_MeasurementUpdate(boolean_T rtu_Enable, const real_T rtu_Lk
   [12], const real_T rtu_yk[2], const real_T rtu_Ck[12], const real_T
@@ -188,7 +188,7 @@ void Copy_of_Contr_MeasurementUpdate(boolean_T rtu_Enable, const real_T rtu_Lk
 /*
  * System initialize for enable system:
  *    '<S31>/Enabled Subsystem'
- *    '<S87>/Enabled Subsystem'
+ *    '<S89>/Enabled Subsystem'
  */
 void Copy_of_C_EnabledSubsystem_Init(B_EnabledSubsystem_Copy_of_Co_T *localB,
   P_EnabledSubsystem_Copy_of_Co_T *localP)
@@ -205,7 +205,7 @@ void Copy_of_C_EnabledSubsystem_Init(B_EnabledSubsystem_Copy_of_Co_T *localB,
 /*
  * Disable for enable system:
  *    '<S31>/Enabled Subsystem'
- *    '<S87>/Enabled Subsystem'
+ *    '<S89>/Enabled Subsystem'
  */
 void Copy_o_EnabledSubsystem_Disable(B_EnabledSubsystem_Copy_of_Co_T *localB,
   DW_EnabledSubsystem_Copy_of_C_T *localDW, P_EnabledSubsystem_Copy_of_Co_T
@@ -225,7 +225,7 @@ void Copy_o_EnabledSubsystem_Disable(B_EnabledSubsystem_Copy_of_Co_T *localB,
 /*
  * Start for enable system:
  *    '<S31>/Enabled Subsystem'
- *    '<S87>/Enabled Subsystem'
+ *    '<S89>/Enabled Subsystem'
  */
 void Copy_of__EnabledSubsystem_Start(DW_EnabledSubsystem_Copy_of_C_T *localDW)
 {
@@ -235,7 +235,7 @@ void Copy_of__EnabledSubsystem_Start(DW_EnabledSubsystem_Copy_of_C_T *localDW)
 /*
  * Output and update for enable system:
  *    '<S31>/Enabled Subsystem'
- *    '<S87>/Enabled Subsystem'
+ *    '<S89>/Enabled Subsystem'
  */
 void Copy_of_Contro_EnabledSubsystem(boolean_T rtu_Enable, const real_T rtu_Mk
   [12], const real_T rtu_Ck[12], const real_T rtu_yk[2], const real_T
@@ -440,14 +440,14 @@ void Copy_of_Controller_output(void)
   /* Abs: '<S4>/Abs' */
   rtb_Cos = fabs(rtb_Cos);
 
-  /* Logic: '<S150>/Logical Operator' incorporates:
-   *  Constant: '<S150>/Constant'
-   *  Constant: '<S150>/Time constant'
-   *  Constant: '<S153>/Constant'
-   *  Constant: '<S154>/Constant'
-   *  RelationalOperator: '<S153>/Compare'
-   *  RelationalOperator: '<S154>/Compare'
-   *  Sum: '<S150>/Sum1'
+  /* Logic: '<S152>/Logical Operator' incorporates:
+   *  Constant: '<S152>/Constant'
+   *  Constant: '<S152>/Time constant'
+   *  Constant: '<S155>/Constant'
+   *  Constant: '<S156>/Constant'
+   *  RelationalOperator: '<S155>/Compare'
+   *  RelationalOperator: '<S156>/Compare'
+   *  Sum: '<S152>/Sum1'
    */
   Copy_of_Controller_B.LogicalOperator =
     ((Copy_of_Controller_P.LowPassFilterDiscreteorContin_m -
@@ -455,22 +455,22 @@ void Copy_of_Controller_output(void)
      (Copy_of_Controller_P.LowPassFilterDiscreteorConti_mr <
       Copy_of_Controller_P.CompareToConstant_const_l));
 
-  /* SampleTimeMath: '<S139>/TSamp'
+  /* SampleTimeMath: '<S141>/TSamp'
    *
-   * About '<S139>/TSamp':
+   * About '<S141>/TSamp':
    *  y = u * K where K = 1 / ( w * Ts )
    */
   Copy_of_Controller_B.TSamp = Copy_of_Controller_B.Mod *
     Copy_of_Controller_P.TSamp_WtEt_n;
 
-  /* Gain: '<S141>/K' incorporates:
-   *  Sum: '<S139>/Diff'
-   *  UnitDelay: '<S139>/UD'
+  /* Gain: '<S143>/K' incorporates:
+   *  Sum: '<S141>/Diff'
+   *  UnitDelay: '<S141>/UD'
    */
   K = (Copy_of_Controller_B.TSamp - Copy_of_Controller_DW.UD_DSTATE) *
     Copy_of_Controller_P.LowPassFilterDiscreteorContin_o;
 
-  /* DiscreteIntegrator: '<S156>/Integrator' */
+  /* DiscreteIntegrator: '<S158>/Integrator' */
   if (Copy_of_Controller_DW.Integrator_IC_LOADING != 0) {
     Copy_of_Controller_DW.Integrator_DSTATE = K;
     if (Copy_of_Controller_DW.Integrator_DSTATE >=
@@ -508,32 +508,32 @@ void Copy_of_Controller_output(void)
       Copy_of_Controller_P.Integrator_LowerSat_l;
   }
 
-  /* Saturate: '<S156>/Saturation' incorporates:
-   *  DiscreteIntegrator: '<S156>/Integrator'
+  /* Saturate: '<S158>/Saturation' incorporates:
+   *  DiscreteIntegrator: '<S158>/Integrator'
    */
   if (Copy_of_Controller_DW.Integrator_DSTATE >
       Copy_of_Controller_P.Saturation_UpperSat_m) {
-    /* Saturate: '<S156>/Saturation' */
+    /* Saturate: '<S158>/Saturation' */
     rtb_Saturation_h = Copy_of_Controller_P.Saturation_UpperSat_m;
   } else if (Copy_of_Controller_DW.Integrator_DSTATE <
              Copy_of_Controller_P.Saturation_LowerSat_j) {
-    /* Saturate: '<S156>/Saturation' */
+    /* Saturate: '<S158>/Saturation' */
     rtb_Saturation_h = Copy_of_Controller_P.Saturation_LowerSat_j;
   } else {
-    /* Saturate: '<S156>/Saturation' */
+    /* Saturate: '<S158>/Saturation' */
     rtb_Saturation_h = Copy_of_Controller_DW.Integrator_DSTATE;
   }
 
-  /* End of Saturate: '<S156>/Saturation' */
+  /* End of Saturate: '<S158>/Saturation' */
 
-  /* Logic: '<S143>/Logical Operator' incorporates:
-   *  Constant: '<S143>/Constant'
-   *  Constant: '<S143>/Time constant'
-   *  Constant: '<S146>/Constant'
-   *  Constant: '<S147>/Constant'
-   *  RelationalOperator: '<S146>/Compare'
-   *  RelationalOperator: '<S147>/Compare'
-   *  Sum: '<S143>/Sum1'
+  /* Logic: '<S145>/Logical Operator' incorporates:
+   *  Constant: '<S145>/Constant'
+   *  Constant: '<S145>/Time constant'
+   *  Constant: '<S148>/Constant'
+   *  Constant: '<S149>/Constant'
+   *  RelationalOperator: '<S148>/Compare'
+   *  RelationalOperator: '<S149>/Compare'
+   *  Sum: '<S145>/Sum1'
    */
   Copy_of_Controller_B.LogicalOperator_g =
     ((Copy_of_Controller_P.LowPassFilterDiscreteorConti_b2 -
@@ -541,22 +541,22 @@ void Copy_of_Controller_output(void)
      (Copy_of_Controller_P.LowPassFilterDiscreteorConti_oe <
       Copy_of_Controller_P.CompareToConstant_const_c));
 
-  /* SampleTimeMath: '<S138>/TSamp'
+  /* SampleTimeMath: '<S140>/TSamp'
    *
-   * About '<S138>/TSamp':
+   * About '<S140>/TSamp':
    *  y = u * K where K = 1 / ( w * Ts )
    */
   Copy_of_Controller_B.TSamp_n = Copy_of_Controller_B.raagpos *
     Copy_of_Controller_P.TSamp_WtEt_k;
 
-  /* Gain: '<S140>/K' incorporates:
-   *  Sum: '<S138>/Diff'
-   *  UnitDelay: '<S138>/UD'
+  /* Gain: '<S142>/K' incorporates:
+   *  Sum: '<S140>/Diff'
+   *  UnitDelay: '<S140>/UD'
    */
   K_d = (Copy_of_Controller_B.TSamp_n - Copy_of_Controller_DW.UD_DSTATE_b) *
     Copy_of_Controller_P.LowPassFilterDiscreteorContin_b;
 
-  /* DiscreteIntegrator: '<S149>/Integrator' */
+  /* DiscreteIntegrator: '<S151>/Integrator' */
   if (Copy_of_Controller_DW.Integrator_IC_LOADING_i != 0) {
     Copy_of_Controller_DW.Integrator_DSTATE_f = K_d;
     if (Copy_of_Controller_DW.Integrator_DSTATE_f >=
@@ -594,41 +594,41 @@ void Copy_of_Controller_output(void)
       Copy_of_Controller_P.Integrator_LowerSat_k;
   }
 
-  /* Saturate: '<S149>/Saturation' incorporates:
-   *  DiscreteIntegrator: '<S149>/Integrator'
+  /* Saturate: '<S151>/Saturation' incorporates:
+   *  DiscreteIntegrator: '<S151>/Integrator'
    */
   if (Copy_of_Controller_DW.Integrator_DSTATE_f >
       Copy_of_Controller_P.Saturation_UpperSat_c) {
-    /* Saturate: '<S149>/Saturation' */
+    /* Saturate: '<S151>/Saturation' */
     rtb_Saturation_m = Copy_of_Controller_P.Saturation_UpperSat_c;
   } else if (Copy_of_Controller_DW.Integrator_DSTATE_f <
              Copy_of_Controller_P.Saturation_LowerSat_jk) {
-    /* Saturate: '<S149>/Saturation' */
+    /* Saturate: '<S151>/Saturation' */
     rtb_Saturation_m = Copy_of_Controller_P.Saturation_LowerSat_jk;
   } else {
-    /* Saturate: '<S149>/Saturation' */
+    /* Saturate: '<S151>/Saturation' */
     rtb_Saturation_m = Copy_of_Controller_DW.Integrator_DSTATE_f;
   }
 
-  /* End of Saturate: '<S149>/Saturation' */
+  /* End of Saturate: '<S151>/Saturation' */
 
-  /* Outputs for Enabled SubSystem: '<S137>/D Latch' incorporates:
-   *  EnablePort: '<S142>/C'
+  /* Outputs for Enabled SubSystem: '<S139>/D Latch' incorporates:
+   *  EnablePort: '<S144>/C'
    */
   /* Delay: '<S4>/Delay' */
   if (Copy_of_Controller_DW.Delay_DSTATE_f[0U]) {
-    /* SignalConversion generated from: '<S142>/D' incorporates:
+    /* SignalConversion generated from: '<S144>/D' incorporates:
      *  Abs: '<S4>/Abs1'
      *  Abs: '<S4>/Abs2'
-     *  Constant: '<S133>/Constant'
-     *  Constant: '<S134>/Constant'
      *  Constant: '<S135>/Constant'
      *  Constant: '<S136>/Constant'
+     *  Constant: '<S137>/Constant'
+     *  Constant: '<S138>/Constant'
      *  Logic: '<S4>/AND'
-     *  RelationalOperator: '<S133>/Compare'
-     *  RelationalOperator: '<S134>/Compare'
      *  RelationalOperator: '<S135>/Compare'
      *  RelationalOperator: '<S136>/Compare'
+     *  RelationalOperator: '<S137>/Compare'
+     *  RelationalOperator: '<S138>/Compare'
      */
     Copy_of_Controller_B.D = ((Copy_of_Controller_B.Mod <=
       Copy_of_Controller_P.CompareToConstant5_const) && (fabs(rtb_Saturation_h) <=
@@ -640,10 +640,10 @@ void Copy_of_Controller_output(void)
   }
 
   /* End of Delay: '<S4>/Delay' */
-  /* End of Outputs for SubSystem: '<S137>/D Latch' */
+  /* End of Outputs for SubSystem: '<S139>/D Latch' */
 
-  /* RelationalOperator: '<S131>/Compare' incorporates:
-   *  Constant: '<S131>/Constant'
+  /* RelationalOperator: '<S133>/Compare' incorporates:
+   *  Constant: '<S133>/Constant'
    */
   Copy_of_Controller_B.Compare = (rtb_Cos <= Copy_of_Controller_P.Balance_const);
 
@@ -651,9 +651,9 @@ void Copy_of_Controller_output(void)
   rtb_Compare_g = !Copy_of_Controller_B.Compare;
 
   /* Logic: '<S4>/Down' incorporates:
-   *  Constant: '<S132>/Constant'
+   *  Constant: '<S134>/Constant'
    *  Logic: '<S4>/NOT1'
-   *  RelationalOperator: '<S132>/Compare'
+   *  RelationalOperator: '<S134>/Compare'
    */
   Copy_of_Controller_B.Down = ((rtb_Cos >=
     Copy_of_Controller_P.CompareToConstant1_const) && (!Copy_of_Controller_B.D) &&
@@ -667,7 +667,7 @@ void Copy_of_Controller_output(void)
       /* InitializeConditions for Delay: '<S60>/MemoryX' */
       Copy_of_Controller_DW.icLoad = true;
 
-      /* SystemReset for MATLAB Function: '<S109>/SqrtUsedFcn' */
+      /* SystemReset for MATLAB Function: '<S111>/SqrtUsedFcn' */
       Copy_of_Contr_SqrtUsedFcn_Reset(&Copy_of_Controller_DW.sf_SqrtUsedFcn_m);
       Copy_of_Controller_DW.down_MODE = true;
     }
@@ -684,29 +684,20 @@ void Copy_of_Controller_output(void)
       Copy_of_Controller_P.Constant1_Value) -
       Copy_of_Controller_P.Constant_Value_e;
     rtb_Reshapey[1] = Copy_of_Controller_B.raagpos;
-
-    /* Delay: '<S60>/MemoryX' incorporates:
-     *  Constant: '<S60>/X0'
-     */
-    Copy_of_Controller_DW.icLoad = ((Copy_of_Controller_B.Down &&
-      (Copy_of_Controller_PrevZCX.MemoryX_Reset_ZCE != POS_ZCSIG)) ||
-      Copy_of_Controller_DW.icLoad);
-    Copy_of_Controller_PrevZCX.MemoryX_Reset_ZCE = Copy_of_Controller_B.Down;
     for (i = 0; i < 6; i++) {
+      /* Delay: '<S60>/MemoryX' incorporates:
+       *  Constant: '<S60>/X0'
+       */
       if (Copy_of_Controller_DW.icLoad) {
         Copy_of_Controller_DW.MemoryX_DSTATE[i] =
           Copy_of_Controller_P.X0_Value_j[i];
       }
 
-      /* Delay: '<S60>/MemoryX' incorporates:
-       *  Constant: '<S60>/X0'
-       */
+      /* Delay: '<S60>/MemoryX' */
       rtb_MemoryX[i] = Copy_of_Controller_DW.MemoryX_DSTATE[i];
     }
 
-    /* End of Delay: '<S60>/MemoryX' */
-
-    /* Outputs for Enabled SubSystem: '<S87>/Enabled Subsystem' */
+    /* Outputs for Enabled SubSystem: '<S89>/Enabled Subsystem' */
     /* Constant: '<S60>/Enable' incorporates:
      *  Constant: '<S60>/C'
      *  Constant: '<S62>/KalmanGainM'
@@ -717,15 +708,15 @@ void Copy_of_Controller_output(void)
       &Copy_of_Controller_DW.EnabledSubsystem_p,
       &Copy_of_Controller_P.EnabledSubsystem_p);
 
-    /* End of Outputs for SubSystem: '<S87>/Enabled Subsystem' */
+    /* End of Outputs for SubSystem: '<S89>/Enabled Subsystem' */
 
-    /* MATLAB Function: '<S109>/SqrtUsedFcn' incorporates:
-     *  Constant: '<S109>/isSqrtUsed'
+    /* MATLAB Function: '<S111>/SqrtUsedFcn' incorporates:
+     *  Constant: '<S111>/isSqrtUsed'
      *  Constant: '<S62>/CovarianceZ'
      */
     Copy_of_Controller_SqrtUsedFcn(&Copy_of_Controller_DW.sf_SqrtUsedFcn_m);
 
-    /* Outputs for Enabled SubSystem: '<S81>/MeasurementUpdate' */
+    /* Outputs for Enabled SubSystem: '<S82>/MeasurementUpdate' */
     /* Constant: '<S60>/Enable' incorporates:
      *  Constant: '<S60>/C'
      *  Constant: '<S60>/D'
@@ -739,9 +730,9 @@ void Copy_of_Controller_output(void)
       &Copy_of_Controller_DW.MeasurementUpdate_p,
       &Copy_of_Controller_P.MeasurementUpdate_p);
 
-    /* End of Outputs for SubSystem: '<S81>/MeasurementUpdate' */
+    /* End of Outputs for SubSystem: '<S82>/MeasurementUpdate' */
 
-    /* Product: '<S81>/A[k]*xhat[k|k-1]' incorporates:
+    /* Product: '<S82>/A[k]*xhat[k|k-1]' incorporates:
      *  Constant: '<S60>/A'
      */
     for (i = 0; i < 6; i++) {
@@ -753,19 +744,19 @@ void Copy_of_Controller_output(void)
       tmp[i] = rtb_Cos;
     }
 
-    /* End of Product: '<S81>/A[k]*xhat[k|k-1]' */
+    /* End of Product: '<S82>/A[k]*xhat[k|k-1]' */
     for (i = 0; i <= 4; i += 2) {
-      /* Sum: '<S81>/Add' incorporates:
+      /* Sum: '<S82>/Add' incorporates:
        *  Constant: '<S60>/B'
-       *  Product: '<S111>/Product3'
-       *  Product: '<S81>/B[k]*u[k]'
+       *  Product: '<S113>/Product3'
+       *  Product: '<S82>/B[k]*u[k]'
        */
       tmp_0 = _mm_loadu_pd(&tmp[i]);
       tmp_1 = _mm_loadu_pd(&Copy_of_Controller_B.MeasurementUpdate_p.Product3[i]);
 
-      /* Sum: '<S81>/Add' incorporates:
+      /* Sum: '<S82>/Add' incorporates:
        *  Constant: '<S60>/B'
-       *  Product: '<S81>/B[k]*u[k]'
+       *  Product: '<S82>/B[k]*u[k]'
        */
       _mm_storeu_pd(&Copy_of_Controller_B.Add[i], _mm_add_pd(_mm_add_pd
         (_mm_mul_pd(_mm_loadu_pd(&Copy_of_Controller_P.B_Value_o[i]),
@@ -773,7 +764,7 @@ void Copy_of_Controller_output(void)
     }
 
     /* Gain: '<S2>/Gain3' incorporates:
-     *  Sum: '<S87>/Add'
+     *  Sum: '<S89>/Add'
      */
     rtb_Cos = 0.0;
     for (i = 0; i < 6; i++) {
@@ -787,23 +778,23 @@ void Copy_of_Controller_output(void)
     Copy_of_Controller_B.Sum5 = rtb_Cos;
     srUpdateBC(Copy_of_Controller_DW.down_SubsysRanBC);
   } else if (Copy_of_Controller_DW.down_MODE) {
-    /* Disable for Enabled SubSystem: '<S87>/Enabled Subsystem' */
+    /* Disable for Enabled SubSystem: '<S89>/Enabled Subsystem' */
     if (Copy_of_Controller_DW.EnabledSubsystem_p.EnabledSubsystem_MODE) {
       Copy_o_EnabledSubsystem_Disable(&Copy_of_Controller_B.EnabledSubsystem_p,
         &Copy_of_Controller_DW.EnabledSubsystem_p,
         &Copy_of_Controller_P.EnabledSubsystem_p);
     }
 
-    /* End of Disable for SubSystem: '<S87>/Enabled Subsystem' */
+    /* End of Disable for SubSystem: '<S89>/Enabled Subsystem' */
 
-    /* Disable for Enabled SubSystem: '<S81>/MeasurementUpdate' */
+    /* Disable for Enabled SubSystem: '<S82>/MeasurementUpdate' */
     if (Copy_of_Controller_DW.MeasurementUpdate_p.MeasurementUpdate_MODE) {
       Copy__MeasurementUpdate_Disable(&Copy_of_Controller_B.MeasurementUpdate_p,
         &Copy_of_Controller_DW.MeasurementUpdate_p,
         &Copy_of_Controller_P.MeasurementUpdate_p);
     }
 
-    /* End of Disable for SubSystem: '<S81>/MeasurementUpdate' */
+    /* End of Disable for SubSystem: '<S82>/MeasurementUpdate' */
 
     /* Disable for Sum: '<S2>/Sum5' incorporates:
      *  Outport: '<S2>/u_out'
@@ -839,10 +830,9 @@ void Copy_of_Controller_output(void)
      *  Constant: '<S5>/X0'
      */
     Copy_of_Controller_DW.icLoad_p = ((Copy_of_Controller_B.Compare &&
-      (Copy_of_Controller_PrevZCX.MemoryX_Reset_ZCE_g != POS_ZCSIG)) ||
+      (Copy_of_Controller_PrevZCX.MemoryX_Reset_ZCE != POS_ZCSIG)) ||
       Copy_of_Controller_DW.icLoad_p);
-    Copy_of_Controller_PrevZCX.MemoryX_Reset_ZCE_g =
-      Copy_of_Controller_B.Compare;
+    Copy_of_Controller_PrevZCX.MemoryX_Reset_ZCE = Copy_of_Controller_B.Compare;
     for (i = 0; i < 6; i++) {
       if (Copy_of_Controller_DW.icLoad_p) {
         Copy_of_Controller_DW.MemoryX_DSTATE_o[i] =
@@ -974,11 +964,11 @@ void Copy_of_Controller_output(void)
    */
   if (Copy_of_Controller_B.Swing) {
     if (!Copy_of_Controller_DW.swing_MODE) {
-      /* InitializeConditions for UnitDelay: '<S122>/UD' */
+      /* InitializeConditions for UnitDelay: '<S124>/UD' */
       Copy_of_Controller_DW.UD_DSTATE_j =
         Copy_of_Controller_P.DiscreteDerivative_ICPrevScaled;
 
-      /* InitializeConditions for DiscreteIntegrator: '<S130>/Integrator' */
+      /* InitializeConditions for DiscreteIntegrator: '<S132>/Integrator' */
       Copy_of_Controller_DW.Integrator_PrevResetState_a = 0;
       Copy_of_Controller_DW.Integrator_IC_LOADING_m = 1U;
       Copy_of_Controller_DW.swing_MODE = true;
@@ -998,29 +988,29 @@ void Copy_of_Controller_output(void)
     /* Abs: '<S3>/Abs' */
     rtb_Cos = fabs(rtb_Max);
 
-    /* RelationalOperator: '<S121>/Compare' incorporates:
-     *  Constant: '<S121>/Constant'
+    /* RelationalOperator: '<S123>/Compare' incorporates:
+     *  Constant: '<S123>/Constant'
      */
     rtb_Compare_g = (rtb_Cos <= Copy_of_Controller_P.CompareToConstant_const);
 
     /* Trigonometry: '<S3>/Cos' */
     rtb_Cos = cos(rtb_Max);
 
-    /* SampleTimeMath: '<S122>/TSamp'
+    /* SampleTimeMath: '<S124>/TSamp'
      *
-     * About '<S122>/TSamp':
+     * About '<S124>/TSamp':
      *  y = u * K where K = 1 / ( w * Ts )
      */
     Copy_of_Controller_B.TSamp_a = rtb_Max * Copy_of_Controller_P.TSamp_WtEt;
 
-    /* Logic: '<S124>/Logical Operator' incorporates:
-     *  Constant: '<S124>/Constant'
-     *  Constant: '<S124>/Time constant'
-     *  Constant: '<S127>/Constant'
-     *  Constant: '<S128>/Constant'
-     *  RelationalOperator: '<S127>/Compare'
-     *  RelationalOperator: '<S128>/Compare'
-     *  Sum: '<S124>/Sum1'
+    /* Logic: '<S126>/Logical Operator' incorporates:
+     *  Constant: '<S126>/Constant'
+     *  Constant: '<S126>/Time constant'
+     *  Constant: '<S129>/Constant'
+     *  Constant: '<S130>/Constant'
+     *  RelationalOperator: '<S129>/Compare'
+     *  RelationalOperator: '<S130>/Compare'
+     *  Sum: '<S126>/Sum1'
      */
     Copy_of_Controller_B.LogicalOperator_f =
       ((Copy_of_Controller_P.LowPassFilterDiscreteorContin_d -
@@ -1028,14 +1018,14 @@ void Copy_of_Controller_output(void)
        && (Copy_of_Controller_P.LowPassFilterDiscreteorConti_b0 <
            Copy_of_Controller_P.CompareToConstant_const_o));
 
-    /* Gain: '<S123>/K' incorporates:
-     *  Sum: '<S122>/Diff'
-     *  UnitDelay: '<S122>/UD'
+    /* Gain: '<S125>/K' incorporates:
+     *  Sum: '<S124>/Diff'
+     *  UnitDelay: '<S124>/UD'
      */
     rtb_Max = (Copy_of_Controller_B.TSamp_a - Copy_of_Controller_DW.UD_DSTATE_j)
       * Copy_of_Controller_P.LowPassFilterDiscreteorContinuo;
 
-    /* DiscreteIntegrator: '<S130>/Integrator' */
+    /* DiscreteIntegrator: '<S132>/Integrator' */
     if (Copy_of_Controller_DW.Integrator_IC_LOADING_m != 0) {
       Copy_of_Controller_DW.Integrator_DSTATE_i = rtb_Max;
       if (Copy_of_Controller_DW.Integrator_DSTATE_i >=
@@ -1073,26 +1063,26 @@ void Copy_of_Controller_output(void)
         Copy_of_Controller_P.Integrator_LowerSat;
     }
 
-    /* Saturate: '<S130>/Saturation' incorporates:
-     *  DiscreteIntegrator: '<S130>/Integrator'
+    /* Saturate: '<S132>/Saturation' incorporates:
+     *  DiscreteIntegrator: '<S132>/Integrator'
      */
     if (Copy_of_Controller_DW.Integrator_DSTATE_i >
         Copy_of_Controller_P.Saturation_UpperSat) {
-      /* Saturate: '<S130>/Saturation' */
+      /* Saturate: '<S132>/Saturation' */
       rtb_Saturation_o = Copy_of_Controller_P.Saturation_UpperSat;
     } else if (Copy_of_Controller_DW.Integrator_DSTATE_i <
                Copy_of_Controller_P.Saturation_LowerSat) {
-      /* Saturate: '<S130>/Saturation' */
+      /* Saturate: '<S132>/Saturation' */
       rtb_Saturation_o = Copy_of_Controller_P.Saturation_LowerSat;
     } else {
-      /* Saturate: '<S130>/Saturation' */
+      /* Saturate: '<S132>/Saturation' */
       rtb_Saturation_o = Copy_of_Controller_DW.Integrator_DSTATE_i;
     }
 
-    /* End of Saturate: '<S130>/Saturation' */
+    /* End of Saturate: '<S132>/Saturation' */
 
-    /* MinMax: '<S124>/Max' incorporates:
-     *  Constant: '<S124>/Time constant'
+    /* MinMax: '<S126>/Max' incorporates:
+     *  Constant: '<S126>/Time constant'
      */
     if ((Copy_of_Controller_B.Probe_h[0] >=
          Copy_of_Controller_P.LowPassFilterDiscreteorContin_d) || rtIsNaN
@@ -1102,11 +1092,11 @@ void Copy_of_Controller_output(void)
       rtb_Product = Copy_of_Controller_P.LowPassFilterDiscreteorContin_d;
     }
 
-    /* End of MinMax: '<S124>/Max' */
+    /* End of MinMax: '<S126>/Max' */
 
-    /* Product: '<S123>/1//T' incorporates:
-     *  Fcn: '<S124>/Avoid Divide by Zero'
-     *  Sum: '<S123>/Sum1'
+    /* Product: '<S125>/1//T' incorporates:
+     *  Fcn: '<S126>/Avoid Divide by Zero'
+     *  Sum: '<S125>/Sum1'
      */
     Copy_of_Controller_B.uT_i = 1.0 / ((real_T)(rtb_Product == 0.0) *
       2.2204460492503131e-16 + rtb_Product) * (rtb_Max - rtb_Saturation_o);
@@ -1116,8 +1106,8 @@ void Copy_of_Controller_output(void)
      *  Gain: '<S3>/Gain1'
      *  Product: '<S3>/Product'
      */
-    Copy_of_Controller_B.Sum = Copy_of_Controller_P.Gain1_Gain *
-      rtb_Saturation_o * (real_T)rtb_Compare_g * rtb_Cos +
+    Copy_of_Controller_B.Sum = (real_T)rtb_Compare_g * rtb_Cos *
+      (Copy_of_Controller_P.Gain1_Gain * rtb_Saturation_o) +
       Copy_of_Controller_P.Gain_Gain * Copy_of_Controller_B.raagpos;
     srUpdateBC(Copy_of_Controller_DW.swing_SubsysRanBC);
   } else if (Copy_of_Controller_DW.swing_MODE) {
@@ -1154,8 +1144,8 @@ void Copy_of_Controller_output(void)
     }
   }
 
-  /* MinMax: '<S143>/Max' incorporates:
-   *  Constant: '<S143>/Time constant'
+  /* MinMax: '<S145>/Max' incorporates:
+   *  Constant: '<S145>/Time constant'
    */
   if ((Copy_of_Controller_B.Probe_o[0] >=
        Copy_of_Controller_P.LowPassFilterDiscreteorConti_b2) || rtIsNaN
@@ -1165,17 +1155,17 @@ void Copy_of_Controller_output(void)
     rtb_Max = Copy_of_Controller_P.LowPassFilterDiscreteorConti_b2;
   }
 
-  /* End of MinMax: '<S143>/Max' */
+  /* End of MinMax: '<S145>/Max' */
 
-  /* Product: '<S140>/1//T' incorporates:
-   *  Fcn: '<S143>/Avoid Divide by Zero'
-   *  Sum: '<S140>/Sum1'
+  /* Product: '<S142>/1//T' incorporates:
+   *  Fcn: '<S145>/Avoid Divide by Zero'
+   *  Sum: '<S142>/Sum1'
    */
   Copy_of_Controller_B.uT = 1.0 / ((real_T)(rtb_Max == 0.0) *
     2.2204460492503131e-16 + rtb_Max) * (K_d - rtb_Saturation_m);
 
-  /* MinMax: '<S150>/Max' incorporates:
-   *  Constant: '<S150>/Time constant'
+  /* MinMax: '<S152>/Max' incorporates:
+   *  Constant: '<S152>/Time constant'
    */
   if ((Copy_of_Controller_B.Probe[0] >=
        Copy_of_Controller_P.LowPassFilterDiscreteorContin_m) || rtIsNaN
@@ -1185,11 +1175,11 @@ void Copy_of_Controller_output(void)
     rtb_Max = Copy_of_Controller_P.LowPassFilterDiscreteorContin_m;
   }
 
-  /* End of MinMax: '<S150>/Max' */
+  /* End of MinMax: '<S152>/Max' */
 
-  /* Product: '<S141>/1//T' incorporates:
-   *  Fcn: '<S150>/Avoid Divide by Zero'
-   *  Sum: '<S141>/Sum1'
+  /* Product: '<S143>/1//T' incorporates:
+   *  Fcn: '<S152>/Avoid Divide by Zero'
+   *  Sum: '<S143>/Sum1'
    */
   Copy_of_Controller_B.uT_e = 1.0 / ((real_T)(rtb_Max == 0.0) *
     2.2204460492503131e-16 + rtb_Max) * (K - rtb_Saturation_h);
@@ -1217,10 +1207,10 @@ void Copy_of_Controller_update(void)
   /* Update for Delay: '<Root>/Delay' */
   Copy_of_Controller_DW.Delay_DSTATE = Copy_of_Controller_B.Sum1;
 
-  /* Update for UnitDelay: '<S139>/UD' */
+  /* Update for UnitDelay: '<S141>/UD' */
   Copy_of_Controller_DW.UD_DSTATE = Copy_of_Controller_B.TSamp;
 
-  /* Update for DiscreteIntegrator: '<S156>/Integrator' */
+  /* Update for DiscreteIntegrator: '<S158>/Integrator' */
   Copy_of_Controller_DW.Integrator_IC_LOADING = 0U;
   Copy_of_Controller_DW.Integrator_DSTATE +=
     Copy_of_Controller_P.Integrator_gainval_m * Copy_of_Controller_B.uT_e;
@@ -1237,12 +1227,12 @@ void Copy_of_Controller_update(void)
   Copy_of_Controller_DW.Integrator_PrevResetState = (int8_T)
     Copy_of_Controller_B.LogicalOperator;
 
-  /* End of Update for DiscreteIntegrator: '<S156>/Integrator' */
+  /* End of Update for DiscreteIntegrator: '<S158>/Integrator' */
 
-  /* Update for UnitDelay: '<S138>/UD' */
+  /* Update for UnitDelay: '<S140>/UD' */
   Copy_of_Controller_DW.UD_DSTATE_b = Copy_of_Controller_B.TSamp_n;
 
-  /* Update for DiscreteIntegrator: '<S149>/Integrator' */
+  /* Update for DiscreteIntegrator: '<S151>/Integrator' */
   Copy_of_Controller_DW.Integrator_IC_LOADING_i = 0U;
   Copy_of_Controller_DW.Integrator_DSTATE_f +=
     Copy_of_Controller_P.Integrator_gainval_o * Copy_of_Controller_B.uT;
@@ -1259,7 +1249,7 @@ void Copy_of_Controller_update(void)
   Copy_of_Controller_DW.Integrator_PrevResetState_l = (int8_T)
     Copy_of_Controller_B.LogicalOperator_g;
 
-  /* End of Update for DiscreteIntegrator: '<S149>/Integrator' */
+  /* End of Update for DiscreteIntegrator: '<S151>/Integrator' */
 
   /* Update for Delay: '<S4>/Delay' */
   Copy_of_Controller_DW.Delay_DSTATE_f[0] =
@@ -1300,10 +1290,10 @@ void Copy_of_Controller_update(void)
    *  EnablePort: '<S3>/Enable'
    */
   if (Copy_of_Controller_DW.swing_MODE) {
-    /* Update for UnitDelay: '<S122>/UD' */
+    /* Update for UnitDelay: '<S124>/UD' */
     Copy_of_Controller_DW.UD_DSTATE_j = Copy_of_Controller_B.TSamp_a;
 
-    /* Update for DiscreteIntegrator: '<S130>/Integrator' */
+    /* Update for DiscreteIntegrator: '<S132>/Integrator' */
     Copy_of_Controller_DW.Integrator_IC_LOADING_m = 0U;
     Copy_of_Controller_DW.Integrator_DSTATE_i +=
       Copy_of_Controller_P.Integrator_gainval * Copy_of_Controller_B.uT_i;
@@ -1320,7 +1310,7 @@ void Copy_of_Controller_update(void)
     Copy_of_Controller_DW.Integrator_PrevResetState_a = (int8_T)
       Copy_of_Controller_B.LogicalOperator_f;
 
-    /* End of Update for DiscreteIntegrator: '<S130>/Integrator' */
+    /* End of Update for DiscreteIntegrator: '<S132>/Integrator' */
   }
 
   /* End of Update for SubSystem: '<Root>/swing' */
@@ -1580,26 +1570,26 @@ void Copy_of_Controller_initialize(void)
     }
   }
 
-  /* Start for Probe: '<S150>/Probe' */
+  /* Start for Probe: '<S152>/Probe' */
   Copy_of_Controller_B.Probe[0] = 0.001;
   Copy_of_Controller_B.Probe[1] = 0.0;
 
-  /* Start for Probe: '<S143>/Probe' */
+  /* Start for Probe: '<S145>/Probe' */
   Copy_of_Controller_B.Probe_o[0] = 0.001;
   Copy_of_Controller_B.Probe_o[1] = 0.0;
 
   /* Start for Enabled SubSystem: '<Root>/down' */
   Copy_of_Controller_DW.down_MODE = false;
 
-  /* Start for Enabled SubSystem: '<S87>/Enabled Subsystem' */
+  /* Start for Enabled SubSystem: '<S89>/Enabled Subsystem' */
   Copy_of__EnabledSubsystem_Start(&Copy_of_Controller_DW.EnabledSubsystem_p);
 
-  /* End of Start for SubSystem: '<S87>/Enabled Subsystem' */
+  /* End of Start for SubSystem: '<S89>/Enabled Subsystem' */
 
-  /* Start for Enabled SubSystem: '<S81>/MeasurementUpdate' */
+  /* Start for Enabled SubSystem: '<S82>/MeasurementUpdate' */
   Copy_of_MeasurementUpdate_Start(&Copy_of_Controller_DW.MeasurementUpdate_p);
 
-  /* End of Start for SubSystem: '<S81>/MeasurementUpdate' */
+  /* End of Start for SubSystem: '<S82>/MeasurementUpdate' */
   /* End of Start for SubSystem: '<Root>/down' */
 
   /* Start for Enabled SubSystem: '<Root>/balancing' */
@@ -1619,31 +1609,30 @@ void Copy_of_Controller_initialize(void)
   /* Start for Enabled SubSystem: '<Root>/swing' */
   Copy_of_Controller_DW.swing_MODE = false;
 
-  /* Start for Probe: '<S124>/Probe' */
+  /* Start for Probe: '<S126>/Probe' */
   Copy_of_Controller_B.Probe_h[0] = 0.001;
   Copy_of_Controller_B.Probe_h[1] = 0.0;
 
   /* End of Start for SubSystem: '<Root>/swing' */
-  Copy_of_Controller_PrevZCX.MemoryX_Reset_ZCE_g = POS_ZCSIG;
   Copy_of_Controller_PrevZCX.MemoryX_Reset_ZCE = POS_ZCSIG;
 
   /* InitializeConditions for Delay: '<Root>/Delay' */
   Copy_of_Controller_DW.Delay_DSTATE =
     Copy_of_Controller_P.Delay_InitialCondition;
 
-  /* InitializeConditions for UnitDelay: '<S139>/UD' */
+  /* InitializeConditions for UnitDelay: '<S141>/UD' */
   Copy_of_Controller_DW.UD_DSTATE =
     Copy_of_Controller_P.DiscreteDerivative1_ICPrevScale;
 
-  /* InitializeConditions for DiscreteIntegrator: '<S156>/Integrator' */
+  /* InitializeConditions for DiscreteIntegrator: '<S158>/Integrator' */
   Copy_of_Controller_DW.Integrator_PrevResetState = 0;
   Copy_of_Controller_DW.Integrator_IC_LOADING = 1U;
 
-  /* InitializeConditions for UnitDelay: '<S138>/UD' */
+  /* InitializeConditions for UnitDelay: '<S140>/UD' */
   Copy_of_Controller_DW.UD_DSTATE_b =
     Copy_of_Controller_P.DiscreteDerivative_ICPrevScal_f;
 
-  /* InitializeConditions for DiscreteIntegrator: '<S149>/Integrator' */
+  /* InitializeConditions for DiscreteIntegrator: '<S151>/Integrator' */
   Copy_of_Controller_DW.Integrator_PrevResetState_l = 0;
   Copy_of_Controller_DW.Integrator_IC_LOADING_i = 1U;
 
@@ -1653,32 +1642,32 @@ void Copy_of_Controller_initialize(void)
   Copy_of_Controller_DW.Delay_DSTATE_f[1] =
     Copy_of_Controller_P.Delay_InitialCondition_e;
 
-  /* SystemInitialize for Enabled SubSystem: '<S137>/D Latch' */
-  /* SystemInitialize for SignalConversion generated from: '<S142>/D' incorporates:
-   *  Outport: '<S142>/Q'
+  /* SystemInitialize for Enabled SubSystem: '<S139>/D Latch' */
+  /* SystemInitialize for SignalConversion generated from: '<S144>/D' incorporates:
+   *  Outport: '<S144>/Q'
    */
   Copy_of_Controller_B.D = Copy_of_Controller_P.Q_Y0;
 
-  /* End of SystemInitialize for SubSystem: '<S137>/D Latch' */
+  /* End of SystemInitialize for SubSystem: '<S139>/D Latch' */
 
   /* SystemInitialize for Enabled SubSystem: '<Root>/down' */
   /* InitializeConditions for Delay: '<S60>/MemoryX' */
   Copy_of_Controller_DW.icLoad = true;
 
-  /* SystemInitialize for Enabled SubSystem: '<S87>/Enabled Subsystem' */
+  /* SystemInitialize for Enabled SubSystem: '<S89>/Enabled Subsystem' */
   Copy_of_C_EnabledSubsystem_Init(&Copy_of_Controller_B.EnabledSubsystem_p,
     &Copy_of_Controller_P.EnabledSubsystem_p);
 
-  /* End of SystemInitialize for SubSystem: '<S87>/Enabled Subsystem' */
+  /* End of SystemInitialize for SubSystem: '<S89>/Enabled Subsystem' */
 
-  /* SystemInitialize for MATLAB Function: '<S109>/SqrtUsedFcn' */
+  /* SystemInitialize for MATLAB Function: '<S111>/SqrtUsedFcn' */
   Copy_of_Contro_SqrtUsedFcn_Init(&Copy_of_Controller_DW.sf_SqrtUsedFcn_m);
 
-  /* SystemInitialize for Enabled SubSystem: '<S81>/MeasurementUpdate' */
+  /* SystemInitialize for Enabled SubSystem: '<S82>/MeasurementUpdate' */
   Copy_of__MeasurementUpdate_Init(&Copy_of_Controller_B.MeasurementUpdate_p,
     &Copy_of_Controller_P.MeasurementUpdate_p);
 
-  /* End of SystemInitialize for SubSystem: '<S81>/MeasurementUpdate' */
+  /* End of SystemInitialize for SubSystem: '<S82>/MeasurementUpdate' */
 
   /* SystemInitialize for Sum: '<S2>/Sum5' incorporates:
    *  Outport: '<S2>/u_out'
@@ -1714,11 +1703,11 @@ void Copy_of_Controller_initialize(void)
   /* End of SystemInitialize for SubSystem: '<Root>/balancing' */
 
   /* SystemInitialize for Enabled SubSystem: '<Root>/swing' */
-  /* InitializeConditions for UnitDelay: '<S122>/UD' */
+  /* InitializeConditions for UnitDelay: '<S124>/UD' */
   Copy_of_Controller_DW.UD_DSTATE_j =
     Copy_of_Controller_P.DiscreteDerivative_ICPrevScaled;
 
-  /* InitializeConditions for DiscreteIntegrator: '<S130>/Integrator' */
+  /* InitializeConditions for DiscreteIntegrator: '<S132>/Integrator' */
   Copy_of_Controller_DW.Integrator_PrevResetState_a = 0;
   Copy_of_Controller_DW.Integrator_IC_LOADING_m = 1U;
 
@@ -1892,10 +1881,10 @@ RT_MODEL_Copy_of_Controller_T *Copy_of_Controller(void)
   Copy_of_Controller_M->Timing.stepSize1 = 0.001;
 
   /* External mode info */
-  Copy_of_Controller_M->Sizes.checksums[0] = (3029969783U);
-  Copy_of_Controller_M->Sizes.checksums[1] = (3625939849U);
-  Copy_of_Controller_M->Sizes.checksums[2] = (1673189214U);
-  Copy_of_Controller_M->Sizes.checksums[3] = (3676070943U);
+  Copy_of_Controller_M->Sizes.checksums[0] = (3169127062U);
+  Copy_of_Controller_M->Sizes.checksums[1] = (1969902726U);
+  Copy_of_Controller_M->Sizes.checksums[2] = (1783445265U);
+  Copy_of_Controller_M->Sizes.checksums[3] = (2269460030U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;
@@ -1967,7 +1956,7 @@ RT_MODEL_Copy_of_Controller_T *Copy_of_Controller(void)
   Copy_of_Controller_M->Sizes.numU = (0);/* Number of model inputs */
   Copy_of_Controller_M->Sizes.sysDirFeedThru = (0);/* The model is not direct feedthrough */
   Copy_of_Controller_M->Sizes.numSampTimes = (2);/* Number of sample times */
-  Copy_of_Controller_M->Sizes.numBlocks = (178);/* Number of blocks */
+  Copy_of_Controller_M->Sizes.numBlocks = (177);/* Number of blocks */
   Copy_of_Controller_M->Sizes.numBlockIO = (37);/* Number of block outputs */
   Copy_of_Controller_M->Sizes.numBlockPrms = (408);/* Sum of parameter "widths" */
   return Copy_of_Controller_M;

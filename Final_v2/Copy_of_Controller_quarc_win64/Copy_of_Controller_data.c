@@ -7,9 +7,9 @@
  *
  * Code generation for model "Copy_of_Controller".
  *
- * Model version              : 1.27
+ * Model version              : 1.28
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Fri May 30 17:35:17 2025
+ * C source code generated on : Fri May 30 18:03:49 2025
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -35,112 +35,112 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
     0.029216435584111515, 145.05773005128574, 22.648268881779654 },
 
   /* Mask Parameter: DiscreteDerivative_ICPrevScaled
-   * Referenced by: '<S122>/UD'
+   * Referenced by: '<S124>/UD'
    */
   0.0,
 
   /* Mask Parameter: DiscreteDerivative1_ICPrevScale
-   * Referenced by: '<S139>/UD'
+   * Referenced by: '<S141>/UD'
    */
   0.0,
 
   /* Mask Parameter: DiscreteDerivative_ICPrevScal_f
-   * Referenced by: '<S138>/UD'
+   * Referenced by: '<S140>/UD'
    */
   0.0,
 
   /* Mask Parameter: LowPassFilterDiscreteorContinuo
-   * Referenced by: '<S123>/K'
+   * Referenced by: '<S125>/K'
    */
   1.0,
 
   /* Mask Parameter: LowPassFilterDiscreteorContin_o
-   * Referenced by: '<S141>/K'
+   * Referenced by: '<S143>/K'
    */
   1.0,
 
   /* Mask Parameter: LowPassFilterDiscreteorContin_b
-   * Referenced by: '<S140>/K'
+   * Referenced by: '<S142>/K'
    */
   1.0,
 
   /* Mask Parameter: LowPassFilterDiscreteorContin_d
-   * Referenced by: '<S124>/Time constant'
+   * Referenced by: '<S126>/Time constant'
    */
   0.01,
 
   /* Mask Parameter: LowPassFilterDiscreteorContin_m
-   * Referenced by: '<S150>/Time constant'
+   * Referenced by: '<S152>/Time constant'
    */
   0.01,
 
   /* Mask Parameter: LowPassFilterDiscreteorConti_b2
-   * Referenced by: '<S143>/Time constant'
+   * Referenced by: '<S145>/Time constant'
    */
   0.01,
 
   /* Mask Parameter: CompareToConstant_const
-   * Referenced by: '<S121>/Constant'
+   * Referenced by: '<S123>/Constant'
    */
   0.62831853071795862,
 
   /* Mask Parameter: CompareToConstant_const_o
-   * Referenced by: '<S127>/Constant'
+   * Referenced by: '<S129>/Constant'
    */
   2.0,
 
   /* Mask Parameter: CompareToConstant1_const
-   * Referenced by: '<S132>/Constant'
+   * Referenced by: '<S134>/Constant'
    */
   1.5707963267948966,
 
   /* Mask Parameter: CompareToConstant5_const
-   * Referenced by: '<S136>/Constant'
+   * Referenced by: '<S138>/Constant'
    */
   0.1,
 
   /* Mask Parameter: CompareToConstant_const_l
-   * Referenced by: '<S153>/Constant'
+   * Referenced by: '<S155>/Constant'
    */
   2.0,
 
   /* Mask Parameter: CompareToConstant3_const
-   * Referenced by: '<S134>/Constant'
+   * Referenced by: '<S136>/Constant'
    */
   0.1,
 
   /* Mask Parameter: CompareToConstant4_const
-   * Referenced by: '<S135>/Constant'
+   * Referenced by: '<S137>/Constant'
    */
   1.0,
 
   /* Mask Parameter: CompareToConstant_const_c
-   * Referenced by: '<S146>/Constant'
+   * Referenced by: '<S148>/Constant'
    */
   2.0,
 
   /* Mask Parameter: CompareToConstant2_const
-   * Referenced by: '<S133>/Constant'
+   * Referenced by: '<S135>/Constant'
    */
   0.1,
 
   /* Mask Parameter: Balance_const
-   * Referenced by: '<S131>/Constant'
+   * Referenced by: '<S133>/Constant'
    */
   0.4,
 
   /* Mask Parameter: LowPassFilterDiscreteorConti_b0
-   * Referenced by: '<S124>/Constant'
+   * Referenced by: '<S126>/Constant'
    */
   1.0,
 
   /* Mask Parameter: LowPassFilterDiscreteorConti_mr
-   * Referenced by: '<S150>/Constant'
+   * Referenced by: '<S152>/Constant'
    */
   1.0,
 
   /* Mask Parameter: LowPassFilterDiscreteorConti_oe
-   * Referenced by: '<S143>/Constant'
+   * Referenced by: '<S145>/Constant'
    */
   1.0,
 
@@ -319,7 +319,7 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
   0.0,
 
   /* Expression: 0
-   * Referenced by: '<S128>/Constant'
+   * Referenced by: '<S130>/Constant'
    */
   0.0,
 
@@ -334,7 +334,7 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
   6.2831853071795862,
 
   /* Computed Parameter: TSamp_WtEt
-   * Referenced by: '<S122>/TSamp'
+   * Referenced by: '<S124>/TSamp'
    */
   1000.0,
 
@@ -344,27 +344,27 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
   -10.0,
 
   /* Computed Parameter: Integrator_gainval
-   * Referenced by: '<S130>/Integrator'
+   * Referenced by: '<S132>/Integrator'
    */
   0.001,
 
   /* Expression: antiwindupUpperLimit
-   * Referenced by: '<S130>/Integrator'
+   * Referenced by: '<S132>/Integrator'
    */
   0.0,
 
   /* Expression: antiwindupLowerLimit
-   * Referenced by: '<S130>/Integrator'
+   * Referenced by: '<S132>/Integrator'
    */
   0.0,
 
   /* Expression: windupUpperLimit
-   * Referenced by: '<S130>/Saturation'
+   * Referenced by: '<S132>/Saturation'
    */
   0.0,
 
   /* Expression: windupLowerLimit
-   * Referenced by: '<S130>/Saturation'
+   * Referenced by: '<S132>/Saturation'
    */
   0.0,
 
@@ -374,12 +374,12 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
   -0.8,
 
   /* Expression: 0
-   * Referenced by: '<S147>/Constant'
+   * Referenced by: '<S149>/Constant'
    */
   0.0,
 
   /* Expression: 0
-   * Referenced by: '<S154>/Constant'
+   * Referenced by: '<S156>/Constant'
    */
   0.0,
 
@@ -494,62 +494,62 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
   -3.1415926535897931,
 
   /* Computed Parameter: TSamp_WtEt_n
-   * Referenced by: '<S139>/TSamp'
+   * Referenced by: '<S141>/TSamp'
    */
   1000.0,
 
   /* Computed Parameter: Integrator_gainval_m
-   * Referenced by: '<S156>/Integrator'
+   * Referenced by: '<S158>/Integrator'
    */
   0.001,
 
   /* Expression: antiwindupUpperLimit
-   * Referenced by: '<S156>/Integrator'
+   * Referenced by: '<S158>/Integrator'
    */
   0.0,
 
   /* Expression: antiwindupLowerLimit
-   * Referenced by: '<S156>/Integrator'
+   * Referenced by: '<S158>/Integrator'
    */
   0.0,
 
   /* Expression: windupUpperLimit
-   * Referenced by: '<S156>/Saturation'
+   * Referenced by: '<S158>/Saturation'
    */
   0.0,
 
   /* Expression: windupLowerLimit
-   * Referenced by: '<S156>/Saturation'
+   * Referenced by: '<S158>/Saturation'
    */
   0.0,
 
   /* Computed Parameter: TSamp_WtEt_k
-   * Referenced by: '<S138>/TSamp'
+   * Referenced by: '<S140>/TSamp'
    */
   1000.0,
 
   /* Computed Parameter: Integrator_gainval_o
-   * Referenced by: '<S149>/Integrator'
+   * Referenced by: '<S151>/Integrator'
    */
   0.001,
 
   /* Expression: antiwindupUpperLimit
-   * Referenced by: '<S149>/Integrator'
+   * Referenced by: '<S151>/Integrator'
    */
   0.0,
 
   /* Expression: antiwindupLowerLimit
-   * Referenced by: '<S149>/Integrator'
+   * Referenced by: '<S151>/Integrator'
    */
   0.0,
 
   /* Expression: windupUpperLimit
-   * Referenced by: '<S149>/Saturation'
+   * Referenced by: '<S151>/Saturation'
    */
   0.0,
 
   /* Expression: windupLowerLimit
-   * Referenced by: '<S149>/Saturation'
+   * Referenced by: '<S151>/Saturation'
    */
   0.0,
 
@@ -634,17 +634,17 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
   true,
 
   /* Expression: pInitialization.isSqrtUsed
-   * Referenced by: '<S109>/isSqrtUsed'
+   * Referenced by: '<S111>/isSqrtUsed'
    */
   false,
 
   /* Computed Parameter: Q_Y0
-   * Referenced by: '<S142>/Q'
+   * Referenced by: '<S144>/Q'
    */
   false,
 
   /* Computed Parameter: Q_Y0_b
-   * Referenced by: '<S142>/!Q'
+   * Referenced by: '<S144>/!Q'
    */
   true,
 
@@ -843,27 +843,27 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
    */
   false,
 
-  /* Start of '<S87>/Enabled Subsystem' */
+  /* Start of '<S89>/Enabled Subsystem' */
   {
     /* Expression: 0
-     * Referenced by: '<S113>/deltax'
+     * Referenced by: '<S115>/deltax'
      */
     0.0
   }
   ,
 
-  /* End of '<S87>/Enabled Subsystem' */
+  /* End of '<S89>/Enabled Subsystem' */
 
-  /* Start of '<S81>/MeasurementUpdate' */
+  /* Start of '<S82>/MeasurementUpdate' */
   {
     /* Expression: 0
-     * Referenced by: '<S111>/L*(y[k]-yhat[k|k-1])'
+     * Referenced by: '<S113>/L*(y[k]-yhat[k|k-1])'
      */
     0.0
   }
   ,
 
-  /* End of '<S81>/MeasurementUpdate' */
+  /* End of '<S82>/MeasurementUpdate' */
 
   /* Start of '<S31>/Enabled Subsystem' */
   {
