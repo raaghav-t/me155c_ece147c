@@ -7,9 +7,9 @@
  *
  * Code generation for model "Copy_of_Controller".
  *
- * Model version              : 1.28
+ * Model version              : 1.30
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Fri May 30 18:03:49 2025
+ * C source code generated on : Mon Jun  2 10:46:45 2025
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -70,9 +70,9 @@ static const char_T * rtDataTypeNames[] = {
 
 /* data type transitions for block I/O structure */
 static DataTypeTransition rtBTransitions[] = {
-  { (char_T *)(&Copy_of_Controller_B.Mod), 0, 0, 33 },
+  { (char_T *)(&Copy_of_Controller_B.Mod), 0, 0, 38 },
 
-  { (char_T *)(&Copy_of_Controller_B.LogicalOperator), 8, 0, 8 },
+  { (char_T *)(&Copy_of_Controller_B.Compare), 8, 0, 9 },
 
   { (char_T *)(&Copy_of_Controller_B.EnabledSubsystem_p.Product2[0]), 0, 0, 6 },
 
@@ -83,22 +83,22 @@ static DataTypeTransition rtBTransitions[] = {
   { (char_T *)(&Copy_of_Controller_B.MeasurementUpdate.Product3[0]), 0, 0, 6 }
   ,
 
-  { (char_T *)(&Copy_of_Controller_DW.Delay_DSTATE), 0, 0, 43 },
+  { (char_T *)(&Copy_of_Controller_DW.Delay_DSTATE), 0, 0, 45 },
 
   { (char_T *)(&Copy_of_Controller_DW.HILInitialize_Card), 15, 0, 1 },
 
-  { (char_T *)(&Copy_of_Controller_DW.cartangle_PWORK), 11, 0, 11 },
+  { (char_T *)(&Copy_of_Controller_DW.cartangle_PWORK), 11, 0, 12 },
 
   { (char_T *)(&Copy_of_Controller_DW.HILInitialize_QuadratureModes[0]), 6, 0,
     10 },
 
-  { (char_T *)(&Copy_of_Controller_DW.Delay_DSTATE_f[0]), 8, 0, 2 },
+  { (char_T *)(&Copy_of_Controller_DW.Delay1_DSTATE), 8, 0, 3 },
 
-  { (char_T *)(&Copy_of_Controller_DW.Integrator_PrevResetState), 2, 0, 7 },
+  { (char_T *)(&Copy_of_Controller_DW.Integrator_PrevResetState), 2, 0, 9 },
 
-  { (char_T *)(&Copy_of_Controller_DW.Integrator_IC_LOADING), 3, 0, 3 },
+  { (char_T *)(&Copy_of_Controller_DW.Integrator_IC_LOADING), 3, 0, 4 },
 
-  { (char_T *)(&Copy_of_Controller_DW.icLoad), 8, 0, 5 },
+  { (char_T *)(&Copy_of_Controller_DW.icLoad), 8, 0, 6 },
 
   { (char_T *)
     (&Copy_of_Controller_DW.EnabledSubsystem_p.EnabledSubsystem_SubsysRanBC), 2,
@@ -154,17 +154,17 @@ static DataTypeTransitionTable rtBTransTable = {
 
 /* data type transitions for Parameters structure */
 static DataTypeTransition rtPTransitions[] = {
-  { (char_T *)(&Copy_of_Controller_P.K[0]), 0, 0, 34 },
+  { (char_T *)(&Copy_of_Controller_P.K[0]), 0, 0, 38 },
 
   { (char_T *)(&Copy_of_Controller_P.cartangle_channels), 7, 0, 3 },
 
-  { (char_T *)(&Copy_of_Controller_P.u_out_Y0), 0, 0, 302 },
+  { (char_T *)(&Copy_of_Controller_P.theta_off_Y0), 0, 0, 315 },
 
   { (char_T *)(&Copy_of_Controller_P.HILInitialize_CKChannels[0]), 6, 0, 7 },
 
   { (char_T *)(&Copy_of_Controller_P.HILInitialize_AIChannels[0]), 7, 0, 13 },
 
-  { (char_T *)(&Copy_of_Controller_P.Enable_Value), 8, 0, 45 },
+  { (char_T *)(&Copy_of_Controller_P.Enable_Value), 8, 0, 46 },
 
   { (char_T *)(&Copy_of_Controller_P.EnabledSubsystem_p.deltax_Y0), 0, 0, 1 },
 

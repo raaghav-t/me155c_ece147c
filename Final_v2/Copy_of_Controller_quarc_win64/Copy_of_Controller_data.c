@@ -7,9 +7,9 @@
  *
  * Code generation for model "Copy_of_Controller".
  *
- * Model version              : 1.28
+ * Model version              : 1.30
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Fri May 30 18:03:49 2025
+ * C source code generated on : Mon Jun  2 10:46:45 2025
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -23,124 +23,144 @@
 /* Block parameters (default storage) */
 P_Copy_of_Controller_T Copy_of_Controller_P = {
   /* Variable: K
-   * Referenced by: '<S1>/Gain3'
+   * Referenced by: '<S2>/Gain3'
    */
   { 61.673881547355172, 42.429905201963031, 39.017078618349579,
     -0.090621953305622574, -450.54571555173851, -101.28481157448276 },
 
   /* Variable: K_down
-   * Referenced by: '<S2>/Gain3'
+   * Referenced by: '<S3>/Gain3'
    */
   { 32.450213562237977, 22.798214126770603, 4.5794372411157882,
     0.029216435584111515, 145.05773005128574, 22.648268881779654 },
 
   /* Mask Parameter: DiscreteDerivative_ICPrevScaled
-   * Referenced by: '<S124>/UD'
+   * Referenced by: '<S133>/UD'
    */
   0.0,
 
   /* Mask Parameter: DiscreteDerivative1_ICPrevScale
-   * Referenced by: '<S141>/UD'
+   * Referenced by: '<S152>/UD'
    */
   0.0,
 
   /* Mask Parameter: DiscreteDerivative_ICPrevScal_f
-   * Referenced by: '<S140>/UD'
+   * Referenced by: '<S151>/UD'
    */
   0.0,
 
   /* Mask Parameter: LowPassFilterDiscreteorContinuo
-   * Referenced by: '<S125>/K'
+   * Referenced by: '<S6>/K'
+   */
+  0.1,
+
+  /* Mask Parameter: LowPassFilterDiscreteorContin_f
+   * Referenced by: '<S134>/K'
    */
   1.0,
 
   /* Mask Parameter: LowPassFilterDiscreteorContin_o
-   * Referenced by: '<S143>/K'
+   * Referenced by: '<S154>/K'
    */
   1.0,
 
   /* Mask Parameter: LowPassFilterDiscreteorContin_b
-   * Referenced by: '<S142>/K'
+   * Referenced by: '<S153>/K'
    */
   1.0,
 
+  /* Mask Parameter: LowPassFilterDiscreteorContin_h
+   * Referenced by: '<S7>/Time constant'
+   */
+  1000.0,
+
   /* Mask Parameter: LowPassFilterDiscreteorContin_d
-   * Referenced by: '<S126>/Time constant'
+   * Referenced by: '<S135>/Time constant'
    */
   0.01,
 
   /* Mask Parameter: LowPassFilterDiscreteorContin_m
-   * Referenced by: '<S152>/Time constant'
+   * Referenced by: '<S163>/Time constant'
    */
   0.01,
 
   /* Mask Parameter: LowPassFilterDiscreteorConti_b2
-   * Referenced by: '<S145>/Time constant'
+   * Referenced by: '<S156>/Time constant'
    */
   0.01,
 
   /* Mask Parameter: CompareToConstant_const
-   * Referenced by: '<S123>/Constant'
+   * Referenced by: '<S10>/Constant'
+   */
+  2.0,
+
+  /* Mask Parameter: CompareToConstant_const_e
+   * Referenced by: '<S132>/Constant'
    */
   0.62831853071795862,
 
   /* Mask Parameter: CompareToConstant_const_o
-   * Referenced by: '<S129>/Constant'
+   * Referenced by: '<S138>/Constant'
    */
   2.0,
 
   /* Mask Parameter: CompareToConstant1_const
-   * Referenced by: '<S134>/Constant'
+   * Referenced by: '<S144>/Constant'
    */
   1.5707963267948966,
 
+  /* Mask Parameter: Balance_const
+   * Referenced by: '<S142>/Constant'
+   */
+  0.4,
+
   /* Mask Parameter: CompareToConstant5_const
-   * Referenced by: '<S138>/Constant'
+   * Referenced by: '<S148>/Constant'
    */
   0.1,
 
   /* Mask Parameter: CompareToConstant_const_l
-   * Referenced by: '<S155>/Constant'
+   * Referenced by: '<S166>/Constant'
    */
   2.0,
 
   /* Mask Parameter: CompareToConstant3_const
-   * Referenced by: '<S136>/Constant'
+   * Referenced by: '<S146>/Constant'
    */
   0.1,
 
   /* Mask Parameter: CompareToConstant4_const
-   * Referenced by: '<S137>/Constant'
+   * Referenced by: '<S147>/Constant'
    */
   1.0,
 
   /* Mask Parameter: CompareToConstant_const_c
-   * Referenced by: '<S148>/Constant'
+   * Referenced by: '<S159>/Constant'
    */
   2.0,
 
   /* Mask Parameter: CompareToConstant2_const
-   * Referenced by: '<S135>/Constant'
+   * Referenced by: '<S145>/Constant'
    */
   0.1,
 
-  /* Mask Parameter: Balance_const
-   * Referenced by: '<S133>/Constant'
+  /* Mask Parameter: LowPassFilterDiscreteorConti_fy
+   * Referenced by: '<S7>/Constant'
    */
-  0.4,
+  1.0,
 
   /* Mask Parameter: LowPassFilterDiscreteorConti_b0
-   * Referenced by: '<S126>/Constant'
+   * Referenced by: '<S135>/Constant'
    */
   1.0,
 
   /* Mask Parameter: LowPassFilterDiscreteorConti_mr
-   * Referenced by: '<S152>/Constant'
+   * Referenced by: '<S163>/Constant'
    */
   1.0,
 
   /* Mask Parameter: LowPassFilterDiscreteorConti_oe
-   * Referenced by: '<S145>/Constant'
+   * Referenced by: '<S156>/Constant'
    */
   1.0,
 
@@ -160,17 +180,62 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
   0U,
 
   /* Expression: [0]
-   * Referenced by: '<S1>/u_out'
+   * Referenced by: '<S1>/theta_off'
+   */
+  0.0,
+
+  /* Expression: 0
+   * Referenced by: '<S11>/Constant'
+   */
+  0.0,
+
+  /* Computed Parameter: DiscreteTimeIntegrator_gainval
+   * Referenced by: '<S1>/Discrete-Time Integrator'
+   */
+  0.001,
+
+  /* Expression: 0
+   * Referenced by: '<S1>/Discrete-Time Integrator'
+   */
+  0.0,
+
+  /* Computed Parameter: Integrator_gainval
+   * Referenced by: '<S13>/Integrator'
+   */
+  0.001,
+
+  /* Expression: antiwindupUpperLimit
+   * Referenced by: '<S13>/Integrator'
+   */
+  0.0,
+
+  /* Expression: antiwindupLowerLimit
+   * Referenced by: '<S13>/Integrator'
+   */
+  0.0,
+
+  /* Expression: windupUpperLimit
+   * Referenced by: '<S13>/Saturation'
+   */
+  0.0,
+
+  /* Expression: windupLowerLimit
+   * Referenced by: '<S13>/Saturation'
+   */
+  0.0,
+
+  /* Expression: [0]
+   * Referenced by: '<S2>/u_out'
    */
   0.0,
 
   /* Expression: [-pi 0]
-   * Referenced by: '<S1>/Constant'
+   * Referenced by: '<S2>/Constant'
    */
   { -3.1415926535897931, 0.0 },
 
   /* Expression: pInitialization.M
-   * Referenced by: '<S6>/KalmanGainM'
+   * Referenced by: '<S15>/KalmanGainM'
    */
   { 0.40206025714970023, 0.040682518847074134, 0.19131055678958617,
     1.8721978824685984E-19, -7.8276716768415013E-15, -8.3311487444357287E-16,
@@ -178,18 +243,18 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
     -1.3009600987130741E-8, 0.0881679129802658, 0.098119093555829234 },
 
   /* Expression: pInitialization.C
-   * Referenced by: '<S5>/C'
+   * Referenced by: '<S14>/C'
    */
   { 0.29028, 0.0, 0.44289470999999997, 0.0, 0.20074735213124997, 0.0, 0.0, 0.0,
     0.0, -1.1077420496732719, 0.0, 10.394832036070891 },
 
   /* Expression: pInitialization.X0
-   * Referenced by: '<S5>/X0'
+   * Referenced by: '<S14>/X0'
    */
   { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
 
   /* Expression: pInitialization.A
-   * Referenced by: '<S5>/A'
+   * Referenced by: '<S14>/A'
    */
   { 1.0024703058545708, 0.0080099014061766043, 1.6013215329302366E-5, 0.0, 0.0,
     0.0, -0.0045517392910462357, 0.99998178821992578, 0.0039999757144194509, 0.0,
@@ -199,13 +264,13 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
     0.99999999999094069, 0.0009999999999961626, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0 },
 
   /* Expression: pInitialization.B
-   * Referenced by: '<S5>/B'
+   * Referenced by: '<S14>/B'
    */
   { 0.00050061883788603755, 2.0016519161627954E-6, 2.6683195918706538E-9,
     0.0031992194136736705, 2.5774926128761164E-6, 1.0918453479726534E-9 },
 
   /* Expression: pInitialization.Z
-   * Referenced by: '<S6>/CovarianceZ'
+   * Referenced by: '<S15>/CovarianceZ'
    */
   { 124.61358845348678, -61.346814452162604, -24.81751433169326,
     3.6057699372413289E-16, 2.3463410681455514E-13, 2.4873967987621177E-14,
@@ -221,7 +286,7 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
     -1.1900488770753616E-6, 118.67920730486838, 12.741633422209253 },
 
   /* Expression: pInitialization.L
-   * Referenced by: '<S6>/KalmanGainL'
+   * Referenced by: '<S15>/KalmanGainL'
    */
   { 0.40375250349113, 0.043905776353745013, 0.19147972886733766,
     -4.4169091215432681E-18, -3.0125134344833252E-14, -3.2502901110773282E-15,
@@ -229,27 +294,27 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
     -1.08206653026955E-9, 0.088167912976869864, 0.098207261468807538 },
 
   /* Expression: pInitialization.D
-   * Referenced by: '<S5>/D'
+   * Referenced by: '<S14>/D'
    */
   { 0.0, 0.0 },
 
   /* Expression: [0]
-   * Referenced by: '<S2>/u_out'
+   * Referenced by: '<S3>/u_out'
    */
   0.0,
 
   /* Expression: pi
-   * Referenced by: '<S2>/Constant'
+   * Referenced by: '<S3>/Constant'
    */
   3.1415926535897931,
 
   /* Expression: 2*pi
-   * Referenced by: '<S2>/Constant1'
+   * Referenced by: '<S3>/Constant1'
    */
   6.2831853071795862,
 
   /* Expression: pInitialization.M
-   * Referenced by: '<S62>/KalmanGainM'
+   * Referenced by: '<S71>/KalmanGainM'
    */
   { -0.21191264815193642, -0.3728064115179085, 0.32427361160286788,
     -9.9003269946551826E-18, 2.3247243139763057E-14, 2.4876277133998719E-15,
@@ -257,18 +322,18 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
     -1.3009600924195872E-8, 0.088167912980342059, 0.098119093555837367 },
 
   /* Expression: pInitialization.C
-   * Referenced by: '<S60>/C'
+   * Referenced by: '<S69>/C'
    */
   { 0.29027681981462955, 0.0, -0.44286696392900859, 0.0, 0.20069932381855193,
     0.0, 0.0, 0.0, 0.0, -1.1077420496732719, 0.0, 10.394832036070891 },
 
   /* Expression: pInitialization.X0
-   * Referenced by: '<S60>/X0'
+   * Referenced by: '<S69>/X0'
    */
   { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
 
   /* Expression: pInitialization.A
-   * Referenced by: '<S60>/A'
+   * Referenced by: '<S69>/A'
    */
   { 0.99520254840361544, 0.0079808247354536781, 1.5974442682809616E-5, 0.0, 0.0,
     0.0, -0.0055969868376773788, 0.99997760641846334, 0.0039999701381445273, 0.0,
@@ -279,13 +344,13 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
     0.0, 0.0, 0.0, 1.0 },
 
   /* Expression: pInitialization.B
-   * Referenced by: '<S60>/B'
+   * Referenced by: '<S69>/B'
    */
   { 0.00049880154596585488, 1.9968053353512024E-6, 2.6634727300653473E-9,
     0.0031992194136736705, 2.5774926128761164E-6, 1.0918453479726534E-9 },
 
   /* Expression: pInitialization.Z
-   * Referenced by: '<S62>/CovarianceZ'
+   * Referenced by: '<S71>/CovarianceZ'
    */
   { 199.16390396470553, 41.514288339509982, -207.008591355442,
     1.154833763095265E-14, -2.2785179380136481E-11, -2.4320767227611105E-12,
@@ -301,7 +366,7 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
     -1.1900488778492045E-6, 118.67920730495187, 12.741633422218159 },
 
   /* Expression: pInitialization.L
-   * Referenced by: '<S62>/KalmanGainL'
+   * Referenced by: '<S71>/KalmanGainL'
    */
   { -0.21030271043560803, -0.37449527872088384, 0.32277900392921888,
     -2.2530764772264103E-17, 2.2956656121858317E-14, 2.4993423395323156E-15,
@@ -309,77 +374,77 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
     -1.0820665284886374E-9, 0.088167912976945748, 0.098207261468815643 },
 
   /* Expression: pInitialization.D
-   * Referenced by: '<S60>/D'
+   * Referenced by: '<S69>/D'
    */
   { 0.0, 0.0 },
 
   /* Expression: [0]
-   * Referenced by: '<S3>/u_out'
+   * Referenced by: '<S4>/u_out'
    */
   0.0,
 
   /* Expression: 0
-   * Referenced by: '<S130>/Constant'
+   * Referenced by: '<S139>/Constant'
    */
   0.0,
 
-  /* Expression: pi
-   * Referenced by: '<S3>/Constant'
-   */
-  3.1415926535897931,
-
   /* Expression: 2*pi
-   * Referenced by: '<S3>/Constant1'
+   * Referenced by: '<S4>/2pi'
    */
   6.2831853071795862,
 
+  /* Expression: pi
+   * Referenced by: '<S4>/Constant'
+   */
+  3.1415926535897931,
+
   /* Computed Parameter: TSamp_WtEt
-   * Referenced by: '<S124>/TSamp'
+   * Referenced by: '<S133>/TSamp'
    */
   1000.0,
 
   /* Expression: -10
-   * Referenced by: '<S3>/Gain'
+   * Referenced by: '<S4>/Gain'
    */
   -10.0,
 
-  /* Computed Parameter: Integrator_gainval
-   * Referenced by: '<S132>/Integrator'
+  /* Computed Parameter: Integrator_gainval_h
+   * Referenced by: '<S141>/Integrator'
    */
   0.001,
 
   /* Expression: antiwindupUpperLimit
-   * Referenced by: '<S132>/Integrator'
+   * Referenced by: '<S141>/Integrator'
    */
   0.0,
 
   /* Expression: antiwindupLowerLimit
-   * Referenced by: '<S132>/Integrator'
+   * Referenced by: '<S141>/Integrator'
    */
   0.0,
 
   /* Expression: windupUpperLimit
-   * Referenced by: '<S132>/Saturation'
+   * Referenced by: '<S141>/Saturation'
    */
   0.0,
 
   /* Expression: windupLowerLimit
-   * Referenced by: '<S132>/Saturation'
+   * Referenced by: '<S141>/Saturation'
    */
   0.0,
 
   /* Expression: -0.8
-   * Referenced by: '<S3>/Gain1'
+   * Referenced by: '<S4>/Gain1'
    */
   -0.8,
 
   /* Expression: 0
-   * Referenced by: '<S149>/Constant'
+   * Referenced by: '<S160>/Constant'
    */
   0.0,
 
   /* Expression: 0
-   * Referenced by: '<S156>/Constant'
+   * Referenced by: '<S167>/Constant'
    */
   0.0,
 
@@ -463,16 +528,6 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
    */
   0.0,
 
-  /* Expression: 5
-   * Referenced by: '<Root>/Saturation'
-   */
-  5.0,
-
-  /* Expression: -5
-   * Referenced by: '<Root>/Saturation'
-   */
-  -5.0,
-
   /* Expression: 1/650
    * Referenced by: '<Root>/Gain'
    */
@@ -489,74 +544,104 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
   3.0480000000000003E-5,
 
   /* Expression: -pi
-   * Referenced by: '<S4>/Constant2'
+   * Referenced by: '<S5>/Constant2'
    */
   -3.1415926535897931,
 
   /* Computed Parameter: TSamp_WtEt_n
-   * Referenced by: '<S141>/TSamp'
+   * Referenced by: '<S152>/TSamp'
    */
   1000.0,
 
   /* Computed Parameter: Integrator_gainval_m
-   * Referenced by: '<S158>/Integrator'
+   * Referenced by: '<S169>/Integrator'
    */
   0.001,
 
   /* Expression: antiwindupUpperLimit
-   * Referenced by: '<S158>/Integrator'
+   * Referenced by: '<S169>/Integrator'
    */
   0.0,
 
   /* Expression: antiwindupLowerLimit
-   * Referenced by: '<S158>/Integrator'
+   * Referenced by: '<S169>/Integrator'
    */
   0.0,
 
   /* Expression: windupUpperLimit
-   * Referenced by: '<S158>/Saturation'
+   * Referenced by: '<S169>/Saturation'
    */
   0.0,
 
   /* Expression: windupLowerLimit
-   * Referenced by: '<S158>/Saturation'
+   * Referenced by: '<S169>/Saturation'
    */
   0.0,
 
   /* Computed Parameter: TSamp_WtEt_k
-   * Referenced by: '<S140>/TSamp'
+   * Referenced by: '<S151>/TSamp'
    */
   1000.0,
 
   /* Computed Parameter: Integrator_gainval_o
-   * Referenced by: '<S151>/Integrator'
+   * Referenced by: '<S162>/Integrator'
    */
   0.001,
 
   /* Expression: antiwindupUpperLimit
-   * Referenced by: '<S151>/Integrator'
+   * Referenced by: '<S162>/Integrator'
    */
   0.0,
 
   /* Expression: antiwindupLowerLimit
-   * Referenced by: '<S151>/Integrator'
+   * Referenced by: '<S162>/Integrator'
    */
   0.0,
 
   /* Expression: windupUpperLimit
-   * Referenced by: '<S151>/Saturation'
+   * Referenced by: '<S162>/Saturation'
    */
   0.0,
 
   /* Expression: windupLowerLimit
-   * Referenced by: '<S151>/Saturation'
+   * Referenced by: '<S162>/Saturation'
    */
   0.0,
 
+  /* Expression: 5
+   * Referenced by: '<Root>/Saturation2'
+   */
+  5.0,
+
+  /* Expression: -5
+   * Referenced by: '<Root>/Saturation2'
+   */
+  -5.0,
+
+  /* Expression: 8
+   * Referenced by: '<Root>/Saturation1'
+   */
+  8.0,
+
+  /* Expression: -8
+   * Referenced by: '<Root>/Saturation1'
+   */
+  -8.0,
+
   /* Expression: 1
-   * Referenced by: '<S4>/Constant1'
+   * Referenced by: '<S5>/Constant1'
    */
   1.0,
+
+  /* Expression: 5
+   * Referenced by: '<Root>/Saturation'
+   */
+  5.0,
+
+  /* Expression: -5
+   * Referenced by: '<Root>/Saturation'
+   */
+  -5.0,
 
   /* Expression: 0.001
    * Referenced by: '<Root>/Step'
@@ -619,32 +704,32 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
   4U,
 
   /* Expression: true()
-   * Referenced by: '<S5>/Enable'
+   * Referenced by: '<S14>/Enable'
    */
   true,
 
   /* Expression: pInitialization.isSqrtUsed
-   * Referenced by: '<S53>/isSqrtUsed'
+   * Referenced by: '<S62>/isSqrtUsed'
    */
   false,
 
   /* Expression: true()
-   * Referenced by: '<S60>/Enable'
+   * Referenced by: '<S69>/Enable'
    */
   true,
 
   /* Expression: pInitialization.isSqrtUsed
-   * Referenced by: '<S111>/isSqrtUsed'
+   * Referenced by: '<S120>/isSqrtUsed'
    */
   false,
 
   /* Computed Parameter: Q_Y0
-   * Referenced by: '<S144>/Q'
+   * Referenced by: '<S155>/Q'
    */
   false,
 
   /* Computed Parameter: Q_Y0_b
-   * Referenced by: '<S144>/!Q'
+   * Referenced by: '<S155>/!Q'
    */
   true,
 
@@ -833,8 +918,13 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
    */
   true,
 
+  /* Computed Parameter: Delay1_InitialCondition
+   * Referenced by: '<Root>/Delay1'
+   */
+  false,
+
   /* Computed Parameter: Delay_InitialCondition_e
-   * Referenced by: '<S4>/Delay'
+   * Referenced by: '<S5>/Delay'
    */
   false,
 
@@ -843,45 +933,45 @@ P_Copy_of_Controller_T Copy_of_Controller_P = {
    */
   false,
 
-  /* Start of '<S89>/Enabled Subsystem' */
+  /* Start of '<S98>/Enabled Subsystem' */
   {
     /* Expression: 0
-     * Referenced by: '<S115>/deltax'
+     * Referenced by: '<S124>/deltax'
      */
     0.0
   }
   ,
 
-  /* End of '<S89>/Enabled Subsystem' */
+  /* End of '<S98>/Enabled Subsystem' */
 
-  /* Start of '<S82>/MeasurementUpdate' */
+  /* Start of '<S91>/MeasurementUpdate' */
   {
     /* Expression: 0
-     * Referenced by: '<S113>/L*(y[k]-yhat[k|k-1])'
+     * Referenced by: '<S122>/L*(y[k]-yhat[k|k-1])'
      */
     0.0
   }
   ,
 
-  /* End of '<S82>/MeasurementUpdate' */
+  /* End of '<S91>/MeasurementUpdate' */
 
-  /* Start of '<S31>/Enabled Subsystem' */
+  /* Start of '<S40>/Enabled Subsystem' */
   {
     /* Expression: 0
-     * Referenced by: '<S57>/deltax'
+     * Referenced by: '<S66>/deltax'
      */
     0.0
   }
   ,
 
-  /* End of '<S31>/Enabled Subsystem' */
+  /* End of '<S40>/Enabled Subsystem' */
 
-  /* Start of '<S25>/MeasurementUpdate' */
+  /* Start of '<S34>/MeasurementUpdate' */
   {
     /* Expression: 0
-     * Referenced by: '<S55>/L*(y[k]-yhat[k|k-1])'
+     * Referenced by: '<S64>/L*(y[k]-yhat[k|k-1])'
      */
     0.0
   }
-  /* End of '<S25>/MeasurementUpdate' */
+  /* End of '<S34>/MeasurementUpdate' */
 };

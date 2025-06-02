@@ -1,4 +1,4 @@
-load est2.mat
+%load ../model_id/est2.mat ../model_id/rev.mat
 sys = est;
 
 sys = [sys(1); sys(2)/tf('s')];
@@ -38,6 +38,7 @@ R = 0.000001;
 Q = diag([1000, 1, 10, 0.01]);
 Q = diag([2000, 20, 10, 0.01]);
 Qd = diag([8000, 10, 100, 0.01]);
+%Qd = 0.01*diag([2000, 30, 100, 2]);
 
 
 % theta, x, thetadot, xdot
