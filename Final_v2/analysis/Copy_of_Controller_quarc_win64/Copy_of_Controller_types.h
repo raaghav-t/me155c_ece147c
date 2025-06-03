@@ -7,9 +7,9 @@
  *
  * Code generation for model "Copy_of_Controller".
  *
- * Model version              : 1.30
+ * Model version              : 1.31
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Mon Jun  2 10:03:15 2025
+ * C source code generated on : Mon Jun  2 19:03:51 2025
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -21,10 +21,10 @@
 #ifndef RTW_HEADER_Copy_of_Controller_types_h_
 #define RTW_HEADER_Copy_of_Controller_types_h_
 
-/* Parameters for system: '<S25>/MeasurementUpdate' */
+/* Parameters for system: '<S34>/MeasurementUpdate' */
 typedef struct P_MeasurementUpdate_Copy_of_C_T_ P_MeasurementUpdate_Copy_of_C_T;
 
-/* Parameters for system: '<S31>/Enabled Subsystem' */
+/* Parameters for system: '<S40>/Enabled Subsystem' */
 typedef struct P_EnabledSubsystem_Copy_of_Co_T_ P_EnabledSubsystem_Copy_of_Co_T;
 
 /* Parameters (default storage) */
