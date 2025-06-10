@@ -22,7 +22,7 @@
 \begin{abstract}
 This project focuses on the identification, modeling, and control of an inverted pendulum on a cart system. Through experimental identification, control design, and closed-loop testing, we implemented robust swing-up, balancing, and catching controllers. System identification methods included logarithmic sine sweeps and parametric identification with MATLAB's tfest. Controller design employed energy-based swing-up methods and robust LQR/LQG balancing strategies. Experimental validations confirm effective performance, achieving stable equilibrium transitions and pendulum catching.
 \end{abstract}
-
+\clearpage
 \section{Introduction}
 This project investigates the control of an inverted pendulum on a cart, specifically targeting swing-up, balancing, and catching tasks. The inverted pendulum, a classic control problem, requires precise and robust feedback control strategies due to its inherent instability. Previous literature includes methods involving energy-based swing-up and state-space feedback stabilization. The report is structured with system identification in Section 2, controller design in Section 3, closed-loop results in Section 4, and conclusions in Section 5.
 
@@ -141,6 +141,7 @@ To achieve this, we used the weights $Q$ below:
 \end{align*}
 This even more aggressive control of the angular position prevents the pendulum from swinging to more than $90^\circ$, which means that the catching controller does not need to wait for it to swing back down.
 
+
 \subsection{State Machine}
 Control modes transition between swing-up, balancing, and catching using a robust state machine architecture.
 This state machine was implemented in Simulink using logic gates, comparing the pendulum angle and velocity to determine the current state and enable the correct controller.
@@ -154,16 +155,22 @@ This state machine was implemented in Simulink using logic gates, comparing the 
 
 This digital logic ensured that our system was able to recover from most disturbances we tried, with the only exceptions being when the momentum of the pendulum caused the cart to "jump" off of the track.
 
+\subsection{Full Simulink Block Diagram}
+These components come together to form the controller seen in Figure \ref{fig:full_c}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/full-controller.png}
+    \caption{Full controller in Simulink}
+    \label{fig:full_c}
+\end{figure}
+
+You can see the switching block on the bottom right that enables the three subsystems to the right.
 \section{Closed-Loop Performance}
 
 Closed-loop experiments validated the controllers' performance. The step response showed quick stabilization and effective handling of mode transitions, with no large steady state oscillations. And, even when the balancing controller failed, the catching and swing-up controllers could bring it back to the upward position within 10s. 
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{figures/ph.png}
-    \caption{Closed-loop step response for cart and pendulum positions.}
-    \label{fig:step_response}
-\end{figure}
+
 
 
 \section{Conclusions and Future Work}
