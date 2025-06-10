@@ -59,7 +59,12 @@ Non-parametric identification utilized a logarithmic sine sweep ($0.3-3$ Hz). Pa
 \section{Controller Design}
 
 \subsection{Swing-Up Controller}
-An energy addition method drives the pendulum toward the upright position by strategically applying force near zero crossings of $\theta$, boosting the system's mechanical energy.
+The swing-up controller uses an energy addition method to drive the pendulum toward the upright position.
+Around every zero crossing of the pendulum angle $\theta$, the controller applies a force to move the cart in the direction opposite to the pendulum's velocity in order to increase the energy in the pendulum.
+This continues until the pendulum is able to fully ``swing up''.
+Additionally, a simple proportional controller is used to regulate the cart's position to stay near zero meters, preventing excessive cart movement during the swing-up phase.
+The activation is limited to a range $\theta \in [-30^\circ,30^\circ]$ to try and reach the inverted state with a small velocity.
+
 
 \begin{figure}[H]
     \centering
@@ -76,6 +81,7 @@ Similar to balancing, catching employs LQR/LQG but aims to return the pendulum r
 
 \subsection{State Machine}
 Control modes transition between swing-up, balancing, and catching using a robust state machine architecture.
+This state machine was implemented in Simulink using logic gates, comparing the pendulum angle and velocity to determine the current state and enable the correct controller.
 
 \begin{figure}[H]
     \centering
