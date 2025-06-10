@@ -88,6 +88,11 @@ This allowed the system to use large cart movements to stabilize the equilibrium
 \end{align*}
 The columns correspond to the states: angular position, angular velocity, cart position, and cart velocity respectively.
 
+For the LQG state estimation to feed into the LQR controller, we used a Kalman filter block in Simulink. 
+With the default settings, feeding in our output and input signals, the Kalman filter was able to reliably provide an
+accurate estimate of the state to the controller.
+
+
 \subsection{Catching Controller}
 Similar to balancing, catching employs LQR/LQG but aims to return the pendulum reliably to the stable downward equilibrium.
 
