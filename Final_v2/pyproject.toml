@@ -1,0 +1,18 @@
+[project]
+name = "final-v2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "derivative>=0.6.3",
+    "ipykernel>=6.29.5",
+    "lightning>=2.5.1.post0",
+    "matplotlib>=3.10.3",
+    "numpy>=2.2.6",
+    "optht>=0.2.0",
+    "pydmd>=2025.5.1",
+    "pykoopman>=1.0.5",
+    "scipy>=1.15.3",
+    "setuptools>=80.9.0",
+]
