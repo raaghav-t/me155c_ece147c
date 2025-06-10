@@ -189,6 +189,12 @@ See the video \href{https://youtu.be/cFawTXDfmD8}{here}.
 
 \section{Conclusions and Future Work}
 The controllers successfully addressed swing-up, balancing, and catching objectives, validating theoretical designs with robust experimental performance. Further work includes enhancing failure logic and addressing steady-state error. 
+We could augment the state machine to better handle when the cart hits the guard rails or when the pendulum swing-up is too fast for the balancing controller to act effectively.
+Also, when the pendulum made a full rotation, the angular encoder could not measure this perfectly, and the cart would slowly drift to one side during balancing.
+This steady-state error could be mitigated by adding a small integrator to the controller as a correction term.
 
+
+% \bibliographystyle{IEEEtran}
+% \bibliography{references}
 
 \end{document}
