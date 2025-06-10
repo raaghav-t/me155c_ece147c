@@ -50,36 +50,45 @@ As you can see, there is a peak in the bode plot that corresponds to a resonant 
 
 In order to modify our model for the pointing up case, we simply reflected one pole and both zeros from the pendulum angle transfer function about the imaginary axis. This makes sense, as the dynamics flip from stable to unstable. The transfer functions for this modified system can be seen in Figure \ref{fig:bode_up}.
 
-
-
+% Combined root locus plots for down and up configurations
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{../plots/bode_down.png}
-    \caption{Bode plot: Identified frequency response for cart dynamics and pendulum dynamics downwards.}
-    \label{fig:bode_down}
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{../plots/rlocus_down.png}
+        \caption{Root locus for pendulum in downward position.}
+        \label{fig:rl_down}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{../plots/bode_down.png}
+        \caption{Identified frequency response for cart dynamics and pendulum dynamics downwards.}
+        \label{fig:bode_down}
+    \end{subfigure}
+    \caption{Root locus plot and Bode of the pendulum dynamics in the downward configuration.}
+    \label{fig:rlocus_plots}
 \end{figure}
 
+% Combined bode plots for down and up configurations
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{../plots/bode_up.png}
-    \caption{Bode plot: Identified frequency response for cart dynamics and pendulum dynamics upwards.}
-    \label{fig:bode_up}
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{../plots/rlocus_up.png}
+        \caption{Root locus for pendulum in upward position.}
+        \label{fig:rl_up}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{../plots/bode_up.png}
+        \caption{Identified frequency response for cart dynamics and pendulum dynamics upwards.}
+        \label{fig:bode_up}
+    \end{subfigure}
+    \caption{Root locus plot and Bode of the pendulum dynamics in the upward configuration.}
+    \label{fig:bode_plots}
 \end{figure}
 
 In addition, the root loci of the pendulum transfer functions can be seen in Figures \ref{fig:rl_down} and \ref{fig:rl_up}. Observe the reflected pole and zeros.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{../plots/rlocus_down.png}
-    \caption{Root locus plot: transfer function to the pendulum in the downward position}
-    \label{fig:rl_down}
-\end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{../plots/rlocus_up.png}
-    \caption{Root locus plot: transfer function to the pendulum in the upward position}
-    \label{fig:rl_up}
-\end{figure}
+
 
 \section{Controller Design}
 
