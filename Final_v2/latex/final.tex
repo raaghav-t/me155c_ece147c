@@ -42,10 +42,10 @@ The experimental setup consists of an asymmetric metal rod mounted to a motor-dr
 
 \subsubsection{Non-parametric}
 
-Non-parametric identification utilized a logarithmic sine sweep using the \texttt{logspace} of frequencies between($0.3-3$ Hz). Parametric identification was done using MATLAB's \texttt{tfest} function, performing 30 experimental trials.
+Non-parametric identification utilized a logarithmic sine sweep using the \texttt{logspace} of frequencies between($0.3-3$ Hz). 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/non-para.png}
+    \includegraphics[width=0.95\textwidth]{figures/non-para.png}
     \caption{Non-parametric bode plots of the system.}
     \label{fig:non-para}
 \end{figure}
@@ -55,6 +55,7 @@ We used this to help inform our parametric identification.
 \subsubsection{Parametric}
 
 For our parametric identification, we used the same trajectories as for the non-parametric. 
+Parametric identification was done using MATLAB's \texttt{tfest} function, performing 30 experimental trials.
 
 We assumed a structural integrator in the transfer function to cart position. As shown in the bode plots, this integrator was actually the dominant element of the model for the cart position, with the other pole being far into the LHP.
 
@@ -193,6 +194,7 @@ We could augment the state machine to better handle when the cart hits the guard
 Also, when the pendulum made a full rotation, the angular encoder could not measure this perfectly, and the cart would slowly drift to one side during balancing.
 This steady-state error could be mitigated by adding a small integrator to the controller as a correction term.
 
+We recognize our system ID and closed-loop sections don't include all metrics or comparisons, but we successfully implemented swing-up, balance, and catching on hardware!
 
 % \bibliographystyle{IEEEtran}
 % \bibliography{references}
