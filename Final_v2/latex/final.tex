@@ -74,7 +74,19 @@ The activation is limited to a range $\theta \in [-30^\circ,30^\circ]$ to try an
 \end{figure}
 
 \subsection{Balancing Controller}
-The balancing controller employs LQR/LQG methods to stabilize the pendulum in the inverted (unstable) equilibrium within a narrow angular region.
+The balancing controller employs LQR/LQG methods to stabilize the pendulum in the inverted (unstable) equilibrium within a narrow angular region. 
+First, we created an LQR controller to properly penalize the relevant states and try to achieve the best performance. 
+The $Q$ matrix was tuned to aggressively control the pendulum angle but allow the cart to move relatively freely. 
+This allowed the system to use large cart movements to stabilize the equilibrium and stay in the linear regime.
+\begin{align*}
+    Q = \begin{bmatrix}
+        2000 & 0 & 0 & 0 \\
+        0 & 20 & 0 & 0 \\
+        0 & 0 & 10 & 0 \\
+        0 & 0 & 0 & 0.01
+    \end{bmatrix}
+\end{align*}
+The columns correspond to the states: angular position, angular velocity, cart position, and cart velocity respectively.
 
 \subsection{Catching Controller}
 Similar to balancing, catching employs LQR/LQG but aims to return the pendulum reliably to the stable downward equilibrium.
