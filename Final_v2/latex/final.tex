@@ -40,7 +40,7 @@ The experimental setup consists of an asymmetric metal rod mounted to a motor-dr
 
 \subsection{Identification Methods}
 
-Non-parametric identification utilized a logarithmic sine sweep ($0.3-3$ Hz). Parametric identification was done using MATLAB's \texttt{tfest} function, performing 30 experimental trials.
+Non-parametric identification utilized a logarithmic sine sweep using the \texttt{logspace} of frequencies between($0.3-3$ Hz). Parametric identification was done using MATLAB's \texttt{tfest} function, performing 30 experimental trials.
 
 We assumed a structural integrator in the transfer function to cart position. As shown in the bode plots, this integrator was actually the dominant element of the model for the cart position, with the other pole being far into the LHP.
 
@@ -102,8 +102,8 @@ The activation is limited to a range $\theta \in [-30^\circ,30^\circ]$ to try an
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{figures/ph.png}
-    \caption{Swing-up controller activation.}
+    \includegraphics[width=0.6\textwidth]{figures/swingup_activation.png}
+    \caption{When we reach a region of the state-space in an epsilon bound around zero, this correlates to a downwards pendulum and centered cart with small kinetic energy. This triggers the swing up controller as it is now safe to attempt adding controlled energy back into the pendulum to stabilize.}
     \label{fig:swingup}
 \end{figure}
 
