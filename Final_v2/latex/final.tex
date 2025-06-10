@@ -10,7 +10,7 @@
 \usepackage{subcaption}
 \usepackage{cite}
 \usepackage{parskip}
-
+\usepackage{hyperref}
 \title{ME155C Final Project Report\\Inverted Pendulum Control: Swing-up, Balance, and Catching}
 \author{Raaghav Thirumaligai, Cole Giusto, Tien Nguyen}
 \date{June 8, 2025}
@@ -147,7 +147,7 @@ This state machine was implemented in Simulink using logic gates, comparing the 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{figures/state_machine.png}
+    \includegraphics[width=0.95\textwidth]{figures/state_machine.png}
     \caption{State machine for mode switching between controllers.}
     \label{fig:state_machine}
 \end{figure}
@@ -167,7 +167,8 @@ Closed-loop experiments validated the controllers' performance. The step respons
 
 
 \section{Conclusions and Future Work}
-The controllers successfully addressed swing-up, balancing, and catching objectives, validating theoretical designs with robust experimental performance. Further work includes enhancing failure logic and addressing steady-state error.
+The controllers successfully addressed swing-up, balancing, and catching objectives, validating theoretical designs with robust experimental performance. Further work includes enhancing failure logic and addressing steady-state error. See the video here: \href{https://youtu.be/cFawTXDfmD8}{https://youtu.be/cFawTXDfmD8}
+
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
