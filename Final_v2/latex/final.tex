@@ -42,7 +42,7 @@ The experimental setup consists of an asymmetric metal rod mounted to a motor-dr
 
 Non-parametric identification utilized a logarithmic sine sweep ($0.3-3$ Hz). Parametric identification was done using MATLAB's \texttt{tfest} function, performing 30 experimental trials.
 
-We assumed a structural integrator in the transfer function to cart position. As shown in the bode plots, this integrator was actually the dominant element of the model for the cart position, with the other pole being far in the LHP.
+We assumed a structural integrator in the transfer function to cart position. As shown in the bode plots, this integrator was actually the dominant element of the model for the cart position, with the other pole being far into the LHP.
 
 For the transfer function of the pendulum, we found that 3 poles and 2 zeros provided the best fit. The bode plots resulting from this identification can be seen in Figure \ref{fig:bode_down}.
 
@@ -152,9 +152,11 @@ This state machine was implemented in Simulink using logic gates, comparing the 
     \label{fig:state_machine}
 \end{figure}
 
+This digital logic ensured that our system was able to recover from most disturbances we tried, with the only exceptions being when the momentum of the pendulum caused the cart to "jump" off of the track.
+
 \section{Closed-Loop Performance}
 
-Closed-loop experiments validated the controllers' performance. The step response showed quick stabilization and effective handling of mode transitions.
+Closed-loop experiments validated the controllers' performance. The step response showed quick stabilization and effective handling of mode transitions, with no large steady state oscillations. And, even when the balancing controller failed, the catching and swing-up controllers could bring it back to the upward position within 10s. 
 
 \begin{figure}[H]
     \centering
@@ -162,6 +164,7 @@ Closed-loop experiments validated the controllers' performance. The step respons
     \caption{Closed-loop step response for cart and pendulum positions.}
     \label{fig:step_response}
 \end{figure}
+
 
 \section{Conclusions and Future Work}
 The controllers successfully addressed swing-up, balancing, and catching objectives, validating theoretical designs with robust experimental performance. Further work includes enhancing failure logic and addressing steady-state error.
