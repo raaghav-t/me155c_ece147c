@@ -28,11 +28,11 @@ This project investigates the control of an inverted pendulum on a cart, specifi
 \section{System Identification}
 
 \subsection{Process Description}
-The experimental setup consists of an asymmetric metal rod mounted to a motor-driven cart, with encoders providing measurements of pendulum angle ($\theta$) and cart position. The control input is the motor voltage ($u$), and the primary controlled outputs are cart position and pendulum angle.
+The experimental setup consists of an asymmetric metal rod mounted to a motor-driven cart, with encoders providing measurements of pendulum angle ($\theta$) and cart position ($x$). The control input is the motor voltage ($u$), and the primary controlled outputs are cart position and pendulum angle.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{figures/system_setup.png}
+    \includegraphics[width=0.15\textwidth]{figures/system_setup.png}
     \caption{Experimental setup: Cart-pendulum system.}
     \label{fig:setup}
 \end{figure}
@@ -79,7 +79,7 @@ Control modes transition between swing-up, balancing, and catching using a robus
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{figures/ph.png}
+    \includegraphics[width=0.6\textwidth]{figures/state_machine.png}
     \caption{State machine for mode switching between controllers.}
     \label{fig:state_machine}
 \end{figure}
