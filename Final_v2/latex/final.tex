@@ -32,7 +32,7 @@ The experimental setup consists of an asymmetric metal rod mounted to a motor-dr
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{figures/system_setup.pdf}
+    \includegraphics[width=0.6\textwidth]{figures/system_setup.png}
     \caption{Experimental setup: Cart-pendulum system.}
     \label{fig:setup}
 \end{figure}
@@ -43,17 +43,18 @@ Non-parametric identification utilized a logarithmic sine sweep ($0.3-3$ Hz). Pa
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/bode_cart.pdf}
-    \caption{Bode plot: Identified frequency response for cart dynamics.}
-    \label{fig:bode_cart}
+    \includegraphics[width=0.8\textwidth]{../plots/bode_down.png}
+    \caption{Bode plot: Identified frequency response for cart dynamics and pendulum dynamics downwards.}
+    \label{fig:bode_down}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/bode_pendulum.pdf}
-    \caption{Bode plot: Identified frequency response for pendulum dynamics.}
-    \label{fig:bode_pendulum}
+    \includegraphics[width=0.8\textwidth]{../plots/bode_up.png}
+    \caption{Bode plot: Identified frequency response for cart dynamics and pendulum dynamics upwards.}
+    \label{fig:bode_up}
 \end{figure}
+
 
 \section{Controller Design}
 
@@ -62,7 +63,7 @@ An energy addition method drives the pendulum toward the upright position by str
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{figures/swing_up.pdf}
+    \includegraphics[width=0.6\textwidth]{figures/ph.png}
     \caption{Swing-up controller activation.}
     \label{fig:swingup}
 \end{figure}
@@ -78,7 +79,7 @@ Control modes transition between swing-up, balancing, and catching using a robus
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{figures/state_machine.pdf}
+    \includegraphics[width=0.9\textwidth]{figures/ph.png}
     \caption{State machine for mode switching between controllers.}
     \label{fig:state_machine}
 \end{figure}
@@ -89,7 +90,7 @@ Closed-loop experiments validated the controllers' performance. The step respons
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/step_response.pdf}
+    \includegraphics[width=0.8\textwidth]{figures/ph.png}
     \caption{Closed-loop step response for cart and pendulum positions.}
     \label{fig:step_response}
 \end{figure}
