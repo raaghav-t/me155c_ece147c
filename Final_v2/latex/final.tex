@@ -42,6 +42,16 @@ The experimental setup consists of an asymmetric metal rod mounted to a motor-dr
 
 Non-parametric identification utilized a logarithmic sine sweep ($0.3-3$ Hz). Parametric identification was done using MATLAB's \texttt{tfest} function, performing 30 experimental trials.
 
+We assumed a structural integrator in the transfer function to cart position. As shown in the bode plots, this integrator was actually the dominant element of the model for the cart position, with the other pole being far in the LHP.
+
+For the transfer function of the pendulum, we found that 3 poles and 2 zeros provided the best fit. The bode plots resulting from this identification can be seen in Figure \ref{fig:bode_down}.
+
+As you can see, there is a peak in the bode plot that corresponds to a resonant frequency in the system.
+
+In order to modify our model for the pointing up case, we simply reflected one pole and both zeros from the pendulum angle transfer function about the imaginary axis. This makes sense, as the dynamics flip from stable to unstable. The transfer functions for this modified system can be seen in Figure \ref{fig:bode_up}.
+
+
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{../plots/bode_down.png}
@@ -56,6 +66,20 @@ Non-parametric identification utilized a logarithmic sine sweep ($0.3-3$ Hz). Pa
     \label{fig:bode_up}
 \end{figure}
 
+In addition, the root loci of the pendulum transfer functions can be seen in Figures \ref{fig:rl_down} and \ref{fig:rl_up}. Observe the reflected pole and zeros.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{../plots/rlocus_down.png}
+    \caption{Root locus plot: transfer function to the pendulum in the downward position}
+    \label{fig:rl_down}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{../plots/rlocus_up.png}
+    \caption{Root locus plot: transfer function to the pendulum in the upward position}
+    \label{fig:rl_up}
+\end{figure}
 
 \section{Controller Design}
 
@@ -64,7 +88,7 @@ The swing-up controller uses an energy addition method to drive the pendulum tow
 Around every zero crossing of the pendulum angle $\theta$, the controller applies a force to move the cart in the direction opposite to the pendulum's velocity in order to increase the energy in the pendulum.
 This continues until the pendulum is able to fully ``swing up''.
 Additionally, a simple proportional controller is used to regulate the cart's position to stay near zero meters, preventing excessive cart movement during the swing-up phase.
-The activation is limited to a range $\theta \in [-30^\circ,30^\circ]$ to try and reach the inverted state with a small velocity.
+The activation is limited to a range $\theta \in [-30^\circ,30^\circ]$ to try and reach the inverted state with a small velocity. This slow swing-up allows the balancing controller to take over without having to attenuate too much extra energy.
 
 
 \begin{figure}[H]
@@ -95,7 +119,18 @@ accurate estimate of the state to the controller.
 
 
 \subsection{Catching Controller}
-Similar to balancing, catching employs LQR/LQG but aims to return the pendulum reliably to the stable downward equilibrium.
+Similar to balancing, catching employs LQR/LQG but aims to return the pendulum reliably to the stable downward equilibrium. 
+
+To achieve this, we used the weights $Q$ below:
+\begin{align*}
+    \begin{bmatrix}
+        8000 & 0 & 0 & 0 \\
+        0 & 10 & 0 & 0 \\
+        0 & 0 & 100 & 0 \\
+        0 & 0 & 0 & 0.01
+    \end{bmatrix}
+\end{align*}
+This even more aggressive control of the angular position prevents the pendulum from swinging to more than $90^\circ$, which means that the catching controller does not need to wait for it to swing back down.
 
 \subsection{State Machine}
 Control modes transition between swing-up, balancing, and catching using a robust state machine architecture.
