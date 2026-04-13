@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1776102340 "Final_v2/latex/final.tex" "final.pdf" "final" 1776102340
+["pdflatex"] 1776108095 "Final_v2/latex/final.tex" "final.pdf" "final" 1776108095
   "../plots/bode_down.png" 0 -1 0 ""
   "../plots/bode_up.png" 0 -1 0 ""
   "../plots/rlocus_down.png" 0 -1 0 ""
@@ -91,14 +91,14 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1673828139 2826444 871454068774c89eafa6172f34236276 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "Final_v2/latex/final.tex" 1776102338 10923 0f394fa14fd5111d33ab60c6e04bf4cc ""
+  "Final_v2/latex/final.tex" 1776108095 10894 b4d8847f3654c3f446916a9755d4271c ""
   "figures/full-controller.png" 0 -1 0 ""
   "figures/non-para.png" 0 -1 0 ""
   "figures/state_machine.png" 0 -1 0 ""
   "figures/swingup_activation.png" 0 -1 0 ""
   "figures/system_setup.png" 0 -1 0 ""
-  "final.aux" 1776102215 6002 c9003bfd3c1f4c1744fbf095bac42b55 "pdflatex"
-  "final.out" 1776102215 2113 85e9ff95e907f50a33b47ac9f4f0baf2 "pdflatex"
+  "final.aux" 1776108093 6002 c9003bfd3c1f4c1744fbf095bac42b55 "pdflatex"
+  "final.out" 1776108093 2113 85e9ff95e907f50a33b47ac9f4f0baf2 "pdflatex"
   (generated)
   "final.aux"
   "final.log"

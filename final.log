@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.15)  13 APR 2026 10:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.15)  13 APR 2026 12:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -410,33 +410,33 @@ LaTeX Info: Redefining \nameref on input line 18.
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-LaTeX Warning: File `figures/system_setup.png' not found on input line 37.
+LaTeX Warning: File `figures/system_setup.png' not found on input line 36.
 
 
-./Final_v2/latex/final.tex:37: Package pdftex.def Error: File `figures/system_s
+./Final_v2/latex/final.tex:36: Package pdftex.def Error: File `figures/system_s
 etup.png' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 ...h=0.4\textwidth]{figures/system_setup.png}
+l.36 ...h=0.4\textwidth]{figures/system_setup.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `figures/non-para.png' not found on input line 49.
+LaTeX Warning: File `figures/non-para.png' not found on input line 48.
 
 
-./Final_v2/latex/final.tex:49: Package pdftex.def Error: File `figures/non-para
+./Final_v2/latex/final.tex:48: Package pdftex.def Error: File `figures/non-para
 .png' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.49 ...idth=0.95\textwidth]{figures/non-para.png}
+l.48 ...idth=0.95\textwidth]{figures/non-para.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -445,65 +445,65 @@ If that doesn't work, type  X <return>  to quit.
 
 ] [3]
 
-LaTeX Warning: File `../plots/rlocus_down.png' not found on input line 73.
+LaTeX Warning: File `../plots/rlocus_down.png' not found on input line 72.
 
 
-./Final_v2/latex/final.tex:73: Package pdftex.def Error: File `../plots/rlocus_
+./Final_v2/latex/final.tex:72: Package pdftex.def Error: File `../plots/rlocus_
 down.png' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.73 ...idth=\textwidth]{../plots/rlocus_down.png}
+l.72 ...idth=\textwidth]{../plots/rlocus_down.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `../plots/bode_down.png' not found on input line 79.
+LaTeX Warning: File `../plots/bode_down.png' not found on input line 78.
 
 
-./Final_v2/latex/final.tex:79: Package pdftex.def Error: File `../plots/bode_do
+./Final_v2/latex/final.tex:78: Package pdftex.def Error: File `../plots/bode_do
 wn.png' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.79 ...[width=\textwidth]{../plots/bode_down.png}
+l.78 ...[width=\textwidth]{../plots/bode_down.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `../plots/rlocus_up.png' not found on input line 91.
+LaTeX Warning: File `../plots/rlocus_up.png' not found on input line 90.
 
 
-./Final_v2/latex/final.tex:91: Package pdftex.def Error: File `../plots/rlocus_
+./Final_v2/latex/final.tex:90: Package pdftex.def Error: File `../plots/rlocus_
 up.png' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.91 ...[width=\textwidth]{../plots/rlocus_up.png}
+l.90 ...[width=\textwidth]{../plots/rlocus_up.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `../plots/bode_up.png' not found on input line 97.
+LaTeX Warning: File `../plots/bode_up.png' not found on input line 96.
 
 
-./Final_v2/latex/final.tex:97: Package pdftex.def Error: File `../plots/bode_up
+./Final_v2/latex/final.tex:96: Package pdftex.def Error: File `../plots/bode_up
 .png' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.97 ...cs[width=\textwidth]{../plots/bode_up.png}
+l.96 ...cs[width=\textwidth]{../plots/bode_up.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -511,51 +511,51 @@ If that doesn't work, type  X <return>  to quit.
 [4]
 
 LaTeX Warning: File `figures/swingup_activation.png' not found on input line 12
-1.
+0.
 
 
-./Final_v2/latex/final.tex:121: Package pdftex.def Error: File `figures/swingup
+./Final_v2/latex/final.tex:120: Package pdftex.def Error: File `figures/swingup
 _activation.png' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.121 ...extwidth]{figures/swingup_activation.png}
+l.120 ...extwidth]{figures/swingup_activation.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [5] [6]
 
-LaTeX Warning: File `figures/state_machine.png' not found on input line 167.
+LaTeX Warning: File `figures/state_machine.png' not found on input line 166.
 
 
-./Final_v2/latex/final.tex:167: Package pdftex.def Error: File `figures/state_m
+./Final_v2/latex/final.tex:166: Package pdftex.def Error: File `figures/state_m
 achine.png' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.167 ....95\textwidth]{figures/state_machine.png}
+l.166 ....95\textwidth]{figures/state_machine.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [7]
 
-LaTeX Warning: File `figures/full-controller.png' not found on input line 179.
+LaTeX Warning: File `figures/full-controller.png' not found on input line 178.
 
 
-./Final_v2/latex/final.tex:179: Package pdftex.def Error: File `figures/full-co
+./Final_v2/latex/final.tex:178: Package pdftex.def Error: File `figures/full-co
 ntroller.png' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.179 ...8\textwidth]{figures/full-controller.png}
+l.178 ...8\textwidth]{figures/full-controller.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -571,7 +571,7 @@ Here is how much of TeX's memory you used:
  29550 multiletter control sequences out of 15000+600000
  476329 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,14n,63p,613b,497s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,14n,63p,632b,497s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -582,7 +582,7 @@ local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/lo
 cal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
 al/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local
 /texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on final.pdf (10 pages, 136676 bytes).
+Output written on final.pdf (10 pages, 136654 bytes).
 PDF statistics:
  178 PDF objects out of 1000 (max. 8388607)
  144 compressed objects within 2 object streams
